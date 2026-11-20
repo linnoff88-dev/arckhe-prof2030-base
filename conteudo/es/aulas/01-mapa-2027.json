@@ -1,0 +1,337 @@
+{
+  "slug": "mapa-2027",
+  "num": 1,
+  "menu": "Mapa",
+  "titulo": "El mapa de 2027: qué hace bien la IA, en qué se equivoca y cuánto cuesta",
+  "titulo_curto": "El mapa de 2027",
+  "minutos": 15,
+  "lead": "La IA acierta cosas difíciles y se equivoca en cosas simples. Quien ayuda a una empresa a adoptar IA necesita saber, para cada tarea, de qué lado de la línea está y cuánto cuesta de verdad, contando el tiempo de verificar. Esta clase te da el mapa y el modelo para usar en tu trabajo.",
+  "objetivo": "clasificar 3 tareas de tu trabajo en lo que hace bien, lo que hace con verificación o lo que no debe hacer, con el costo de cada una.",
+  "competencias": [
+    "avaliar-fronteira-da-ia",
+    "estimar-custo-por-tarefa",
+    "decidir-quando-nao-usar-ia"
+  ],
+  "aprende": [
+    {
+      "icone": "alvo",
+      "t": "Qué es la \"frontera irregular\" de la IA"
+    },
+    {
+      "icone": "lupa",
+      "t": "Probar una tarea antes de confiar"
+    },
+    {
+      "icone": "grafico",
+      "t": "Calcular el costo por tarea, con la verificación"
+    },
+    {
+      "icone": "camadas",
+      "t": "Quién es quién entre los proveedores"
+    }
+  ],
+  "hero_alt": "Unas manos colocan alfileres de dos colores a ambos lados de una frontera irregular en un mapa, junto a una calculadora y monedas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La línea irregular",
+      "sub": "Toda tarea cae en una de estas tres zonas. El costo decide si vale la pena.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Lo hace bien",
+          "sub": "Borrador, resumen, clasificación",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Resumir una reunión"
+            },
+            {
+              "icone": "chat",
+              "t": "Redactar un borrador de respuesta"
+            }
+          ],
+          "detalhe": "Tareas de lenguaje en las que un error pequeño es barato y fácil de ver. Incluso aquí alguien lee antes de que salga. Ejemplo en Horizonte: Juliana pide un borrador de respuesta a un reclamo y ajusta el tono."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Lo hace, pero verifica",
+          "sub": "Números, hechos, reglas de la empresa",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Sumar los pedidos del mes"
+            },
+            {
+              "icone": "lista",
+              "t": "Aplicar la tabla de precios"
+            }
+          ],
+          "detalhe": "La IA suele acertar, pero el error sale caro y no aparece solo: un total equivocado, un precio inventado, un plazo cambiado. Vale la pena usarla, siempre que exista una verificación definida (quién verifica, cómo y cuándo).",
+          "forte": true
+        },
+        {
+          "icone": "x",
+          "titulo": "No debe hacerlo sola",
+          "sub": "Dinero, salud, decisiones sobre personas",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "Aprobar un descuento o crédito"
+            },
+            {
+              "icone": "usuario",
+              "t": "Decidir a quién despedir"
+            }
+          ],
+          "detalhe": "Cuando el error causa daño legal, financiero o a una persona, la IA puede preparar, pero la decisión es de alguien con nombre. También entra aquí lo que ocurre pocas veces al mes: ni siquiera conviene automatizarlo."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Cuánto cuesta",
+          "sub": "Precio del modelo + tiempo de verificar",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "El precio por tarea baja con cada generación"
+            },
+            {
+              "icone": "usuario",
+              "t": "El tiempo humano no baja solo"
+            }
+          ],
+          "detalhe": "El precio de los modelos baja rápido, pero el costo real de una tarea incluye el tiempo de quien verifica y el costo del error que se cuela. Una tarea barata para la IA puede salir cara si cada respuesta necesita 10 minutos de revisión."
+        }
+      ],
+      "legenda": "La línea no es recta: la misma IA que escribe un contrato puede equivocarse en una cuenta simple. Por eso se prueba tarea por tarea.",
+      "dica": "Haz clic en cada zona para ver ejemplos de Horizonte Distribuidora."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo armar el mapa de una tarea",
+      "sub": "Cuatro pasos. Hazlo con una tarea real.",
+      "passos": [
+        {
+          "titulo": "Elegir",
+          "sub": "Una tarea que se repite",
+          "texto": [
+            "Toma una tarea que ocurre muchas veces al mes y cuyo resultado se puede verificar.",
+            "Una tarea que ocurre dos veces al año casi nunca vale la pena: ajustar la IA da más trabajo que hacerla a mano."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "Patrícia, gerente comercial, arma todos los lunes un resumen de los pedidos de la semana por cliente."
+          }
+        },
+        {
+          "titulo": "Probar",
+          "sub": "Tres veces, con un caso difícil",
+          "texto": [
+            "Ejecuta la tarea en la IA tres veces con el mismo material. Después incluye un caso límite: un dato faltante, un número fuera de lo normal.",
+            "Compara las tres respuestas. Si cambian de una vez a otra, ya sabes que tienes que verificar."
+          ],
+          "exemplo": {
+            "rot": "Caso límite",
+            "texto": "Un pedido cancelado a mitad de semana: ¿la IA lo sumó o lo restó del total?"
+          }
+        },
+        {
+          "titulo": "Clasificar",
+          "sub": "Lo hace bien, verifica o no lo hace",
+          "texto": [
+            "Pregunta: si la IA se equivoca 1 vez de cada 20, ¿el impacto es tolerable? Si lo es, ella lo hace. Si el error cuesta caro pero se ve en una verificación, ella lo hace y alguien verifica.",
+            "Si el error causa daño al dinero, la salud, un contrato o una persona, ella solo prepara."
+          ]
+        },
+        {
+          "titulo": "Hacer la cuenta",
+          "sub": "Costo por tarea, con la verificación",
+          "texto": [
+            "Suma el tiempo que la tarea lleva hoy, el tiempo de usar la IA y el tiempo de verificar. Si el total no baja, la IA no ayudó.",
+            "Antes de pensar en IA, mira si una regla simple, una hoja de cálculo o un sistema listo lo resuelve. Usa la solución más simple que funcione."
+          ],
+          "exemplo": {
+            "rot": "Cuenta",
+            "texto": "Hoy 90 min. Con IA: 10 min para pedir + 20 min para verificar = 30 min. Ganancia de 60 min por semana."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La prueba de la tarea y el mapa de frontera. Cambia lo que está entre < >.",
+      "blocos": [
+        {
+          "rot": "Prompt · probar una tarea",
+          "icone": "chat",
+          "conteudo": "Voy a probar si puedes hacer esta tarea de mi trabajo.\nTarea: <describe la tarea y el resultado esperado>\nMaterial: <pega el material, sin nombre, CPF ni teléfono de clientes>\n\nReglas:\n- Si falta información, di qué falta. No inventes.\n- Al final, enumera los puntos de tu respuesta en los que tienes menos certeza."
+        },
+        {
+          "rot": "Mapa de frontera · 3 tareas",
+          "icone": "lista",
+          "conteudo": "MAPA DE FRONTERA — <tu nombre>, <fecha>\n\n| Tarea | Veces/mes | ¿La IA acertó en las 3 rondas? | Dónde falló | Zona (lo hace bien / verifica / no lo hace) | Quién verifica | Tiempo hoy | Tiempo con IA + verificación |\n|---|---|---|---|---|---|---|---|\n| <tarea 1> | | | | | | | |\n| <tarea 2> | | | | | | | |\n| <tarea 3> | | | | | | | |\n\nPrueba del error: si la IA se equivoca 1 vez de cada 20, ¿el impacto es tolerable?\nPrueba de la alternativa: ¿una regla simple, una hoja de cálculo o un sistema listo lo resuelve?"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo completado",
+            "html": "<p><b>Resumen semanal de pedidos (Patrícia)</b> · 4 veces/mes · acertó 2 de 3 (en una ronda contó un pedido cancelado) · zona: <b>lo hace, pero verifica</b> · verifica: Patrícia, cotejando el total con el sistema · hoy 90 min → con IA 30 min.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Probar una sola vez</b>: la IA puede acertar por suerte. Tres rondas muestran si es estable.</li><li><b>Olvidar la verificación en la cuenta</b>: la ganancia desaparece cuando cada respuesta hay que rehacerla.</li><li><b>Pegar datos de clientes en la prueba</b>: usa ejemplos sin nombre y sin documento.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Quién es quién en octubre de 2026",
+      "paragrafos": [
+        "Los nombres cambian cada pocas semanas; el método de esta clase no. Hoy los principales proveedores son <b>Anthropic</b> (Claude), <b>OpenAI</b> (ChatGPT y Codex), <b>Google</b> (Gemini), <b>xAI</b> (Grok) y los laboratorios chinos, que publican modelos abiertos como <b>Qwen</b>, de Alibaba.",
+        "El precio baja rápido. El 22/09/2026 Anthropic lanzó Opus 5.5 diciendo que alcanza el nivel de Fable 5.1 costando 40% menos que Opus 5. En agosto, Alibaba abrió Qwen3.8-27B, que corre hasta en un notebook. Construir se volvió barato; verificar sigue siendo cosa tuya.",
+        "El informe AI Index 2026, de Stanford, llama a esto <b>frontera irregular</b>: modelos que ganan competencias difíciles y todavía fallan en tareas simples. El mismo informe cuenta 362 incidentes de IA documentados en 2025, frente a 233 el año anterior."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: tu mapa de frontera",
+      "sub": "Una tarea a la vez. Usa ejemplos sin datos personales.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Elegir 3 tareas",
+          "min": "10 min",
+          "texto": "Enumera 3 tareas de tu trabajo (o de Horizonte, si prefieres) que se repitan al menos 4 veces al mes.",
+          "pronto": "las 3 tareas están en la tabla con la cantidad de veces por mes."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Probar cada una 3 veces",
+          "min": "25 min",
+          "texto": "Usa el prompt de prueba. Ejecuta cada tarea 3 veces, una de ellas con un caso límite.",
+          "pronto": "la columna \"¿acertó en las 3 rondas?\" está completa y anotaste al menos un error o duda de la IA."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Clasificar y hacer la cuenta",
+          "min": "15 min",
+          "texto": "Coloca cada tarea en una zona, con el nombre de quien la revisa y los dos tiempos.",
+          "pronto": "el mapa de frontera de las 3 tareas está completo, con zona, quién revisa y tiempo antes y después."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué quiere decir \"frontera irregular\"?",
+          "opcoes": [
+            "Que la IA solo funciona en inglés.",
+            "Que la IA puede acertar en tareas difíciles y fallar en tareas simples, por eso se prueba tarea por tarea.",
+            "Que cada país tiene una ley diferente para la IA.",
+            "Que los modelos abiertos son peores que los cerrados."
+          ],
+          "certa": 1,
+          "explica": "La línea entre lo que la IA hace bien y lo que la IA falla no es recta. Por eso no se puede confiar \"en la IA\" en general; se confía en una tarea probada. El error común es generalizar a partir de un acierto impresionante.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "La IA hace el resumen semanal en 2 minutos, pero Patrícia tarda 40 minutos en revisarlo. ¿Qué entra en la cuenta del costo?",
+          "opcoes": [
+            "Solo el precio de la IA, que es casi cero.",
+            "Solo los 2 minutos de la IA.",
+            "El tiempo de pedir, el de revisar y el costo de un error que se cuele.",
+            "Nada: si la IA lo hizo, está hecho."
+          ],
+          "certa": 2,
+          "explica": "El costo real por tarea incluye la revisión. Si esta ocupa casi el mismo tiempo que la tarea original, la IA no ayudó. El error común es mirar solo el precio del modelo.",
+          "ref": "passos"
+        },
+        {
+          "p": "Una tarea ocurre dos veces al año y el error sale caro. ¿Cuál es la mejor decisión?",
+          "opcoes": [
+            "Automatizar con un agente.",
+            "Hacerla a mano, quizá con la IA preparando un borrador.",
+            "Usar el modelo más caro del mercado.",
+            "Dejar que la IA decida sola para ganar tiempo."
+          ],
+          "certa": 1,
+          "explica": "Volumen bajo y error caro son dos señales en contra de automatizar. La IA puede ayudar a preparar, pero la decisión queda en manos de una persona. El error común es querer IA en todo.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Por qué ejecutar la misma tarea 3 veces en la prueba?",
+          "opcoes": [
+            "Para gastar el límite del plan.",
+            "Porque la IA puede responder distinto cada vez; tres rondas muestran si es estable.",
+            "Porque la ley exige tres pruebas.",
+            "Para que la IA aprenda de ti."
+          ],
+          "certa": 1,
+          "explica": "La misma pregunta puede generar respuestas diferentes. Si cambian, la tarea necesita revisión. El error común es confiar en el primer acierto.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen de la clase",
+      "itens": [
+        {
+          "t": "Frontera irregular",
+          "texto": "La IA acierta cosas difíciles y falla en las simples. Prueba tarea por tarea."
+        },
+        {
+          "t": "Tres zonas",
+          "texto": "Lo hace bien; lo hace, pero revisa; no debe hacerlo sola."
+        },
+        {
+          "t": "Costo real",
+          "texto": "Precio del modelo + tiempo de revisar + costo del error que se cuela."
+        },
+        {
+          "t": "Primero lo más simple",
+          "texto": "Si una regla, una hoja de cálculo o un sistema ya hecho lo resuelve, no hace falta IA."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fuentes y para ir más allá",
+      "links": [
+        {
+          "t": "Stanford HAI: AI Index 2026 (13/04/2026): frontera irregular, 362 incidentes en 2025",
+          "href": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+          "icone": "grafico"
+        },
+        {
+          "t": "Anthropic: Claude Opus 5.5 (22/09/2026), 40% más barato que el Opus 5",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Alibaba Cloud: lanzamiento de Qwen3.8-27B, modelo abierto para ejecutar en local (08/2026)",
+          "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463",
+          "icone": "chip"
+        },
+        {
+          "t": "OpenAI: GPT-6 Sol y Luna, actualización de octubre de 2026",
+          "href": "https://deploymentsafety.openai.com/gpt-6-october",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Consultor de IA (INEMA): la pirámide de soluciones y cuándo no usar IA",
+          "href": "https://inematds.github.io/consultoria2k/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

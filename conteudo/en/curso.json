@@ -1,0 +1,190 @@
+{
+  "id": "prof2030-base",
+  "lang": "en",
+  "url": "https://inematds.github.io/prof2030-base/en/",
+  "nome": "Trusting what AI builds",
+  "sub": "Professional 2030 · Common Core",
+  "volta": {
+    "t": "Professional 2030 Area",
+    "href": "https://inematds.github.io/profissional-2030/"
+  },
+  "lado_card": {
+    "rot": "Lab company",
+    "t": "Horizonte Distribuidora",
+    "texto": "A fictional company with planted flaws, the same one in all five courses. Lessons 4 and 8 use it.",
+    "link": "Open the lab",
+    "href": "https://inematds.github.io/prof2030-lab/"
+  },
+  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · <a href=\"https://inematds.github.io/profissional-2030/\">Professional 2030</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/\">This course's page on INEMA.CLUB</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guide: how to learn AI</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "Professional 2030 · Common Core · 8 lessons",
+    "titulo": "Trusting what AI builds: the basics for anyone who will help companies adopt AI",
+    "lead": "Building with AI got cheap. Trusting what it builds is still expensive. In eight lessons, you learn what AI does well, build a small app and look for flaws in it, recognize the risks that sink projects, and write a one-pager the board understands.",
+    "cta": "Start with lesson 1",
+    "cta2": {
+      "t": "See the Professional 2030 program",
+      "href": "https://inematds.github.io/profissional-2030/"
+    },
+    "capa_alt": "Trusting what AI builds — Professional 2030, Common Core. A professional examines an app on a laptop with a magnifying glass.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "15 to 20 min lessons"
+      },
+      {
+        "v": "8",
+        "t": "exercises with \"done when\""
+      },
+      {
+        "v": "1",
+        "t": "lab company"
+      },
+      {
+        "v": "Free",
+        "t": "open content from INEMA.CLUB"
+      }
+    ],
+    "aulas_titulo": "The lessons",
+    "aulas_sub": "In order: understand, build, find the risk, decide on data and rules, say what you are not, and talk to the board.",
+    "blocos": [
+      {
+        "t": "Who it's for",
+        "itens": [
+          "Any professional who will help a company adopt AI with method and safety, even without knowing how to code.",
+          "Anyone who wants to follow one of the four Professional 2030 tracks: it is the recommended prerequisite (not required).",
+          "Anyone who already uses AI at work and wants to know where it goes wrong before trusting it."
+        ]
+      },
+      {
+        "t": "What you walk away able to do",
+        "itens": [
+          "Say, for a given task, whether AI does it well, does it with checking, or should not do it.",
+          "Build a one-screen app with AI and find three flaws in it.",
+          "Recognize an exposed key, prompt injection, too many permissions, and action without approval.",
+          "Decide where a piece of data can go and build the timeline of the rules.",
+          "Hand the board a one-page diagnosis."
+        ]
+      },
+      {
+        "t": "Part of Professional 2030",
+        "itens": [
+          "This course is the Common Core of <a href=\"https://inematds.github.io/profissional-2030/\">Professional 2030</a>, an open INEMA program. Each track will have INEMA certification; details soon. It is a qualification certificate, not a regulated profession.",
+          "<a href=\"https://inematds.github.io/prof2030-base/\">Common Core: Trusting what AI builds</a> (this course)",
+          "<a href=\"https://inematds.github.io/prof2030-consultor/\">AI Consultant</a>: for the owner and the board",
+          "<a href=\"https://inematds.github.io/prof2030-auditor/\">AI Auditor</a>: risk assessment and triage",
+          "<a href=\"https://inematds.github.io/prof2030-mentor/\">AI Mentor</a>: managers who build",
+          "<a href=\"https://inematds.github.io/prof2030-treinador/\">AI Trainer</a>: teams and leaders",
+          "<a href=\"https://inematds.github.io/prof2030-lab/\">Lab: Horizonte Distribuidora</a>"
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Skip to content",
+    "aulas": "Lessons",
+    "concluido": "completed",
+    "aula": "Lesson",
+    "nesta_aula": "In this lesson, you will learn:",
+    "objetivo": "Goal:",
+    "proxima_aula": "Next lesson",
+    "aula_anterior": "Previous lesson",
+    "voltar_inicio": "Back to the start of the course",
+    "marcar_concluida": "Mark lesson as completed",
+    "dg_dica": "Click each block in the diagram to see what it does.",
+    "copiar": "Copy",
+    "copiado": "Copied",
+    "selo_simulacao": "Simulation: illustrative example",
+    "selo_real": "Example from the repository",
+    "pronto_quando": "Done when:",
+    "fiz": "I did this exercise",
+    "video_pagina": "Video page with script",
+    "pergunta": "Question",
+    "de": "of",
+    "cert_tag": "competency",
+    "correto": "Correct",
+    "errado": "Not that one",
+    "quiz_aguarda": "Choose an option. The explanation appears after you try.",
+    "proxima_pergunta": "Next question",
+    "quiz_ver": "See result",
+    "quiz_fim": "Quiz complete",
+    "quiz_total": "You got {a} of {n} right. Get them all right and the lesson is marked as completed.",
+    "aparencia": "Appearance",
+    "tamanho_texto": "Text size",
+    "tema": "Theme",
+    "tema_escuro": "Dark",
+    "tema_papel": "Light paper",
+    "role_dica": "Scroll the page: each step below lights up its part of the diagram.",
+    "pre_requisito": "requires",
+    "ver_aula": "View the lesson",
+    "mapa_dica": "Click an exercise to see what to do and the \"done when\".",
+    "etapas": "Steps",
+    "exercicios": "exercises",
+    "rever": "Review:",
+    "revisar_erradas": "Review the wrong ones",
+    "refazer": "Retake the quiz",
+    "h_semana": "h per week",
+    "data_inicio": "Start date",
+    "ritmo": "Time available",
+    "gerar_plano": "Generate my plan",
+    "baixar_md": "Download plan.md",
+    "baixar_ics": "Download to calendar (.ics)",
+    "ind_estudo": "Study (lessons)",
+    "ind_pratica": "Declared practice",
+    "ind_nota": "Practice = exercises you marked as done. Proof comes in the certification exam.",
+    "estudo": {
+      "titulo": "Your study",
+      "continuar": "Pick up where I left off",
+      "comecar": "Start with lesson 1",
+      "cta_continuar": "Continue lesson {n}",
+      "hoje": "today",
+      "ontem": "yesterday",
+      "ha_dias": "{n} days ago",
+      "desempenho": "Quiz performance",
+      "notas": "My notes",
+      "dados": "Copy my data",
+      "sem_testes": "No quiz taken yet. The quiz is at the end of each lesson.",
+      "nao_fez": "quiz not taken yet",
+      "ultimo": "Latest",
+      "melhor": "Best",
+      "tentativas": "attempts",
+      "tentativa": "attempt",
+      "tudo_certo": "You got everything right on the latest quiz.",
+      "rever": "To review",
+      "resposta": "Correct answer:",
+      "ir_teste": "Retake the quiz",
+      "sem_notas": "No notes yet. In a lesson, select a passage of text and tap Highlight or Note.",
+      "so_marcado": "(highlight only)",
+      "marcar": "Highlight",
+      "anotar": "Note",
+      "salvar": "Save",
+      "apagar": "Remove highlight",
+      "fechar": "Close",
+      "nota_ph": "Write your note about this passage…",
+      "um_bloco": "Highlight within a single paragraph only.",
+      "nao_marca": "This passage can't be highlighted.",
+      "dados_exp": "Your progress, your notes, and your quiz scores stay in this browser only. Download a copy (.json) to keep it safe or to continue on another computer or browser; there, load the copy. Loading adds to what already exists and doesn't delete anything.",
+      "exportar": "Download copy",
+      "importar": "Load copy",
+      "import_ok": "Copy loaded ({n} items). Refreshing the page…",
+      "import_erro": "File not recognized. Nothing was changed.",
+      "import_outro": "This copy is from a different course. Nothing was changed.",
+      "export_ok": "Copy downloaded."
+    },
+    "conv_dica": "Choose your answer. The feedback appears right after, and the conversation continues based on your choice.",
+    "conv_voce": "You",
+    "conv_escolha": "Your answer",
+    "conv_boa": "Good choice",
+    "conv_meio": "Room to improve",
+    "conv_ruim": "Weak choice",
+    "conv_fim": "End of the conversation",
+    "conv_placar": "You scored {p} of {m} possible points.",
+    "conv_licao": "Lesson:",
+    "conv_recomecar": "Restart the conversation",
+    "conv_feita": "Your best score: {p} of {m} points.",
+    "comecar": "Start the lesson",
+    "nesta_vai": "In this lesson you will",
+    "trocar_tema": "Switch light/dark theme"
+  },
+  "icone": "escudo"
+}

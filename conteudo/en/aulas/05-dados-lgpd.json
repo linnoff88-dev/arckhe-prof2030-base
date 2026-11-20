@@ -1,0 +1,309 @@
+{
+  "slug": "dados-lgpd",
+  "num": 5,
+  "menu": "Data",
+  "titulo": "Data, LGPD (Brazil's data protection law) and choosing a vendor: where data is allowed to go",
+  "titulo_curto": "Data and vendor",
+  "minutos": 20,
+  "lead": "Every time someone pastes a customer conversation into an AI, the data travels: to a server, sometimes outside Brazil, sometimes to train another company's model. LGPD (Brazil's data protection law) applies even when an AI is the one reading. This lesson gives you a simple way to decide where each piece of data can go and with which vendor.",
+  "objetivo": "decide where a piece of data can go (closed model, open local model, or none) and fill in the data × vendor × license matrix for 1 case.",
+  "competencias": [
+    "classificar-dados",
+    "aplicar-lgpd-em-ia",
+    "avaliar-fornecedor-e-licenca"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "The 4 types of data and what each one allows"
+    },
+    {
+      "icone": "nuvem",
+      "t": "Closed via API, open local, or none: pros and cons"
+    },
+    {
+      "icone": "arquivo",
+      "t": "The LGPD (Brazil's data protection law) articles that come up most in AI projects"
+    },
+    {
+      "icone": "lista",
+      "t": "The data × vendor × license matrix"
+    }
+  ],
+  "hero_alt": "A professional chooses between three paths on the table: a locked file box, a small local server and a globe.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From data to decision",
+      "sub": "Three questions, in order. The most restrictive answer wins.",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "What data is it?",
+          "sub": "Public, internal, personal, sensitive",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Personal: name, CPF, phone"
+            },
+            {
+              "icone": "cadeado",
+              "t": "Sensitive: health, religion, biometrics"
+            }
+          ],
+          "detalhe": "Public (website catalog), internal (cost prices, targets), personal (identifies someone: name, CPF, phone, address) and sensitive (health, racial origin, religion, biometrics, among others). The further right it is, the fewer places it can go."
+        },
+        {
+          "icone": "nuvem",
+          "titulo": "Where would it go?",
+          "sub": "Closed via API, open local, free app",
+          "itens": [
+            {
+              "icone": "nuvem",
+              "t": "Vendor's server"
+            },
+            {
+              "icone": "chip",
+              "t": "Company computer"
+            }
+          ],
+          "detalhe": "Closed model via API: the data goes to the vendor's server, often outside Brazil. Open model running locally: the data does not leave the company, but someone has to look after the machine. Free app with generic terms: the worst case, because the terms may allow using the data for training."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Under what contract and license?",
+          "sub": "Terms, country, retention, use for training",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Contract and data agreement"
+            },
+            {
+              "icone": "check",
+              "t": "Open model license"
+            }
+          ],
+          "detalhe": "For the closed one: is there a contract? In what country is the server? How long do they keep it? Do they use it for training? For the open one: does the license allow commercial use? Is there a revenue cap, or is it research only? Who published the model?",
+          "forte": true
+        },
+        {
+          "icone": "portao",
+          "titulo": "Decision",
+          "sub": "Goes, goes anonymized, or doesn't go",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "With a written legal basis"
+            }
+          ],
+          "detalhe": "Three outcomes: it can go as is; it can go after anonymizing (swap the name for a code, remove the CPF and phone); it doesn't go. Every decision involving personal data needs a written LGPD (Brazil's data protection law) legal basis, and the company's DPO (data protection officer) should be consulted before, not after."
+        }
+      ],
+      "legenda": "Anonymizing solves a lot: \"Mercadinho Boa Vista, Seu Antônio, (19) 9...\" becomes \"Customer A, order of 10 boxes\".",
+      "dica": "Click each question."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The LGPD (Brazil's data protection law) as it shows up in an AI project",
+      "sub": "This is not legal advice: it's the minimum you need to know when to call the legal team.",
+      "passos": [
+        {
+          "titulo": "Art. 5",
+          "sub": "What counts as personal and sensitive data",
+          "texto": [
+            "Personal data is anything that identifies or can identify a person. Sensitive data includes health, racial origin, religious belief, political opinion, biometrics and genetics.",
+            "A customer service conversation almost always contains personal data: name, phone, address."
+          ]
+        },
+        {
+          "titulo": "Arts. 7 and 11",
+          "sub": "Legal bases",
+          "texto": [
+            "Every processing activity needs a legal basis: consent, contract performance, legal obligation, legitimate interest, among others. Sensitive data has narrower rules (art. 11).",
+            "Practical question: \"on what basis are we sending this to the AI?\" If nobody can answer, stop."
+          ]
+        },
+        {
+          "titulo": "Arts. 33 to 36",
+          "sub": "International transfer",
+          "texto": [
+            "Sending personal data to a server outside Brazil is an international transfer and is only allowed in specific cases, such as contract clauses approved by the ANPD (Brazil's data protection authority).",
+            "Using an API hosted in the US or China with customer data falls under this."
+          ]
+        },
+        {
+          "titulo": "Arts. 20 and 46",
+          "sub": "Automated decisions and security",
+          "texto": [
+            "Data subjects can request a review of a decision made solely by automated means that affects their interests (art. 20), such as a credit denial.",
+            "The company needs security measures to protect the data (art. 46): an exposed key and an open spreadsheet are the opposite of that."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The decision matrix and the prompt for anonymizing.",
+      "blocos": [
+        {
+          "rot": "Data × vendor × license matrix",
+          "icone": "lista",
+          "conteudo": "DATA MATRIX — <case>, <date>\n\nThe case: <what you want to do with AI>\nData involved: <list> → type: <public | internal | personal | sensitive>\n\n| Option | Where the data goes | Server country | Contract / data agreement | Used for training? | License (if open) | Cost | Risk |\n|---|---|---|---|---|---|---|---|\n| A. Closed model via API | | | | | — | | |\n| B. Open model, local | company computer | Brazil | — | no | <license> | | |\n| C. Anonymize first | | | | | | | |\n| D. Don't use AI | — | — | — | — | — | | |\n\nLegal basis (LGPD art. 7 or 11): <which one and why>\nInternational transfer? <yes/no; if yes, which art. 33 case>\nWho was consulted: <DPO / legal / IT>\nDecision: <option> because <reason in one sentence>"
+        },
+        {
+          "rot": "Prompt · anonymize before sending",
+          "icone": "cadeado",
+          "conteudo": "Rewrite the text below, replacing all personal data with codes:\n- names of people → Customer A, Customer B...\n- CPF, phone, email, address → [removed]\n- customer company name → Company 1, Company 2...\nKeep products, quantities, dates and the meaning of the conversation.\nAt the end, list what you replaced, without repeating the original data.\n\nTEXT:\n<paste here>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Example: customer service summary (F10)",
+            "html": "<p><b>Case:</b> daily summary of Horizonte's WhatsApp conversations. <b>Data:</b> customers' name, phone, CPF and address → personal. <b>Today:</b> sent to a free service outside Brazil, with no contract, under terms that allow using the data for training. <b>Decision:</b> stop now; option C (anonymize first) with a vendor under contract, or B (local open model).</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>\"It's just a summary\"</b>: the summary is made from the whole conversation, which goes along with it.</li><li><b>Free plan on customer data</b>: the terms often allow using what you send.</li><li><b>Thinking an open model solves everything</b>: the license may limit use, and someone has to keep the machine secure.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Open local model became viable",
+      "paragrafos": [
+        "In August 2026, Alibaba released Qwen3.8-27B under the Apache 2.0 license, which allows commercial use. According to the company, with quantization it runs even on a laptop. For an SMB, this opens a fixed-cost option where the data never leaves the company.",
+        "But open does not mean risk-free. Read the license: some have a revenue cap or are research-only. Check who published the model and where it came from, and remember that the local machine needs security too."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the matrix for one case",
+      "sub": "Use a case from your own company. No real case? Use the Horizonte customer service summary (F10).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Pick the case and classify the data",
+          "min": "10 min",
+          "texto": "Describe the case and list the data. No case? Open <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">the Horizonte customer service summary</a>.",
+          "pronto": "each piece of data in the case has a type: public, internal, personal or sensitive."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Fill in the 4 options",
+          "min": "20 min",
+          "texto": "For option A, look in the vendor's terms for: server country, retention and use for training. For B, the license of an open model.",
+          "pronto": "the matrix has all 4 rows filled in; where you did not find the information, it says \"not informed\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Decide with a legal basis",
+          "min": "10 min",
+          "texto": "Write the decision, the legal basis and who needs to be consulted.",
+          "pronto": "the decision fits in one sentence and names the legal basis and the person who needs to be consulted."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Juliana wants to paste conversations with customers' names and phone numbers into a free summary app. What should she do first?",
+          "opcoes": [
+            "Paste them: it's only for summarizing.",
+            "Check where the data goes, the terms and the legal basis; at a minimum, anonymize it first.",
+            "Ask the customer to send fewer messages.",
+            "Use the same vendor's paid app without reading the terms."
+          ],
+          "certa": 1,
+          "explica": "A conversation with a name and phone number is personal data. Before sending it: destination, contract, use for training and legal basis. Anonymizing greatly reduces the risk. The common mistake is thinking that \"just summarizing\" is not data processing.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Sending customer data to an API with a server in the US is, under the LGPD (Brazil's data protection law):",
+          "opcoes": [
+            "Always forbidden.",
+            "International transfer, allowed only in the cases covered by arts. 33 to 36.",
+            "Free, because it's the cloud.",
+            "An IT-only matter."
+          ],
+          "certa": 1,
+          "explica": "It is an international transfer and needs a permitted basis, such as contract clauses approved by the ANPD (Brazil's data protection authority). The common mistake is treating \"the cloud\" as if it had no country.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "An open model runs on the company's computer. What still needs to be checked?",
+          "opcoes": [
+            "Nothing: open and local is always safe.",
+            "The license (commercial use, revenue cap), the provenance and the security of the machine.",
+            "Only the speed.",
+            "Whether it speaks Portuguese."
+          ],
+          "certa": 1,
+          "explica": "Local solves the data's trip, not the license or the security of the machine. The common mistake is confusing \"open\" with \"no rules\".",
+          "ref": "texto"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Lesson summary",
+      "itens": [
+        {
+          "t": "Three questions",
+          "texto": "What data is it? Where would it go? Under what contract and license?"
+        },
+        {
+          "t": "The LGPD applies to AI",
+          "texto": "Legal basis, international transfer (arts. 33–36), security (art. 46)."
+        },
+        {
+          "t": "Anonymize",
+          "texto": "Swapping a name for a code solves many cases."
+        },
+        {
+          "t": "Open and local",
+          "texto": "The data stays put, but the license, the provenance and a secure machine still matter."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "General Data Protection Law (Law 13.709/2018), official text",
+          "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "icone": "arquivo"
+        },
+        {
+          "t": "ANPD: international data transfer",
+          "href": "https://www.gov.br/anpd/pt-br/assuntos/assuntos-internacionais",
+          "icone": "escudo"
+        },
+        {
+          "t": "Alibaba Cloud: Qwen3.8-27B, Apache 2.0, runs on a laptop with quantization (08/2026)",
+          "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463",
+          "icone": "chip"
+        },
+        {
+          "t": "The Next Web: Alibaba's small model that runs on a laptop (08/2026)",
+          "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Lab company: customer service summary (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "pasta"
+        }
+      ]
+    }
+  ]
+}

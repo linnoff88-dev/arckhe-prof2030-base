@@ -1,0 +1,403 @@
+{
+  "slug": "escopo",
+  "num": 7,
+  "menu": "Alcance",
+  "titulo": "Lo que tú no eres: alcance, límites y cuándo llamar a un especialista",
+  "titulo_curto": "Lo que tú no eres",
+  "minutos": 15,
+  "lead": "La forma más rápida de perder la confianza de un cliente es prometer lo que no puedes entregar. \"Garantizo que está seguro\", \"pruebo si se puede entrar\", \"firmo que cumple con la LGPD (ley brasileña de protección de datos)\": cada una de esas frases le pertenece a otro profesional. Saber decir lo que no eres es parte del servicio, y da más credibilidad que prometerlo todo.",
+  "objetivo": "escribir tu tarjeta de alcance de 5 líneas: qué haces, qué entregas, qué no haces, cuándo llamas a un especialista y cómo hablas del certificado.",
+  "competencias": [
+    "definir-escopo-profissional",
+    "reconhecer-limites-de-atuacao",
+    "encaminhar-para-especialista"
+  ],
+  "aprende": [
+    {
+      "icone": "check",
+      "t": "Qué hace y qué entrega un profesional de adopción de IA"
+    },
+    {
+      "icone": "x",
+      "t": "Lo que queda en manos del pentest, lo jurídico y la respuesta a incidentes"
+    },
+    {
+      "icone": "chat",
+      "t": "Responder al cliente que pide garantía total"
+    },
+    {
+      "icone": "arquivo",
+      "t": "La tarjeta de alcance de 5 líneas"
+    }
+  ],
+  "hero_alt": "Unas manos dibujan con un bolígrafo una línea firme que divide una hoja en blanco en dos áreas, junto a una regla y una tarjeta.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La línea de tu alcance",
+      "sub": "De un lado lo que tú haces; del otro, quién hace el resto.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Lo que tú haces",
+          "sub": "Diagnosticar, organizar, enseñar, acompañar",
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "Triaje de riesgos con evidencia"
+            },
+            {
+              "icone": "lista",
+              "t": "Plan de 30 días"
+            }
+          ],
+          "detalhe": "Mapear dónde hay IA, encontrar riesgos con evidencia, organizar datos y reglas, proponer un plan, capacitar al equipo y acompañar los resultados. Es trabajo de método, no de garantía.",
+          "forte": true
+        },
+        {
+          "icone": "x",
+          "titulo": "Lo que tú no haces",
+          "sub": "Pentest, dictamen jurídico, garantía total",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "Prueba de intrusión"
+            },
+            {
+              "icone": "arquivo",
+              "t": "Dictamen sobre la LGPD (ley brasileña de protección de datos)"
+            }
+          ],
+          "detalhe": "La prueba de intrusión (pentest) y la respuesta a incidentes quedan en manos de profesionales de seguridad habilitados, con autorización por escrito. El dictamen jurídico queda con un abogado o con el encargado de datos (DPO). Y nadie garantiza \"seguridad total\"."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Cuándo llamar",
+          "sub": "La señal de que pasaste la línea",
+          "itens": [
+            {
+              "icone": "portao",
+              "t": "Incidente, contrato, intrusión, decisión legal"
+            }
+          ],
+          "detalhe": "Sospecha de filtración o de un ataque en curso, duda sobre si una ley aplica, contrato con un proveedor, prueba activa en un sistema: detente y llama a quien sea del rubro. Tu papel es darte cuenta temprano y organizar lo que el especialista va a necesitar."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Tu credencial",
+          "sub": "Calificación, no profesión regulada",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Certificado INEMA de calificación"
+            }
+          ],
+          "detalhe": "El certificado de Profesional 2030 será una certificación de calificación emitida por INEMA, no una profesión regulada. Tampoco es la certificación ISO/IEC 42001, que se otorga a empresas mediante un organismo acreditado. Di exactamente qué es."
+        }
+      ],
+      "legenda": "\"Auditor de IA\" aquí quiere decir evaluación y triaje de riesgos de IA. No es un pentest ni una auditoría certificada.",
+      "dica": "Haz clic en cada lado de la línea."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo escribir tu alcance",
+      "sub": "Cuatro reglas que evitan la promesa equivocada.",
+      "passos": [
+        {
+          "titulo": "Verbos que cumples",
+          "sub": "Mapear, señalar, proponer, enseñar",
+          "texto": [
+            "Escribe lo que haces con verbos que se pueden comprobar: mapear, señalar con evidencia, proponer, enseñar, dar seguimiento.",
+            "Evita \"garantizar\", \"certificar\" y \"blindar\"."
+          ]
+        },
+        {
+          "titulo": "Garantiza y no garantiza",
+          "sub": "Los dos lados",
+          "texto": [
+            "Para cada entrega, di qué garantiza y qué no garantiza. Un triaje de riesgos garantiza que los riesgos encontrados están documentados con evidencia; no garantiza que no existan otros.",
+            "Esa honestidad es lo que hace que el cliente vuelva."
+          ],
+          "exemplo": {
+            "rot": "Frase lista",
+            "texto": "Yo señalo los riesgos que encontré, con evidencia y prioridad. Esto no sustituye una prueba de intrusión ni un dictamen jurídico."
+          }
+        },
+        {
+          "titulo": "Nombre de a quién llamar",
+          "sub": "Especialista con contacto",
+          "texto": [
+            "Ten a mano el tipo de especialista para cada caso: seguridad (pentest e incidentes), jurídico o encargado de datos (DPO) (LGPD y contratos), el área de TI de la empresa (cambios en el sistema).",
+            "Derivar bien también es entrega."
+          ]
+        },
+        {
+          "titulo": "Autorización por escrito",
+          "sub": "Antes de mirar cualquier cosa",
+          "texto": [
+            "Acuerda por escrito a qué puedes acceder y qué vas a hacer. Incluso si solo vas a mirar.",
+            "Nada de probar un sistema sin que el dueño lo sepa, aunque sea con buena intención."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Conversación simulada: Carlos quiere una garantía",
+      "sub": "Simulación para practicar. Carlos Mendes, dueño de Horizonte, pide tres cosas que pasan la línea. Elige la respuesta que darías.",
+      "personagem": {
+        "nome": "Carlos Mendes",
+        "papel": "dueño de Horizonte Distribuidora · 40 personas"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Quiero que me garantices que nuestro agente de WhatsApp está 100% seguro. ¿Puedes?",
+          "opcoes": [
+            {
+              "t": "Lo garantizo, quédate tranquilo.",
+              "vai": "fim-promessa",
+              "nota": 0,
+              "comenta": "Nadie garantiza el 100%. Si algo pasa, tu palabra se vuelve el problema."
+            },
+            {
+              "t": "Nadie garantiza el 100%. Hago un triaje de los riesgos con evidencia y un plan de 30 días para los más graves.",
+              "vai": "invadir",
+              "nota": 2,
+              "comenta": "Cambiaste la garantía por una entrega que se puede comprobar. Eso es lo que genera confianza."
+            },
+            {
+              "t": "Puedo echarle un vistazo, pero sin prometer nada.",
+              "vai": "invadir",
+              "nota": 1,
+              "comenta": "Honesto, pero vago: Carlos no sabe qué va a recibir. Di la entrega."
+            }
+          ]
+        },
+        "invadir": {
+          "cliente": "Trato hecho. Y ya que vas a mirar, intenta invadir el sistema de pedidos de Rafael para ver si aguanta.",
+          "opcoes": [
+            {
+              "t": "Lo intento, pásame el acceso.",
+              "vai": "fim-invasao",
+              "nota": 0,
+              "comenta": "Una prueba de intrusión es un pentest: exige un profesional habilitado, alcance y autorización por escrito."
+            },
+            {
+              "t": "Una prueba de intrusión es trabajo de un especialista en seguridad, con autorización por escrito. Yo señalo dónde vale la pena contratar y qué debe probar.",
+              "vai": "lgpd",
+              "nota": 2,
+              "comenta": "Reconociste la línea y convertiste el pedido en una recomendación útil."
+            },
+            {
+              "t": "Puedo echarle un vistazo rápido al sistema sin avisarle a Rafael.",
+              "vai": "fim-invasao",
+              "nota": 0,
+              "comenta": "Meterse en un sistema sin que el responsable lo sepa es un riesgo para ti y para la empresa, aunque sea con buena intención."
+            }
+          ]
+        },
+        "lgpd": {
+          "cliente": "Tiene sentido. ¿Y al final firmas que estamos de acuerdo con la LGPD (ley brasileña de protección de datos)?",
+          "opcoes": [
+            {
+              "t": "Firmo, es solo un papel.",
+              "vai": "fim-parecer",
+              "nota": 0,
+              "comenta": "Declarar conformidad con la LGPD (ley brasileña de protección de datos) es un dictamen jurídico. No es tu papel."
+            },
+            {
+              "t": "Escribo que, por lo que vi, parece estar todo bien.",
+              "vai": "fim-parecer",
+              "nota": 1,
+              "comenta": "Mejor que firmar, pero todavía suena a dictamen. Enumera riesgos y preguntas, no conclusiones jurídicas."
+            },
+            {
+              "t": "Yo señalo los riesgos de datos que encontré y las preguntas para el área jurídica. Quien emite el dictamen es el área jurídica o el encargado de datos (DPO).",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Alcance claro: tú organizas; quien concluye es quien tiene la habilitación."
+            }
+          ]
+        },
+        "fim-promessa": {
+          "fim": true,
+          "titulo": "Una promesa que no se puede cumplir",
+          "texto": "Carlos cerró el trato con base en una garantía. En el primer incidente, la conversación va a ser sobre tu promesa, no sobre el agente."
+        },
+        "fim-invasao": {
+          "fim": true,
+          "titulo": "Te pasaste de la línea",
+          "texto": "Una prueba de intrusión sin habilitación ni autorización por escrito puede causar daño y traer problemas legales para ti y para la empresa."
+        },
+        "fim-parecer": {
+          "fim": true,
+          "titulo": "Casi",
+          "texto": "Sostuviste las dos primeras, pero terminaste dando algo parecido a un dictamen jurídico. Cambia las conclusiones por riesgos y preguntas."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Alcance claro",
+          "texto": "Carlos sabe qué va a recibir (triaje con evidencia y plan de 30 días), a quién llamar para una intrusión y quién emite el dictamen de LGPD (ley brasileña de protección de datos)."
+        }
+      },
+      "licao": "Decir lo que no haces, con un entregable claro en su lugar, vale más que prometerlo todo."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: tarjeta de alcance",
+      "sub": "Cinco líneas. Cabe en una propuesta, en un correo o en tu presentación.",
+      "blocos": [
+        {
+          "rot": "Tarjeta de alcance (5 líneas)",
+          "icone": "arquivo",
+          "conteudo": "TARJETA DE ALCANCE — <tu nombre>\n1. Lo que hago: <ej.: mapeo dónde hay IA y hago un triaje de riesgos con evidencia>\n2. Lo que entrego: <ej.: informe de una página + plan de 30 días>\n3. Lo que NO hago: <ej.: prueba de intrusión, respuesta a incidentes, dictamen jurídico, garantía de seguridad total>\n4. Cuándo llamo a un especialista: <ej.: sospecha de filtración → seguridad; duda de LGPD o contrato → jurídico>\n5. Mi credencial: <ej.: certificado de calificación INEMA (Profesional 2030); no es una profesión regulada ni una certificación ISO>"
+        },
+        {
+          "rot": "Frase de lo que garantiza / no garantiza",
+          "icone": "chat",
+          "conteudo": "Esta entrega garantiza: <lo que tú controlas y el cliente puede verificar>.\nEsta entrega no garantiza: <lo que depende de otros factores o de otro profesional>.\nPara eso, el camino es: <especialista o siguiente etapa>."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo completado",
+            "html": "<p><b>1.</b> Mapeo dónde hay IA en la empresa y hago un triaje de riesgos con evidencia. <b>2.</b> Informe de una página y plan de 30 días. <b>3.</b> No hago pruebas de intrusión, respuesta a incidentes ni dictámenes jurídicos, y no garantizo seguridad total. <b>4.</b> Filtración o ataque → especialista en seguridad; LGPD y contratos → jurídico. <b>5.</b> Certificado de calificación INEMA; no es una profesión regulada.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>\"Blindo tu empresa\"</b>: una promesa que nadie cumple.</li><li><b>Llamar \"habilitación\" al certificado</b>: es una calificación, no un registro profesional.</li><li><b>Dejar vacío el punto 4</b>: sin saber a quién derivar, terminas haciendo lo que no debías.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: tu tarjeta de alcance",
+      "sub": "Escribe para tu caso real, no para el ideal.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Ejecutar la conversación simulada",
+          "min": "5 min",
+          "texto": "Haz la conversación con Carlos hasta el final. Si no llegaste a \"Alcance claro\", empieza de nuevo.",
+          "pronto": "llegaste al final \"Alcance claro\"."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Escribir la tarjeta",
+          "min": "15 min",
+          "texto": "Completa las 5 líneas con tus propias palabras. En el punto 4, escribe el tipo de especialista y, si lo tienes, un contacto.",
+          "pronto": "la tarjeta tiene 5 líneas, ninguna usa \"garantizar\" sin el \"no garantiza\" al lado, y el punto 4 tiene al menos dos casos."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Prueba con alguien",
+          "min": "10 min",
+          "texto": "Muéstrale la tarjeta a un colega y pregúntale: \"¿qué crees que hago y qué no hago?\"",
+          "pronto": "la respuesta del colega coincide con las líneas 1 y 3 de la tarjeta."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "El cliente pide \"garantiza que estamos seguros\". ¿Cuál es la mejor respuesta?",
+          "opcoes": [
+            "\"Lo garantizo.\"",
+            "\"No trabajo con seguridad.\"",
+            "\"Nadie garantiza el 100%; yo entrego un triaje con evidencia y un plan de 30 días.\"",
+            "\"Depende del precio.\""
+          ],
+          "certa": 2,
+          "explica": "Cambia la garantía por un entregable que el cliente pueda verificar. El error común es prometer para cerrar el trato.",
+          "ref": "simconversa",
+          "cert": true
+        },
+        {
+          "p": "El certificado de Profesional 2030 es:",
+          "opcoes": [
+            "Registro de una profesión regulada.",
+            "Certificación ISO/IEC 42001.",
+            "Certificación de calificación emitida por INEMA.",
+            "Licencia para hacer pentest."
+          ],
+          "certa": 2,
+          "explica": "Es una certificación de calificación, no una profesión regulada ni una certificación de empresa. Decir exactamente lo que es te protege a ti y al programa.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Percibes señales de que datos de clientes pueden haberse filtrado. ¿Qué haces?",
+          "opcoes": [
+            "Investigar solo en los servidores.",
+            "Avisar al responsable e indicar a un especialista en respuesta a incidentes, organizando lo que viste.",
+            "Esperar el próximo informe.",
+            "Borrar las evidencias para no asustar al cliente."
+          ],
+          "certa": 1,
+          "explica": "La respuesta a incidentes es cosa de especialistas. Tu papel es notar a tiempo, avisar y organizar lo que viste. El error común es tocar los sistemas y destruir evidencia.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen de la clase",
+      "itens": [
+        {
+          "t": "Tú haces",
+          "texto": "Mapear, señalar con evidencia, proponer, enseñar, dar seguimiento."
+        },
+        {
+          "t": "Tú no haces",
+          "texto": "Pentest, respuesta a incidentes, dictamen jurídico, garantía total."
+        },
+        {
+          "t": "Garantiza y no garantiza",
+          "texto": "Toda entrega dice los dos lados."
+        },
+        {
+          "t": "Credencial",
+          "texto": "Certificado de calificación INEMA; no es una profesión regulada."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "LOOP-R (INEMA): lo que un método garantiza y lo que no garantiza",
+          "href": "https://inematds.github.io/loop-r/curso/",
+          "icone": "lista"
+        },
+        {
+          "t": "Mapa del Cliente (INEMA): lo que el consultor de soluciones de IA no es",
+          "href": "https://inematds.github.io/mapacliente/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Programa Profesional 2030: formaciones y certificación",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "escudo"
+        },
+        {
+          "t": "ANPD: Autoridad Nacional de Protección de Datos",
+          "href": "https://www.gov.br/anpd/pt-br",
+          "icone": "arquivo"
+        },
+        {
+          "t": "BSI: qué es la ISO/IEC 42001 (sistema de gestión de IA)",
+          "href": "https://www.bsigroup.com/en-GB/products-and-services/standards/iso-42001-ai-management-system/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "regras",
+  "num": 6,
+  "menu": "Rules",
+  "titulo": "Rules with set dates: what applies now and what's coming",
+  "titulo_curto": "Rules with dates",
+  "minutos": 15,
+  "lead": "AI regulation feels like a distant topic, but part of it already applies today and part of it has a date on the calendar. Whoever helps companies doesn't need to be a lawyer; you need to know what applies now, what's coming, who it applies to and when to call legal. This lesson organizes all of that into a timeline you build for your own company.",
+  "objetivo": "build your company's compliance timeline: what applies now, what's coming, who it applies to and who owns each item.",
+  "competencias": [
+    "mapear-regulacao-de-ia",
+    "montar-linha-do-tempo-de-conformidade",
+    "saber-quando-chamar-o-juridico"
+  ],
+  "aprende": [
+    {
+      "icone": "calendario",
+      "t": "EU AI Act dates after the 2026 postponement"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Where PL 2338 stands in Brazil"
+    },
+    {
+      "icone": "camadas",
+      "t": "NIST AI RMF and ISO 42001: what they are and what they're for"
+    },
+    {
+      "icone": "lista",
+      "t": "The compliance timeline"
+    }
+  ],
+  "hero_alt": "A paper calendar with days circled in red, thick books stacked up and an hourglass on a dark desk.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The timeline",
+      "sub": "From left to right: what already applies, what has a date and what is voluntary.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Already applies in Brazil",
+          "sub": "LGPD",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Law 13.709/2018"
+            }
+          ],
+          "detalhe": "The LGPD (Brazil's data protection law) already applies to any processing of personal data, including by AI. It is the rule that weighs most today for a Brazilian small or midsize business: legal basis, international transfer, security and the right to review an automated decision (lesson 5)."
+        },
+        {
+          "icone": "check",
+          "titulo": "Already applies in the EU",
+          "sub": "Prohibitions, literacy, general-purpose models",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "AI literacy since 02/02/2025"
+            }
+          ],
+          "detalhe": "Under the EU AI Act, the prohibited practices and the AI literacy obligation (art. 4) have applied since 02/02/2025. Whoever provides or uses AI systems must make sure their team understands enough about AI. The rules for general-purpose models and for transparency also stay on the original calendar."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "With a date in the EU",
+          "sub": "High risk: 02/12/2027",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "Postponed by the Digital Omnibus"
+            }
+          ],
+          "detalhe": "The Digital Omnibus package, adopted in July 2026, postponed the high-risk rules: Annex III systems (hiring, credit, education, critical infrastructure) move to 02/12/2027; AI built into regulated products, to 02/08/2028. It applies to a Brazilian company that sells or uses AI in the European market.",
+          "forte": true
+        },
+        {
+          "icone": "portao",
+          "titulo": "Under discussion in Brazil",
+          "sub": "PL 2338/2023",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Special Committee of the Chamber of Deputies"
+            }
+          ],
+          "detalhe": "PL 2338/2023, which sets rules for the ethical and responsible use of AI, came from the Senate. On the Chamber's record, checked on 10/19/2026, the status is \"Awaiting Rapporteur's Opinion in the Special Committee\". It is not law yet: keep an eye on it, but don't treat it as an obligation."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Voluntary",
+          "sub": "NIST AI RMF, ISO/IEC 42001",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "Govern, map, measure, manage"
+            }
+          ],
+          "detalhe": "The NIST AI RMF (US) is a voluntary guide with four functions: govern, map, measure and manage risks. ISO/IEC 42001:2023 is the AI management system standard, certifiable by an accredited body. Neither is law, but they work as a checklist and a common language with large clients."
+        }
+      ],
+      "legenda": "For each rule, two questions: does it apply to us? Starting when?",
+      "dica": "Click each milestone."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build the company's timeline",
+      "sub": "Four steps. Horizonte serves as the example.",
+      "passos": [
+        {
+          "titulo": "List where AI is used",
+          "sub": "Use the inventory from lesson 2",
+          "texto": [
+            "Start with the inventory: which tools use AI, what data they process and who the company sells to.",
+            "At Horizonte: WhatsApp customer service, conversation summaries, order app, email. Customers only in Brazil."
+          ]
+        },
+        {
+          "titulo": "See what applies",
+          "sub": "One question per rule",
+          "texto": [
+            "LGPD: does it process personal data? Almost always yes. EU AI Act: does it sell or use AI in the European Union? At Horizonte, no.",
+            "Hiring, credit or education with AI? Flag them: these are high-risk areas under the AI Act and call for extra care in Brazil too."
+          ]
+        },
+        {
+          "titulo": "Set the dates",
+          "sub": "Already in force, has a date, under discussion",
+          "texto": [
+            "Separate what already applies (act now), what has a date (plan), and what is under discussion (monitor).",
+            "Don't treat a bill as law: that spends energy in the wrong place."
+          ]
+        },
+        {
+          "titulo": "Assign an owner and a next action",
+          "sub": "Every row gets a name",
+          "texto": [
+            "Every row needs someone who owns it and a next action, with a date.",
+            "Unsure whether a rule applies, about a contract, or about a legal basis? That's when you call legal. You organize; the legal opinion is theirs."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "LGPD · service summary · owner: Rafael with legal · stop sending without a contract within 30 days."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: compliance timeline",
+      "sub": "One row per rule. Review every quarter.",
+      "blocos": [
+        {
+          "rot": "Compliance timeline",
+          "icone": "calendario",
+          "conteudo": "AI COMPLIANCE TIMELINE — <company>, reviewed on <date>\n\nWhere AI is used: <list from the inventory>\nWho it sells to: <Brazil | EU | others>\n\n| Rule | Does it apply to us? Why | Status (already in force / has a date / under discussion / voluntary) | Date | What it requires of us | Owner | Next action and deadline |\n|---|---|---|---|---|---|---|\n| LGPD | | already in force | | | | |\n| EU AI Act: literacy and prohibitions | | already in force (EU) | 02/02/2025 | | | |\n| EU AI Act: high risk Annex III | | has a date (EU) | 02/12/2027 | | | |\n| PL 2338/2023 | | under discussion | — | monitor | | |\n| NIST AI RMF / ISO 42001 | | voluntary | — | | | |\n\nTake to legal: <questions about application, contract, legal basis>\nNext review: <date, 3 months from now>"
+        },
+        {
+          "rot": "Prompt · check whether a rule applies",
+          "icone": "chat",
+          "conteudo": "Help me organize questions for legal, without giving a legal opinion.\nCompany: <sector, size, where it sells>\nAI use: <what the tool does and what data it handles>\nRule: <LGPD | EU AI Act | PL 2338/2023>\n\nList:\n1. Which facts about us decide whether the rule applies.\n2. The questions I should take to legal.\nDon't say whether the rule applies or not; don't invent articles. If you don't know, say so."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Example: Horizonte",
+            "html": "<ul><li><b>LGPD</b> · applies (customer data on WhatsApp) · already in force · owner: Carlos with legal · review the service summary in 30 days.</li><li><b>EU AI Act</b> · doesn't apply today (no EU customers) · reassess if you export.</li><li><b>PL 2338/2023</b> · under discussion · monitor every quarter.</li><li><b>NIST AI RMF</b> · voluntary · use the 4 functions as an internal checklist.</li></ul>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Treating a bill as law</b>: PL 2338 is still in the Chamber of Deputies.</li><li><b>Thinking European law doesn't matter</b>: it matters if the company sells or uses AI in the EU.</li><li><b>Giving a legal opinion</b>: you organize facts and questions; legal is the one who concludes.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your company's timeline",
+      "sub": "Use the inventory from lesson 2. No company? Use Horizonte.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Where AI is used and who it sells to",
+          "min": "10 min",
+          "texto": "Copy the tools from the inventory and write where the company sells.",
+          "pronto": "the top of the template is filled in with the tools and the markets."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Applies or doesn't",
+          "min": "15 min",
+          "texto": "For each rule in the template, answer \"does it apply to us?\" with the reason in one sentence.",
+          "pronto": "all 5 rows have a yes or no and the reason, and the doubts went into \"take to legal\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Owner and next action",
+          "min": "10 min",
+          "texto": "Give an owner and a next action with a deadline to each row that applies. Set the next review for 3 months from now.",
+          "pronto": "every row that applies has a name and a date, and the review is scheduled."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "For Horizonte, which sells only in Brazil, which rule weighs most today?",
+          "opcoes": [
+            "The entire EU AI Act.",
+            "The LGPD, which already applies to personal data handled by AI.",
+            "PL 2338, which is already law.",
+            "None: AI isn't regulated in Brazil."
+          ],
+          "certa": 1,
+          "explica": "The LGPD already applies and covers any processing of personal data, including by AI. PL 2338 is still in the Chamber of Deputies. The common mistake is thinking that, without a specific AI law, there are no rules.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "After the Digital Omnibus, when do the AI Act's Annex III high-risk rules start to apply?",
+          "opcoes": [
+            "02/02/2025",
+            "02/08/2026",
+            "02/12/2027",
+            "Never: they were repealed"
+          ],
+          "certa": 2,
+          "explica": "They were postponed to 02/12/2027, not repealed. Literacy and prohibitions have applied since 02/02/2025. The common mistake is reading \"postponed\" as \"over\".",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "A question came up about whether a client's use of AI counts as \"high risk\". What do you do?",
+          "opcoes": [
+            "Answer it yourself, to save time.",
+            "Organize the facts and the questions and take them to legal.",
+            "Ask the AI and pass its answer along as a legal opinion.",
+            "Ignore it until the law changes."
+          ],
+          "certa": 1,
+          "explica": "You organize; the legal opinion is theirs. That's the limit of your role (lesson 7). The common mistake is passing along an AI answer as if it were a legal opinion.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Lesson summary",
+      "itens": [
+        {
+          "t": "Already in force",
+          "texto": "LGPD (Brazil's data protection law) in Brazil; AI Act literacy and prohibitions in the EU since 02/02/2025."
+        },
+        {
+          "t": "Has a date",
+          "texto": "AI Act Annex III high risk: 02/12/2027."
+        },
+        {
+          "t": "Under discussion",
+          "texto": "Bill PL 2338/2023 is awaiting a rapporteur's opinion in the Chamber's Special Committee."
+        },
+        {
+          "t": "Voluntary",
+          "texto": "NIST AI RMF and ISO/IEC 42001: checklist and shared language."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "Software Improvement Group: summary of the EU AI Act with the Digital Omnibus (Reg. 2026/1744; high risk → 02/12/2027)",
+          "href": "https://www.softwareimprovementgroup.com/eu-ai-act-summary/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "EU AI Act, Article 4: AI literacy (in effect since 02/02/2025)",
+          "href": "https://artificialintelligenceact.eu/article/4/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Chamber of Deputies: tracking record for Bill PL 2338/2023",
+          "href": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+          "icone": "arquivo"
+        },
+        {
+          "t": "NIST: AI Risk Management Framework",
+          "href": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "icone": "escudo"
+        },
+        {
+          "t": "General Data Protection Law (Law 13.709/2018)",
+          "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "icone": "arquivo"
+        },
+        {
+          "t": "BSI: what ISO/IEC 42001 is (AI management system)",
+          "href": "https://www.bsigroup.com/en-GB/products-and-services/standards/iso-42001-ai-management-system/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

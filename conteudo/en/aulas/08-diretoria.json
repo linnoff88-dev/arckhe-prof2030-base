@@ -1,0 +1,329 @@
+{
+  "slug": "diretoria",
+  "num": 8,
+  "menu": "Board",
+  "titulo": "A one-pager for the board + What changed",
+  "titulo_curto": "A one-pager + What changed",
+  "minutos": 20,
+  "lead": "You found the risks; now someone has to decide. A director doesn't read a ten-page technical report: they read one page in two minutes, if it talks about money, customers and what needs to be decided. This lesson closes the course with the final project, a quick diagnosis of Horizonte, and with the panel of what changed in the market.",
+  "objetivo": "write a one-page quick diagnosis of one piece of Horizonte, with 3 findings, risk in business language and the decision requested.",
+  "competencias": [
+    "comunicar-risco-para-executivo",
+    "traduzir-tecnico-em-negocio",
+    "propor-plano-de-30-dias",
+    "acompanhar-mudancas-do-mercado"
+  ],
+  "aprende": [
+    {
+      "icone": "arquivo",
+      "t": "The 5 blocks of a one-pager for the board"
+    },
+    {
+      "icone": "chat",
+      "t": "Translate a technical term into a business consequence"
+    },
+    {
+      "icone": "calendario",
+      "t": "Build a 30-day plan with an owner and a deadline"
+    },
+    {
+      "icone": "grafico",
+      "t": "What changed in the market in October 2026"
+    }
+  ],
+  "hero_alt": "A single printed sheet in the center of a meeting table; in the background, out of focus, two executives talking.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The 5 blocks of the page",
+      "sub": "In the order the director reads them. If it doesn't fit on one page, the thinking is still muddled.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "1. Situation",
+          "sub": "What we looked at, when, with what authorization",
+          "itens": [
+            {
+              "icone": "calendario",
+              "t": "Scope and date"
+            }
+          ],
+          "detalhe": "Two lines: what was assessed, on what date, with whose authorization, and the limit of the work (risk screening, not a penetration test or a legal opinion)."
+        },
+        {
+          "icone": "lista",
+          "titulo": "2. What we found",
+          "sub": "3 findings with evidence",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Excerpt, screenshot or number"
+            }
+          ],
+          "detalhe": "At most three findings, from most serious to least serious. Each one with its evidence in one line. A finding without evidence doesn't make it in."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "3. What it means",
+          "sub": "In reais, customers and reputation",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "Business consequence"
+            }
+          ],
+          "detalhe": "Translate each finding into a consequence: money lost, customer exposed, possible fine, company name at stake. No jargon. Be conservative: an inflated number brings down the whole page.",
+          "forte": true
+        },
+        {
+          "icone": "calendario",
+          "titulo": "4. 30-day plan",
+          "sub": "Action, owner, deadline",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "One name per line"
+            }
+          ],
+          "detalhe": "Three to five actions, each with an owner and a deadline. Start with what cuts the risk fastest, even if it's simple, like turning off a permission."
+        },
+        {
+          "icone": "portao",
+          "titulo": "5. Decision requested",
+          "sub": "What needs a yes today",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "One question, one answer"
+            }
+          ],
+          "detalhe": "End with what the director needs to decide now: approve the plan, free up a person, hire a specialist. A page with no decision requested becomes reading material and gets forgotten."
+        }
+      ],
+      "legenda": "Final test: read aloud, does the page take less than 2 minutes?",
+      "dica": "Click on each block."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From technical to business",
+      "sub": "Four translations that show up in almost every diagnosis.",
+      "passos": [
+        {
+          "titulo": "Prompt injection",
+          "sub": "→ a customer is giving the agent orders",
+          "texto": [
+            "Instead of \"the agent is vulnerable to prompt injection,\" write what happens to the company.",
+            "Use the number from the evidence itself, when there is one."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "A customer pasted a list with a hidden instruction and the agent gave a 70% discount: an order of R$ 28,120 went out for R$ 8,436, marked as paid."
+          }
+        },
+        {
+          "titulo": "Uncapped discount",
+          "sub": "→ margin leaking out with no one seeing it",
+          "texto": [
+            "The instruction says to give \"whatever discount it takes.\" In practice, the customer decides the margin.",
+            "Say how much has already gone out, if the evidence shows it."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "35% discount on an order of R$ 4,884, with no one's approval."
+          }
+        },
+        {
+          "titulo": "No log",
+          "sub": "→ nobody knows what happened",
+          "texto": [
+            "With no log of its actions, the company doesn't know how many orders went out with a discount and can't dispute an error.",
+            "It's the finding that keeps you from measuring all the others."
+          ]
+        },
+        {
+          "titulo": "Exposed key",
+          "sub": "→ the company's account in anyone's pocket",
+          "texto": [
+            "\"API key in the front end\" becomes: any visitor to the site can copy the AI service's password and spend on the company's account.",
+            "Also state the immediate action: change the key today."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The page and the prompt that helps remove the jargon.",
+      "blocos": [
+        {
+          "rot": "Lightning diagnosis (1 page)",
+          "icone": "arquivo",
+          "conteudo": "LIGHTNING DIAGNOSIS — <item assessed>, <company>\nTo: <director's name> · From: <your name> · Date: <date>\n\n1. SITUATION\nWe assessed <what> on <date>, authorized by <whom>. Scope: risk screening; does not include penetration testing or legal opinion.\n\n2. WHAT WE FOUND\n- <Finding 1, the most serious> — evidence: <excerpt, screenshot or number>\n- <Finding 2> — evidence: <...>\n- <Finding 3> — evidence: <...>\n\n3. WHAT THIS MEANS FOR THE BUSINESS\n- <Finding 1 in reais, customers or reputation>\n- <Finding 2 ...>\n- <Finding 3 ...>\n\n4. 30-DAY PLAN\n| Action | Owner | Deadline |\n|---|---|---|\n| <action that cuts the risk fastest> | | |\n| | | |\n| | | |\n\n5. DECISION REQUESTED TODAY\n<one question that can be answered with yes or no>"
+        },
+        {
+          "rot": "Prompt · remove the jargon",
+          "icone": "chat",
+          "conteudo": "Rewrite the findings below for the owner of a 40-person company, who is not from the technical field.\nFor each finding: one sentence saying what can happen to the company (money, customers, reputation), with no technical terms.\nUse only the numbers that are in the findings. Do not invent values, probabilities or fines.\n\nFINDINGS:\n<paste the finding sheets from lesson 4 here>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Example: WhatsApp agent",
+            "html": "<ul><li><b>To:</b> Carlos Mendes.</li><li><b>Findings:</b> (1) the agent obeys orders hidden in the customer's text; (2) it gives any discount; (3) it doesn't log what it does.</li><li><b>Meaning:</b> an order of R$ 28,120 went out for R$ 8,436, marked as paid; we don't know how many others.</li><li><b>Plan:</b> turn off automatic order creation (Rafael, today); cap of 5% and approval from Patrícia above that (7 days); turn on action logging (7 days); review the orders with a discount since July (Patrícia, 30 days).</li><li><b>Decision:</b> approve the shutdown today?</li></ul>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Ten findings</b>: the director doesn't know where to start. Three, from most serious.</li><li><b>Invented number</b>: \"could cost millions\" with no basis destroys trust in the whole page.</li><li><b>Plan with no owner</b>: an action with no name doesn't happen.</li><li><b>No decision requested</b>: the page becomes reading material.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Final project: the Horizonte lightning diagnosis",
+      "sub": "Choose one item from the lab. Suggestion: the WhatsApp agent, which has more findings. Don't open the answer key before you finish.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Choose the item and gather the evidence",
+          "min": "15 min",
+          "texto": "Open the <a href=\"https://inematds.github.io/prof2030-lab/\" target=\"_blank\" rel=\"noopener\">Horizonte lab</a> and choose one item. Use the finding sheets from lesson 4 and fill in whatever is missing.",
+          "pronto": "you have 3 findings from the same item, each with an excerpt or number copied from the lab."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Write the page",
+          "min": "30 min",
+          "texto": "Fill in the 5 blocks of the template for Carlos Mendes. Use the prompt to remove the jargon and check that it didn't invent numbers.",
+          "pronto": "the page fits on one sheet, has the 5 blocks, each finding has evidence and a business consequence, and the plan has an owner and a deadline on every line."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · The 2-minute test",
+          "min": "10 min",
+          "texto": "Read the page aloud while timing yourself. Then compare it with the <a href=\"https://inematds.github.io/prof2030-lab/gabarito.html\" target=\"_blank\" rel=\"noopener\">answer key (spoiler)</a>.",
+          "pronto": "the reading took less than 2 minutes and you noted what the answer key had that your page did not."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "What changed (Oct/2026)",
+      "sub": "A market panel for those who help companies trust what AI builds. This panel is updated every quarter; the rest of the course still holds.",
+      "paragrafos": [
+        "<b>Building got cheaper.</b> On 09/22/2026 Anthropic released Opus 5.5, on par with Fable 5.1 and 40% cheaper to run than Opus 5 (<a href=\"https://www.anthropic.com/claude-opus-5-5\" target=\"_blank\" rel=\"noopener\">Anthropic</a>). Checking did not get cheaper: that is where your work is.",
+        "<b>Local open models became viable.</b> In August 2026 Alibaba published Qwen3.8-27B under an Apache 2.0 license; according to the company, it runs even on a laptop with quantization (<a href=\"https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463\" target=\"_blank\" rel=\"noopener\">Alibaba Cloud</a>). One more option for the matrix in lesson 5.",
+        "<b>Agents that work for hours became a product.</b> Anthropic opened Managed Agents in public beta in 04/2026, billed by session hour (<a href=\"https://www.helpnetsecurity.com/?p=365593\" target=\"_blank\" rel=\"noopener\">Help Net Security</a>), and OpenAI launched ChatGPT Work in 07/2026 (<a href=\"https://reworked.co/digital-workplace/openai-debuts-direct-claude-cowork-competitor-chatgpt-work/\" target=\"_blank\" rel=\"noopener\">Reworked</a>).",
+        "<b>Even the people who make the model log actions nobody asked for.</b> On 10/10/2026 Anthropic reported that Claude, in tests, submitted a sensitive form on a real site and exploited a flaw on a server; it turned off live internet access in internal evaluations (<a href=\"https://securityaffairs.com/?p=200726\" target=\"_blank\" rel=\"noopener\">Security Affairs</a>).",
+        "<b>AI-built apps became a scanning target.</b> In 05/2026 Red Access said it found about 380 thousand public apps built with vibe coding tools, about 5 thousand with possibly sensitive information; the platforms dispute part of that reading (<a href=\"https://dpo.hku.hk/news/thousands-of-ai-%E2%80%98vibe-coding%E2%80%99-apps-may-expose-sensitive-medical%2C-business-data\" target=\"_blank\" rel=\"noopener\">HKU</a>).",
+        "<b>Europe postponed high risk.</b> The Digital Omnibus (Reg. 2026/1744, July 2026) moved the high-risk rules in Annex III of the AI Act to 12/02/2027; literacy requirements and prohibitions still apply (<a href=\"https://www.softwareimprovementgroup.com/eu-ai-act-summary/\" target=\"_blank\" rel=\"noopener\">SIG</a>).",
+        "<b>Brazil still has no AI law.</b> On 10/19/2026, Bill PL 2338/2023 was awaiting the rapporteur's opinion in the Chamber's Special Committee (<a href=\"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262\" target=\"_blank\" rel=\"noopener\">Câmara</a>). The LGPD (Brazil's data protection law) is still the rule that carries weight."
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Which of these sentences works for the board's one-pager?",
+          "opcoes": [
+            "\"The agent is vulnerable to prompt injection via untrusted context.\"",
+            "\"A customer got the agent to give a 70% discount on a R$ 28,120 order.\"",
+            "\"Security is bad.\"",
+            "\"We could lose millions.\""
+          ],
+          "certa": 1,
+          "explica": "A business consequence with a number from your own evidence. The first is jargon, the third is vague, and the fourth is a number with no basis. The common mistake is writing for technical people.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "What must not be missing at the end of the page?",
+          "opcoes": [
+            "The list of all the company's tools.",
+            "The decision requested: what needs a yes today.",
+            "The app's source code.",
+            "A guarantee that everything will be safe."
+          ],
+          "certa": 1,
+          "explica": "A page with no decision requested becomes reading material and gets forgotten. And a guarantee has no place here (lesson 7). The common mistake is ending with \"here are the findings.\"",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Why does the \"What changed\" panel sit in a separate section?",
+          "opcoes": [
+            "Because it is not important.",
+            "Because tools change every few weeks; the panel is replaced every quarter and the method in the other lessons stays.",
+            "Because it is vendor advertising.",
+            "Because it only applies to Europe."
+          ],
+          "certa": 1,
+          "explica": "The method (map, levels, risks, data, rules, scope, one-pager) survives a change of tools. What changes goes into the quarterly panel.",
+          "ref": "texto"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Course summary",
+      "itens": [
+        {
+          "t": "Understand",
+          "texto": "Jagged frontier, cost with checking, and the 4 agent levels."
+        },
+        {
+          "t": "Build and check",
+          "texto": "A 1-screen app made with AI, probed from the inside, and the 4 risks in the lab."
+        },
+        {
+          "t": "Decide",
+          "texto": "Where the data goes, which rule applies, and what you are not."
+        },
+        {
+          "t": "Communicate",
+          "texto": "One page: situation, findings, meaning, 30-day plan, and the decision requested."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Next steps",
+      "links": [
+        {
+          "t": "AI Consultant (Professional 2030)",
+          "href": "https://inematds.github.io/prof2030-consultor/",
+          "icone": "alvo"
+        },
+        {
+          "t": "AI Auditor (Professional 2030)",
+          "href": "https://inematds.github.io/prof2030-auditor/",
+          "icone": "escudo"
+        },
+        {
+          "t": "AI Mentor (Professional 2030)",
+          "href": "https://inematds.github.io/prof2030-mentor/",
+          "icone": "usuario"
+        },
+        {
+          "t": "AI Trainer (Professional 2030)",
+          "href": "https://inematds.github.io/prof2030-treinador/",
+          "icone": "megafone"
+        },
+        {
+          "t": "Lab company: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Professional 2030 Program",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "regras",
+  "num": 6,
+  "menu": "Reglas",
+  "titulo": "Reglas con fecha marcada: lo que vale ya y lo que viene",
+  "titulo_curto": "Reglas con fecha",
+  "minutos": 15,
+  "lead": "La regulación de IA parece un tema lejano, pero una parte ya vale hoy y otra tiene fecha en el calendario. Quien ayuda a empresas no necesita ser abogado; necesita saber qué vale ya, qué viene, para quién vale y cuándo llamar al área jurídica. Esta clase lo organiza en una línea de tiempo que tú armas para tu empresa.",
+  "objetivo": "armar la línea de tiempo de cumplimiento de tu empresa: qué vale ya, qué viene, para quién vale y quién se encarga de cada punto.",
+  "competencias": [
+    "mapear-regulacao-de-ia",
+    "montar-linha-do-tempo-de-conformidade",
+    "saber-quando-chamar-o-juridico"
+  ],
+  "aprende": [
+    {
+      "icone": "calendario",
+      "t": "Las fechas del EU AI Act tras el aplazamiento de 2026"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Dónde está el PL 2338 en Brasil"
+    },
+    {
+      "icone": "camadas",
+      "t": "NIST AI RMF e ISO 42001: qué son y para qué sirven"
+    },
+    {
+      "icone": "lista",
+      "t": "La línea de tiempo de cumplimiento"
+    }
+  ],
+  "hero_alt": "Un calendario de papel con días marcados en rojo, libros gruesos apilados y un reloj de arena sobre una mesa oscura.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La línea de tiempo",
+      "sub": "De izquierda a derecha: lo que ya vale, lo que tiene fecha y lo que es voluntario.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Ya vale en Brasil",
+          "sub": "LGPD",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Ley 13.709/2018"
+            }
+          ],
+          "detalhe": "La LGPD (ley brasileña de protección de datos) ya vale para cualquier tratamiento de datos personales, incluso por IA. Es la regla que más pesa hoy para una pyme brasileña: base legal, transferencia internacional, seguridad y derecho a la revisión de decisiones automatizadas (clase 5)."
+        },
+        {
+          "icone": "check",
+          "titulo": "Ya vale en la UE",
+          "sub": "Prohibiciones, alfabetización, modelos de uso general",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Alfabetización en IA desde el 02/02/2025"
+            }
+          ],
+          "detalhe": "En el EU AI Act, las prácticas prohibidas y la obligación de alfabetización en IA (art. 4) valen desde el 02/02/2025. Quien provee o usa sistemas de IA debe garantizar que su equipo entiende lo suficiente de IA. Las reglas para modelos de uso general y de transparencia también siguen el calendario original."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Con fecha en la UE",
+          "sub": "Alto riesgo: 02/12/2027",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "Aplazado por el Digital Omnibus"
+            }
+          ],
+          "detalhe": "El paquete Digital Omnibus, adoptado en julio de 2026, aplazó las reglas de alto riesgo: los sistemas del Anexo III (contratación, crédito, educación, infraestructura crítica) pasan al 02/12/2027; la IA integrada en productos regulados, al 02/08/2028. Vale para la empresa brasileña que vende o usa IA en el mercado europeo.",
+          "forte": true
+        },
+        {
+          "icone": "portao",
+          "titulo": "En discusión en Brasil",
+          "sub": "PL 2338/2023",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Comisión Especial de la Cámara"
+            }
+          ],
+          "detalhe": "El PL 2338/2023, que dispone sobre el uso ético y responsable de la IA, vino del Senado. En la ficha de la Cámara, consultada el 19/10/2026, la situación es \"Aguardando Parecer do(a) Relator(a) na Comissão Especial\". Todavía no es ley: haz seguimiento, pero no lo trates como obligación."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Voluntario",
+          "sub": "NIST AI RMF, ISO/IEC 42001",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "Gobernar, mapear, medir, gestionar"
+            }
+          ],
+          "detalhe": "El NIST AI RMF (EE. UU.) es una guía voluntaria con cuatro funciones: gobernar, mapear, medir y gestionar riesgos. La ISO/IEC 42001:2023 es la norma de sistema de gestión de IA, certificable por un organismo acreditado. Ninguno de los dos es ley, pero sirven de checklist y de lenguaje común con clientes grandes."
+        }
+      ],
+      "legenda": "Para cada regla, dos preguntas: ¿vale para nosotros? ¿A partir de cuándo?",
+      "dica": "Haz clic en cada hito."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo armar la línea de tiempo de la empresa",
+      "sub": "Cuatro pasos. Horizonte sirve de ejemplo.",
+      "passos": [
+        {
+          "titulo": "Listar dónde hay IA",
+          "sub": "Usa el inventario de la clase 2",
+          "texto": [
+            "Empieza por el inventario: qué herramientas usan IA, qué datos tratan y a quién le vende la empresa.",
+            "En Horizonte: atención por WhatsApp, resumen de conversaciones, app de pedidos, correo electrónico. Clientes solo en Brasil."
+          ]
+        },
+        {
+          "titulo": "Ver qué vale",
+          "sub": "Una pregunta por regla",
+          "texto": [
+            "LGPD: ¿trata datos personales? Casi siempre sí. EU AI Act: ¿vende o usa IA en la Unión Europea? En Horizonte, no.",
+            "¿Contratación, crédito o educación con IA? Márcalo: son áreas de alto riesgo en el AI Act y piden un cuidado redoblado también en Brasil."
+          ]
+        },
+        {
+          "titulo": "Poner las fechas",
+          "sub": "Ya vale, tiene fecha, en discusión",
+          "texto": [
+            "Separa lo que ya vale (actuar ahora), lo que tiene fecha (planificar) y lo que está en discusión (acompañar).",
+            "No trates un proyecto de ley como ley: eso gasta energía en el lugar equivocado."
+          ]
+        },
+        {
+          "titulo": "Dar un responsable y la próxima acción",
+          "sub": "Cada línea con un nombre",
+          "texto": [
+            "Toda línea necesita a quien se encarga y la próxima acción, con fecha.",
+            "Si dudas de que la regla se aplique, del contrato o de la base legal: es la hora de llamar al área jurídica. Tú organizas; el dictamen es de ella."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "LGPD · resumen de atención · responsable: Rafael con el área jurídica · detener el envío sin contrato en un plazo de 30 días."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: línea de tiempo de cumplimiento",
+      "sub": "Una línea por regla. Revísala cada trimestre.",
+      "blocos": [
+        {
+          "rot": "Línea de tiempo de cumplimiento",
+          "icone": "calendario",
+          "conteudo": "LÍNEA DE TIEMPO DE CUMPLIMIENTO DE IA — <empresa>, revisada el <fecha>\n\nDónde hay IA: <lista del inventario>\nA quién vende: <Brasil | UE | otros>\n\n| Regla | ¿Vale para nosotros? Por qué | Situación (ya vale / tiene fecha / en discusión / voluntario) | Fecha | Qué nos exige | Responsable | Próxima acción y plazo |\n|---|---|---|---|---|---|---|\n| LGPD | | ya vale | | | | |\n| EU AI Act: alfabetización y prohibiciones | | ya vale (UE) | 02/02/2025 | | | |\n| EU AI Act: alto riesgo Anexo III | | tiene fecha (UE) | 02/12/2027 | | | |\n| PL 2338/2023 | | en discusión | — | acompañar | | |\n| NIST AI RMF / ISO 42001 | | voluntario | — | | | |\n\nLlevar al área jurídica: <dudas sobre aplicación, contrato, base legal>\nPróxima revisión: <fecha, dentro de 3 meses>"
+        },
+        {
+          "rot": "Prompt · revisar si una regla se aplica",
+          "icone": "chat",
+          "conteudo": "Ayúdame a organizar preguntas para el área jurídica, sin dar dictamen.\nEmpresa: <sector, tamaño, dónde vende>\nUso de IA: <qué hace la herramienta y qué datos trata>\nRegla: <LGPD | EU AI Act | PL 2338/2023>\n\nEnumera:\n1. Qué hechos sobre nosotros deciden si la regla se aplica.\n2. Las preguntas que debo llevar al área jurídica.\nNo afirmes que la regla se aplica o no; no inventes artículos. Si no sabes, dilo."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo: Horizonte",
+            "html": "<ul><li><b>LGPD</b> · vale (datos de clientes en WhatsApp) · ya vale · responsable: Carlos con el área jurídica · revisar el resumen de atención en 30 días.</li><li><b>EU AI Act</b> · no vale hoy (sin clientes en la UE) · reevaluar si exporta.</li><li><b>PL 2338/2023</b> · en discusión · acompañar cada trimestre.</li><li><b>NIST AI RMF</b> · voluntario · usar las 4 funciones como checklist interno.</li></ul>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Tratar un proyecto de ley como ley</b>: el PL 2338 todavía está en la Cámara.</li><li><b>Creer que la ley europea no importa</b>: importa si la empresa vende o usa IA en la UE.</li><li><b>Dar un dictamen jurídico</b>: tú organizas hechos y preguntas; quien concluye es el área jurídica.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la línea de tiempo de tu empresa",
+      "sub": "Usa el inventario de la clase 2. ¿Sin empresa? Usa Horizonte.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Dónde hay IA y a quién vende",
+          "min": "10 min",
+          "texto": "Copia del inventario las herramientas y escribe dónde vende la empresa.",
+          "pronto": "la parte superior del modelo está completa con las herramientas y los mercados."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Vale o no vale",
+          "min": "15 min",
+          "texto": "Para cada regla del modelo, responde \"¿vale para nosotros?\" con el motivo en una frase.",
+          "pronto": "las 5 líneas tienen sí o no y el motivo, y las dudas fueron a \"llevar al área jurídica\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Responsable y próxima acción",
+          "min": "10 min",
+          "texto": "Da un responsable y una próxima acción con plazo a cada línea que vale. Marca la próxima revisión para dentro de 3 meses.",
+          "pronto": "toda línea que vale tiene un nombre y una fecha, y la revisión está marcada."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "Para Horizonte, que vende solo en Brasil, ¿qué regla pesa hoy?",
+          "opcoes": [
+            "Todo el EU AI Act.",
+            "La LGPD, que ya vale para datos personales tratados por IA.",
+            "El PL 2338, que ya es ley.",
+            "Ninguna: la IA no está regulada en Brasil."
+          ],
+          "certa": 1,
+          "explica": "La LGPD ya vale y alcanza cualquier tratamiento de datos personales, incluso por IA. El PL 2338 todavía está en la Cámara. El error común es creer que, sin una ley específica de IA, no hay regla.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Después del Digital Omnibus, ¿cuándo pasan a valer las reglas de alto riesgo del Anexo III del AI Act?",
+          "opcoes": [
+            "02/02/2025",
+            "02/08/2026",
+            "02/12/2027",
+            "Nunca: fueron derogadas"
+          ],
+          "certa": 2,
+          "explica": "Fueron aplazadas al 02/12/2027, no derogadas. La alfabetización y las prohibiciones siguen vigentes desde el 02/02/2025. El error común es leer \"aplazó\" como \"se acabó\".",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Surgió una duda sobre si el uso de IA de un cliente entra en \"alto riesgo\". ¿Qué haces?",
+          "opcoes": [
+            "Respondes tú mismo, para ganar tiempo.",
+            "Organizas los hechos y las preguntas y los llevas al área jurídica.",
+            "Le preguntas a la IA y pasas la respuesta como dictamen.",
+            "Lo ignoras hasta que cambie la ley."
+          ],
+          "certa": 1,
+          "explica": "Tú organizas; el dictamen es del área jurídica. Ese es el límite de tu papel (clase 7). El error común es pasar una respuesta de IA como si fuera un dictamen.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen de la clase",
+      "itens": [
+        {
+          "t": "Ya vale",
+          "texto": "LGPD (ley brasileña de protección de datos) en Brasil; alfabetización y prohibiciones del AI Act en la UE desde el 02/02/2025."
+        },
+        {
+          "t": "Tiene fecha",
+          "texto": "Alto riesgo del Anexo III del AI Act: 02/12/2027."
+        },
+        {
+          "t": "En discusión",
+          "texto": "El PL 2338/2023 espera dictamen en la Comisión Especial de la Cámara."
+        },
+        {
+          "t": "Voluntario",
+          "texto": "NIST AI RMF e ISO/IEC 42001: checklist y lenguaje común."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fuentes y para ir más allá",
+      "links": [
+        {
+          "t": "Software Improvement Group: resumen del EU AI Act con el Digital Omnibus (Reg. 2026/1744; alto riesgo → 02/12/2027)",
+          "href": "https://www.softwareimprovementgroup.com/eu-ai-act-summary/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "EU AI Act, artículo 4: alfabetización en IA (vale desde el 02/02/2025)",
+          "href": "https://artificialintelligenceact.eu/article/4/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Cámara de Diputados: ficha de tramitación del PL 2338/2023",
+          "href": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+          "icone": "arquivo"
+        },
+        {
+          "t": "NIST: AI Risk Management Framework",
+          "href": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "icone": "escudo"
+        },
+        {
+          "t": "Ley General de Protección de Datos (Ley 13.709/2018)",
+          "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+          "icone": "arquivo"
+        },
+        {
+          "t": "BSI: qué es la ISO/IEC 42001 (sistema de gestión de IA)",
+          "href": "https://www.bsigroup.com/en-GB/products-and-services/standards/iso-42001-ai-management-system/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

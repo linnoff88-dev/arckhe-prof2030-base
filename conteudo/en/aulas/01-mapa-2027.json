@@ -1,0 +1,337 @@
+{
+  "slug": "mapa-2027",
+  "num": 1,
+  "menu": "Map",
+  "titulo": "The 2027 map: what AI does well, where it fails, and what it costs",
+  "titulo_curto": "The 2027 map",
+  "minutos": 15,
+  "lead": "AI gets hard things right and simple things wrong. Anyone who helps a company adopt AI needs to know, for each task, which side of the line it falls on and what it really costs, counting the time spent checking. This lesson gives you the map and the model to use in your work.",
+  "objetivo": "sort 3 tasks from your work into does well, does with checking, or should not do, with the cost of each.",
+  "competencias": [
+    "avaliar-fronteira-da-ia",
+    "estimar-custo-por-tarefa",
+    "decidir-quando-nao-usar-ia"
+  ],
+  "aprende": [
+    {
+      "icone": "alvo",
+      "t": "What the \"jagged frontier\" of AI is"
+    },
+    {
+      "icone": "lupa",
+      "t": "Test a task before you trust it"
+    },
+    {
+      "icone": "grafico",
+      "t": "Calculate the cost per task, including checking"
+    },
+    {
+      "icone": "camadas",
+      "t": "Who's who among the vendors"
+    }
+  ],
+  "hero_alt": "Hands place pins of two colors on either side of a jagged frontier on a map, next to a calculator and coins.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The jagged line",
+      "sub": "Every task falls into one of these three zones. Cost decides whether it's worth it.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Does well",
+          "sub": "Drafting, summarizing, classifying",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Summarize a meeting"
+            },
+            {
+              "icone": "chat",
+              "t": "Draft a reply"
+            }
+          ],
+          "detalhe": "Language tasks where a small error is cheap and easy to spot. Even here, someone reads it before it goes out. Example at Horizonte: Juliana asks for a draft reply to a complaint and adjusts the tone."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Does it, but check",
+          "sub": "Numbers, facts, company rules",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Add up the month's orders"
+            },
+            {
+              "icone": "lista",
+              "t": "Apply the price table"
+            }
+          ],
+          "detalhe": "AI is usually right, but the error is costly and doesn't show up on its own: a wrong total, an invented price, a swapped deadline. It's worth using, as long as there's a defined check (who checks, how, and when).",
+          "forte": true
+        },
+        {
+          "icone": "x",
+          "titulo": "Should not do alone",
+          "sub": "Money, health, decisions about people",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "Approve a discount or credit"
+            },
+            {
+              "icone": "usuario",
+              "t": "Decide who gets laid off"
+            }
+          ],
+          "detalhe": "When an error causes legal or financial harm, or harm to a person, AI can prepare, but the decision belongs to someone with a name. This also covers what happens only a few times a month: it isn't even worth automating."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "What it costs",
+          "sub": "Model price + time to check",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "Price per task drops with every generation"
+            },
+            {
+              "icone": "usuario",
+              "t": "Human time doesn't drop on its own"
+            }
+          ],
+          "detalhe": "Model prices fall fast, but the real cost of a task includes the time of whoever checks it and the cost of the error that slips through. A task that's cheap for AI can get expensive if every answer needs 10 minutes of review."
+        }
+      ],
+      "legenda": "The line isn't straight: the same AI that writes a contract can get a simple sum wrong. That's why you test task by task.",
+      "dica": "Click each zone to see examples from Horizonte Distribuidora."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build the map for a task",
+      "sub": "Four steps. Do it with a real task.",
+      "passos": [
+        {
+          "titulo": "Choose",
+          "sub": "A task that repeats",
+          "texto": [
+            "Pick a task that happens many times a month and has a result you can check.",
+            "A task that happens twice a year rarely pays off: tuning the AI takes more work than doing it by hand."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "Patrícia, the sales manager, puts together a summary of the week's orders by customer every Monday."
+          }
+        },
+        {
+          "titulo": "Test",
+          "sub": "Three times, with one hard case",
+          "texto": [
+            "Run the task in the AI three times with the same material. Then include an edge case: a missing data point, a number outside the usual range.",
+            "Compare the three answers. If they change from one run to the next, you already know you need to check."
+          ],
+          "exemplo": {
+            "rot": "Edge case",
+            "texto": "An order canceled midweek: did the AI add it to the total or take it out?"
+          }
+        },
+        {
+          "titulo": "Classify",
+          "sub": "Does it well, check it, or doesn't do it",
+          "texto": [
+            "Ask yourself: if the AI gets it wrong 1 time in 20, is the impact tolerable? If so, it does the task. If the error is costly but would show up in a check, it does the task and someone checks it.",
+            "If the error can harm money, health, a contract, or a person, it only prepares the work."
+          ]
+        },
+        {
+          "titulo": "Do the math",
+          "sub": "Cost per task, including the check",
+          "texto": [
+            "Add up the time the task takes today, the time to use the AI, and the time to check. If the total doesn't drop, the AI didn't help.",
+            "Before you think about AI, see whether a simple rule, a spreadsheet, or an off-the-shelf system solves it. Use the simplest solution that works."
+          ],
+          "exemplo": {
+            "rot": "Math",
+            "texto": "Today 90 min. With AI: 10 min to ask + 20 min to check = 30 min. A gain of 60 min per week."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The task test and the frontier map. Replace what is between < >.",
+      "blocos": [
+        {
+          "rot": "Prompt · test a task",
+          "icone": "chat",
+          "conteudo": "I'm going to test whether you can do this task from my work.\nTask: <describe the task and the expected result>\nMaterial: <paste the material, without a customer's name, CPF, or phone number>\n\nRules:\n- If information is missing, say what is missing. Don't make it up.\n- At the end, list the points in your answer where you are least certain."
+        },
+        {
+          "rot": "Frontier map · 3 tasks",
+          "icone": "lista",
+          "conteudo": "FRONTIER MAP — <your name>, <date>\n\n| Task | Times/month | Did the AI get it right in all 3 rounds? | Where it went wrong | Zone (does well / check it / doesn't do it) | Who checks | Time today | Time with AI + check |\n|---|---|---|---|---|---|---|---|\n| <task 1> | | | | | | | |\n| <task 2> | | | | | | | |\n| <task 3> | | | | | | | |\n\nError test: if the AI gets it wrong 1 time in 20, is the impact tolerable?\nAlternative test: does a simple rule, spreadsheet, or off-the-shelf system solve it?"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Filled-in example",
+            "html": "<p><b>Weekly order summary (Patrícia)</b> · 4 times/month · got 2 of 3 right (in one round it counted a canceled order) · zone: <b>does it, but check it</b> · checker: Patrícia, matching the total against the system · today 90 min → with AI 30 min.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Testing only once</b>: the AI can get it right by luck. Three rounds show whether it is stable.</li><li><b>Leaving the check out of the math</b>: the gain disappears when every answer has to be redone.</li><li><b>Pasting customer data into the test</b>: use examples without names and without documents.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Who's who in October 2026",
+      "paragrafos": [
+        "The names change every few weeks; the method in this lesson does not. Today the main providers are <b>Anthropic</b> (Claude), <b>OpenAI</b> (ChatGPT and Codex), <b>Google</b> (Gemini), <b>xAI</b> (Grok), and the Chinese labs, which publish open models such as <b>Qwen</b>, from Alibaba.",
+        "Prices fall fast. On 09/22/2026, Anthropic launched Opus 5.5, saying it reaches the level of Fable 5.1 at 40% less cost than Opus 5. In August, Alibaba opened up Qwen3.8-27B, which runs even on a laptop. Building got cheap; checking is still up to you.",
+        "Stanford's AI Index 2026 report calls this the <b>jagged frontier</b>: models that win hard competitions and still get simple tasks wrong. The same report counts 362 documented AI incidents in 2025, up from 233 the year before."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your frontier map",
+      "sub": "One task at a time. Use examples without personal data.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "S1 · Pick 3 tasks",
+          "min": "10 min",
+          "texto": "List 3 tasks from your work (or from Horizonte, if you prefer) that repeat at least 4 times a month.",
+          "pronto": "the 3 tasks are in the table with the number of times per month."
+        },
+        {
+          "id": "e2",
+          "titulo": "S2 · Test each one 3 times",
+          "min": "25 min",
+          "texto": "Use the test prompt. Run each task 3 times, one of them with an edge case.",
+          "pronto": "the \"got it right in all 3 rounds?\" column is filled in and you noted at least one AI error or doubt."
+        },
+        {
+          "id": "e3",
+          "titulo": "S3 · Classify and do the math",
+          "min": "15 min",
+          "texto": "Put each task in a zone, with the name of who checks it and the two times.",
+          "pronto": "the boundary map for the 3 tasks is complete, with zone, who checks it, and time before and after."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "What does \"jagged frontier\" mean?",
+          "opcoes": [
+            "That AI only works in English.",
+            "That AI can get hard tasks right and simple tasks wrong, so you test task by task.",
+            "That each country has a different law for AI.",
+            "That open models are worse than closed ones."
+          ],
+          "certa": 1,
+          "explica": "The line between what AI does well and what it gets wrong is not straight. That's why you can't trust \"AI\" in general; you trust a task you've tested. The common mistake is to generalize from one impressive success.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "AI does the weekly summary in 2 minutes, but Patrícia takes 40 minutes to check it. What goes into the cost?",
+          "opcoes": [
+            "Only the price of the AI, which is almost zero.",
+            "Only the 2 minutes of AI time.",
+            "The time to ask, the time to check, and the cost of an error that slips through.",
+            "Nothing: if the AI did it, it's done."
+          ],
+          "certa": 2,
+          "explica": "The real cost per task includes the check. If it takes almost as long as the original task, the AI didn't help. The common mistake is to look only at the model's price.",
+          "ref": "passos"
+        },
+        {
+          "p": "A task happens twice a year and an error is costly. What's the best decision?",
+          "opcoes": [
+            "Automate it with an agent.",
+            "Do it by hand, maybe with AI preparing a draft.",
+            "Use the most expensive model on the market.",
+            "Let the AI decide on its own to save time."
+          ],
+          "certa": 1,
+          "explica": "Low volume and costly errors are two signs against automating. AI can help prepare, but a person makes the decision. The common mistake is wanting AI for everything.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why run the same task 3 times in the test?",
+          "opcoes": [
+            "To use up the plan's limit.",
+            "Because AI can answer differently each time; three rounds show whether it's stable.",
+            "Because the law requires three tests.",
+            "So the AI learns from you."
+          ],
+          "certa": 1,
+          "explica": "The same question can produce different answers. If they change, the task needs checking. The common mistake is trusting the first success.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Lesson summary",
+      "itens": [
+        {
+          "t": "Jagged frontier",
+          "texto": "AI gets hard things right and simple things wrong. Test task by task."
+        },
+        {
+          "t": "Three zones",
+          "texto": "Does it well; does it, but check; shouldn't do it alone."
+        },
+        {
+          "t": "Real cost",
+          "texto": "Model price + time to check + cost of the error that slips through."
+        },
+        {
+          "t": "Simpler first",
+          "texto": "If a rule, spreadsheet, or ready-made system solves it, you don't need AI."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "Stanford HAI: AI Index 2026 (04/13/2026): jagged frontier, 362 incidents in 2025",
+          "href": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+          "icone": "grafico"
+        },
+        {
+          "t": "Anthropic: Claude Opus 5.5 (09/22/2026), 40% cheaper than Opus 5",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Alibaba Cloud: launch of Qwen3.8-27B, an open model to run locally (08/2026)",
+          "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463",
+          "icone": "chip"
+        },
+        {
+          "t": "OpenAI: GPT-6 Sol and Luna, October 2026 update",
+          "href": "https://deploymentsafety.openai.com/gpt-6-october",
+          "icone": "arquivo"
+        },
+        {
+          "t": "AI Consultant (INEMA): the solution pyramid and when not to use AI",
+          "href": "https://inematds.github.io/consultoria2k/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

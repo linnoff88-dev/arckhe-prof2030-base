@@ -1,0 +1,276 @@
+{
+  "slug": "vibe-coding",
+  "num": 3,
+  "menu": "Vibe coding",
+  "titulo": "Vibe coding pelo lado da confiança: construa um app e procure as falhas",
+  "titulo_curto": "Vibe coding com confiança",
+  "minutos": 20,
+  "lead": "Vibe coding é pedir um programa em português e deixar a IA escrever o código. Funciona: em minutos sai um app que abre e parece pronto. O problema é que \"abriu\" não quer dizer \"está seguro\". Nesta aula você constrói um app de uma tela, com segurança, e depois troca de papel: vira quem procura as falhas.",
+  "objetivo": "construir com IA um app de 1 tela que roda no seu computador e listar 3 falhas que você achou nele, com o lugar de cada uma.",
+  "competencias": [
+    "construir-app-com-ia",
+    "testar-app-como-usuario",
+    "auditar-app-feito-por-ia",
+    "proteger-segredos"
+  ],
+  "aprende": [
+    { "icone": "terminal", "t": "Construir um app de 1 tela com Claude Code, Codex ou ChatGPT" },
+    { "icone": "escudo", "t": "As regras para praticar sem risco" },
+    { "icone": "lupa", "t": "Testar como usuário e como quem quer abusar" },
+    { "icone": "lista", "t": "Pedir uma auditoria à IA e conferir você mesmo" }
+  ],
+  "hero_alt": "Mãos num notebook com um aplicativo simples aberto; ao lado, bilhetes adesivos com sinais de alerta, uma lupa e um caderno.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O ciclo de quem constrói com confiança",
+      "sub": "Construir é a metade fácil. A outra metade é procurar o que quebra.",
+      "nos": [
+        {
+          "icone": "escudo",
+          "titulo": "Preparar",
+          "sub": "Pasta nova, dado inventado",
+          "itens": [
+            { "icone": "pasta", "t": "Pasta só para o teste" },
+            { "icone": "cadeado", "t": "Nenhuma chave ou dado real" }
+          ],
+          "detalhe": "Antes de pedir qualquer coisa, combine as regras: pasta nova, clientes inventados, chave falsa, nada publicado na internet. Assim um erro fica no seu computador."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Pedir",
+          "sub": "Um app, uma tela, um arquivo",
+          "itens": [ { "icone": "arquivo", "t": "index.html" } ],
+          "detalhe": "Peça um resultado que você consegue ver: um formulário de pedido numa tela só, num único arquivo que abre no navegador."
+        },
+        {
+          "icone": "check",
+          "titulo": "Usar",
+          "sub": "Como cliente e como abusador",
+          "itens": [
+            { "icone": "check", "t": "Caminho feliz" },
+            { "icone": "x", "t": "Preço negativo, campo vazio" }
+          ],
+          "detalhe": "Primeiro use como um cliente normal. Depois tente quebrar: quantidade zero, preço negativo, texto enorme, campo vazio. App que só foi testado no caminho feliz não foi testado."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Procurar falhas",
+          "sub": "Código, chaves, áreas abertas",
+          "itens": [
+            { "icone": "cadeado", "t": "Chave no código do navegador?" },
+            { "icone": "usuario", "t": "Área sem login?" }
+          ],
+          "detalhe": "Abra o código-fonte e procure chave, senha e áreas que deveriam ter login. Depois peça uma auditoria a uma IA numa conversa nova, e confira cada item que ela apontar.",
+          "forte": true
+        }
+      ],
+      "volta": "Corrigiu? Procure de novo: a correção pode quebrar outra coisa",
+      "legenda": "O app que \"abriu\" é o começo da conferência, não o fim.",
+      "dica": "Clique em cada etapa."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Passo a passo da prática",
+      "sub": "Escolha um caminho: Claude Code, Codex ou ChatGPT. O resto é igual.",
+      "passos": [
+        {
+          "titulo": "Preparar",
+          "sub": "Regras antes do primeiro pedido",
+          "texto": [
+            "Crie uma pasta só para o teste, por exemplo <code>teste-horizonte</code>. Use só clientes inventados e a chave falsa <code>CHAVE-DE-TESTE-123</code>.",
+            "Nada de publicar: o app roda só no seu computador, abrindo o arquivo no navegador."
+          ]
+        },
+        {
+          "titulo": "Construir",
+          "sub": "Três caminhos",
+          "texto": [
+            "<b>Claude Code ou Codex</b>: abra o terminal, entre na pasta, rode <code>claude</code> ou <code>codex</code> e cole o pedido. Aceite só a criação de arquivos dentro da pasta.",
+            "<b>ChatGPT</b>: cole o pedido, copie o código que vier, salve como <code>index.html</code> na pasta (Bloco de Notas, \"salvar como\", tipo \"todos os arquivos\") e dê dois cliques."
+          ],
+          "exemplo": { "rot": "Pronto", "texto": "O formulário abre no navegador, você cadastra 3 pedidos e vê a lista com o total." }
+        },
+        {
+          "titulo": "Usar e abusar",
+          "sub": "Caminho feliz e casos de borda",
+          "texto": [
+            "Faça 3 pedidos normais. Depois tente: quantidade 0, preço negativo, nome com 500 letras, campo vazio, e abra a \"área do gerente\".",
+            "Anote tudo que o app aceitou e não deveria."
+          ]
+        },
+        {
+          "titulo": "Procurar falhas",
+          "sub": "Você e uma IA \"de fora\"",
+          "texto": [
+            "Abra o código (no navegador: botão direito, \"Exibir código-fonte\", ou Ctrl+U). Procure por <code>CHAVE</code>, <code>senha</code> e <code>gerente</code>.",
+            "Abra uma conversa nova, cole o código e o prompt de auditoria. Confira no código cada falha que ela listar: a IA também inventa."
+          ],
+          "exemplo": { "rot": "Pergunta-chave", "texto": "Se qualquer pessoa abrir esta página, o que ela consegue ver e fazer?" }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "As regras, o pedido do app, a auditoria e a lista de falhas.",
+      "blocos": [
+        {
+          "rot": "Regras da prática (cole antes de tudo)",
+          "icone": "escudo",
+          "conteudo": "Regras deste teste:\n- Trabalhe só dentro desta pasta. Não apague nada fora dela.\n- Use apenas dados inventados. Nenhum nome, CPF ou telefone real.\n- Não publique nada na internet e não instale nada fora da pasta.\n- A única chave permitida é a falsa: CHAVE-DE-TESTE-123.\n- No fim, diga o que você criou e como eu abro."
+        },
+        {
+          "rot": "Pedido do app (1 tela)",
+          "icone": "chat",
+          "conteudo": "Crie um app de uma tela só, num único arquivo index.html que abre direto no navegador, sem servidor.\n\nÉ o formulário de pedidos da Horizonte Distribuidora (produtos de limpeza):\n- Campos: cliente, produto (lista com 5 produtos inventados e preço), quantidade.\n- Botão \"Adicionar pedido\". Abaixo, a lista de pedidos com o total em R$.\n- Guarde os pedidos no próprio navegador, para não sumirem ao recarregar.\n- Um botão \"Área do gerente\" que mostra todos os pedidos e permite apagar.\n- Ao adicionar, \"envie\" o pedido para a API de estoque usando a chave CHAVE-DE-TESTE-123 (pode ser só simulado).\n\nVisual simples e legível no celular. Explique em 5 linhas como o app funciona."
+        },
+        {
+          "rot": "Prompt de auditoria (conversa nova)",
+          "icone": "lupa",
+          "conteudo": "Você é um revisor de segurança. Analise o código abaixo, de um app feito com IA.\nProcure, nesta ordem:\n1. Chaves, senhas ou tokens visíveis no código que roda no navegador.\n2. Áreas ou ações que deveriam exigir login e não exigem.\n3. Dados que qualquer pessoa com o link consegue ver ou apagar.\n4. Entradas não validadas (quantidade 0, preço negativo, texto enorme, código no campo).\n5. Bibliotecas externas: quais são, de onde vêm e se a versão é antiga.\n6. Dados pessoais guardados sem necessidade.\n\nPara cada falha: o que é, a linha ou trecho, a gravidade (alta/média/baixa) e como corrigir.\nNão invente: se não der para confirmar pelo código, diga \"não confirmado\".\n\nCÓDIGO:\n<cole aqui o conteúdo do index.html>"
+        },
+        {
+          "rot": "Lista de falhas (sua entrega)",
+          "icone": "lista",
+          "conteudo": "FALHAS DO APP — <seu nome>, <data>, feito com <Claude Code | Codex | ChatGPT>\n\n| # | Falha | Onde está (linha ou print) | Como achei (uso / código / auditoria) | Gravidade | O que pedir para corrigir |\n|---|---|---|---|---|---|\n| 1 | | | | | |\n| 2 | | | | | |\n| 3 | | | | | |\n\nA auditoria da IA apontou algo que NÃO estava no código? <sim/não, qual>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Falhas que costumam aparecer",
+            "html": "<ul><li><b>Chave no código do navegador</b>: a <code>CHAVE-DE-TESTE-123</code> aparece no Ctrl+U. Se fosse real, qualquer visitante copiaria.</li><li><b>Área do gerente sem login</b>: um botão aberto a todos, que apaga pedidos.</li><li><b>Sem validação</b>: aceita quantidade 0 e preço negativo; o total fica errado.</li><li><b>Biblioteca externa</b> carregada da internet, sem versão fixa.</li></ul>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Achar que \"funcionou\" = \"está seguro\"</b>: o app abre e tem falha grave.</li><li><b>Auditar na mesma conversa que construiu</b>: a IA tende a defender o próprio código. Use conversa nova.</li><li><b>Aceitar a lista da IA sem conferir</b>: ela pode apontar falha que não existe ou esquecer uma real.</li><li><b>Publicar \"só para mostrar\"</b>: o que está na internet, qualquer um acha.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Por que isso importa fora da sala de aula",
+      "paragrafos": [
+        "Em maio de 2026 a empresa de segurança Red Access disse ter encontrado cerca de 380 mil páginas e apps públicos feitos com ferramentas como Lovable, Replit, Netlify e Base44; cerca de 5 mil deles expunham informação possivelmente sensível, como documentos financeiros e conversas de atendimento. As plataformas contestaram parte da leitura: app público visível não é, por si só, um vazamento.",
+        "A lição para você não depende de quem tem razão: quem constrói rápido com IA precisa perguntar, antes de publicar, quem consegue ver e fazer o quê. É exatamente o que esta aula treina e o que a aula 4 pede na empresa-laboratório."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: construa e audite",
+      "sub": "Uns 60 minutos no total. Faça na ordem.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Pasta e regras",
+          "min": "5 min",
+          "texto": "Crie a pasta teste-horizonte e cole as regras da prática no começo da conversa com a IA.",
+          "pronto": "a pasta existe e a IA confirmou as regras antes de construir."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · O app rodando",
+          "min": "20 min",
+          "texto": "Use o pedido do app no caminho que escolheu. Abra o index.html no navegador e cadastre 3 pedidos.",
+          "pronto": "o app abre no seu navegador e mostra 3 pedidos com o total em R$."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Usar e abusar",
+          "min": "10 min",
+          "texto": "Teste quantidade 0, preço negativo, campo vazio, texto enorme e a área do gerente.",
+          "pronto": "você anotou o que o app aceitou e não deveria (ou que recusou tudo)."
+        },
+        {
+          "id": "e4",
+          "titulo": "E4 · Auditoria e lista de falhas",
+          "min": "25 min",
+          "texto": "Procure no código-fonte, rode o prompt de auditoria numa conversa nova e confira cada item no código.",
+          "pronto": "a lista tem 3 falhas, cada uma com a linha ou o print de onde está e como você achou."
+        }
+      ],
+      "fonte": "Quer ir mais fundo em construção? O curso <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cobre o caminho até a produção."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "O app abriu, salvou os pedidos e mostrou o total certo. O que isso prova?",
+          "opcoes": [
+            "Que o app está seguro.",
+            "Que o caminho feliz funciona. Segurança e casos de borda ainda não foram testados.",
+            "Que pode publicar.",
+            "Que a IA não erra."
+          ],
+          "certa": 1,
+          "explica": "Funcionar não é estar seguro. Falta ver o que qualquer pessoa consegue ver e fazer, e o que o app aceita e não deveria. O erro comum é publicar no primeiro \"deu certo\".",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Você achou CHAVE-DE-TESTE-123 no Ctrl+U. Se fosse uma chave real, qual o problema?",
+          "opcoes": [
+            "Nenhum, o código é só seu.",
+            "Qualquer visitante da página copiaria a chave e poderia usá-la no seu nome e na sua conta.",
+            "O app ficaria mais lento.",
+            "O navegador apagaria a chave."
+          ],
+          "certa": 1,
+          "explica": "Tudo que roda no navegador é visível para quem abre a página. Chave real fica no servidor, em variável de ambiente, nunca no código do navegador. O erro comum é achar que o código \"não aparece\".",
+          "ref": "codigo",
+          "cert": true
+        },
+        {
+          "p": "Por que pedir a auditoria numa conversa nova?",
+          "opcoes": [
+            "Porque a conversa antiga fica mais cara.",
+            "Porque na mesma conversa a IA tende a defender o que ela mesma fez; um olhar \"de fora\" acha mais.",
+            "Porque é obrigatório por lei.",
+            "Não faz diferença."
+          ],
+          "certa": 1,
+          "explica": "Separar quem constrói de quem revisa vale para gente e para IA. E mesmo assim você confere no código cada item: a auditoria também pode inventar.",
+          "ref": "passos"
+        },
+        {
+          "p": "Qual destas regras protege você durante a prática?",
+          "opcoes": [
+            "Usar os clientes reais para o teste ficar realista.",
+            "Publicar o app para pedir opinião.",
+            "Pasta só para o teste, dados inventados, chave falsa e nada publicado.",
+            "Dar ao agente acesso a todo o computador para ele trabalhar melhor."
+          ],
+          "certa": 2,
+          "explica": "Com dados inventados e nada publicado, qualquer falha fica no seu computador. O erro comum é testar com dado real \"só desta vez\".",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo da aula",
+      "itens": [
+        { "t": "Abriu ≠ seguro", "texto": "O caminho feliz é o começo da conferência." },
+        { "t": "Pratique sem risco", "texto": "Pasta própria, dado inventado, chave falsa, nada publicado." },
+        { "t": "Use e abuse", "texto": "Zero, negativo, vazio, enorme e a área que devia ter login." },
+        { "t": "Auditoria de fora", "texto": "Conversa nova e você confere cada item no código." }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fontes e para ir além",
+      "links": [
+        { "t": "HKU, Escritório de Proteção de Dados: milhares de apps de vibe coding podem expor dados (05/2026, a partir da pesquisa da Red Access)", "href": "https://dpo.hku.hk/news/thousands-of-ai-%E2%80%98vibe-coding%E2%80%99-apps-may-expose-sensitive-medical%2C-business-data", "icone": "arquivo" },
+        { "t": "Supabase: o que é RLS, a regra que impede um usuário de ler os dados de outro", "href": "https://supabase.com/docs/guides/database/postgres/row-level-security", "icone": "cadeado" },
+        { "t": "Claude Code (Anthropic)", "href": "https://claude.com/product/claude-code", "icone": "terminal" },
+        { "t": "Codex (OpenAI)", "href": "https://developers.openai.com/codex", "icone": "terminal" },
+        { "t": "Vibe Coding: Domínio Completo (INEMA)", "href": "https://inematds.github.io/vibe-coding-completo/", "icone": "camadas" }
+      ]
+    }
+  ]
+}

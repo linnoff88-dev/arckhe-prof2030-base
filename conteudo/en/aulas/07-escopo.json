@@ -1,0 +1,403 @@
+{
+  "slug": "escopo",
+  "num": 7,
+  "menu": "Scope",
+  "titulo": "What you are not: scope, limits and when to call a specialist",
+  "titulo_curto": "What you are not",
+  "minutos": 15,
+  "lead": "The fastest way to lose a client's trust is to promise what you cannot deliver. \"I guarantee it's secure,\" \"I'll test whether it can be hacked,\" \"I certify it complies with the LGPD (Brazil's data protection law)\": each of those sentences belongs to another professional. Knowing how to say what you are not is part of the service, and it earns more credibility than promising everything.",
+  "objetivo": "write your 5-line scope card: what you do, what you deliver, what you don't do, when you call a specialist, and how you talk about the certificate.",
+  "competencias": [
+    "definir-escopo-profissional",
+    "reconhecer-limites-de-atuacao",
+    "encaminhar-para-especialista"
+  ],
+  "aprende": [
+    {
+      "icone": "check",
+      "t": "What an AI adoption professional does and delivers"
+    },
+    {
+      "icone": "x",
+      "t": "What stays with pentest, legal and incident response"
+    },
+    {
+      "icone": "chat",
+      "t": "Answering a client who asks for a total guarantee"
+    },
+    {
+      "icone": "arquivo",
+      "t": "The 5-line scope card"
+    }
+  ],
+  "hero_alt": "Hands draw a firm line with a pen, dividing a blank sheet into two areas, next to a ruler and a card.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Your scope line",
+      "sub": "On one side, what you do; on the other, who does the rest.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "What you do",
+          "sub": "Diagnose, organize, teach, follow up",
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "Risk triage with evidence"
+            },
+            {
+              "icone": "lista",
+              "t": "30-day plan"
+            }
+          ],
+          "detalhe": "Map where AI is in use, find risks with evidence, organize data and rules, propose a plan, train the team and track the results. It's method work, not guarantee work.",
+          "forte": true
+        },
+        {
+          "icone": "x",
+          "titulo": "What you don't do",
+          "sub": "Pentest, legal opinion, total guarantee",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "Penetration test"
+            },
+            {
+              "icone": "arquivo",
+              "t": "Opinion on the LGPD (Brazil's data protection law)"
+            }
+          ],
+          "detalhe": "Penetration testing (pentest) and incident response belong to qualified security professionals with written authorization. A legal opinion belongs to a lawyer or the DPO (data protection officer). And no one guarantees \"total security.\""
+        },
+        {
+          "icone": "usuario",
+          "titulo": "When to call",
+          "sub": "The sign you've crossed the line",
+          "itens": [
+            {
+              "icone": "portao",
+              "t": "Incident, contract, breach, legal decision"
+            }
+          ],
+          "detalhe": "Suspected leak or attack in progress, doubt about whether a law applies, a vendor contract, an active test on a system: stop and call someone who works in that field. Your role is to notice early and organize what the specialist will need."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Your credential",
+          "sub": "Qualification, not a regulated profession",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "INEMA qualification certificate"
+            }
+          ],
+          "detalhe": "The Professional 2030 certificate will be a qualification certification issued by INEMA, not a regulated profession. It is also not the ISO/IEC 42001 certification, which is granted to companies by an accredited body. Say exactly what it is."
+        }
+      ],
+      "legenda": "\"AI Auditor\" here means AI risk assessment and triage. It is not a pentest or a certified audit.",
+      "dica": "Click each side of the line."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to write your scope",
+      "sub": "Four rules that prevent the wrong promise.",
+      "passos": [
+        {
+          "titulo": "Verbs you can deliver on",
+          "sub": "Map, point out, propose, teach",
+          "texto": [
+            "Write what you do with verbs that can be checked: map, point out with evidence, propose, teach, follow up.",
+            "Avoid \"guarantee,\" \"certify,\" and \"bulletproof.\""
+          ]
+        },
+        {
+          "titulo": "What it guarantees and what it doesn't",
+          "sub": "Both sides",
+          "texto": [
+            "For each deliverable, say what it guarantees and what it does not. A risk triage guarantees that the risks found are documented with evidence; it does not guarantee that no others exist.",
+            "That honesty is what makes the client come back."
+          ],
+          "exemplo": {
+            "rot": "Ready-made sentence",
+            "texto": "I point out the risks I found, with evidence and priority. This does not replace a penetration test or a legal opinion."
+          }
+        },
+        {
+          "titulo": "Who to call",
+          "sub": "A specialist with contact details",
+          "texto": [
+            "Keep on hand the type of specialist for each case: security (pentest and incidents), legal or the DPO (data protection officer) for LGPD (Brazil's data protection law) and contracts, the company's IT team (system changes).",
+            "Referring well is also a deliverable."
+          ]
+        },
+        {
+          "titulo": "Written authorization",
+          "sub": "Before looking at anything",
+          "texto": [
+            "Agree in writing on what you can access and what you will do. Even if you are only looking.",
+            "Never test a system without the owner knowing, even with good intentions."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulated conversation: Carlos wants a guarantee",
+      "sub": "A practice simulation. Carlos Mendes, owner of Horizonte, asks for three things that cross the line. Choose the answer you would give.",
+      "personagem": {
+        "nome": "Carlos Mendes",
+        "papel": "owner of Horizonte Distribuidora · 40 people"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "I want you to guarantee that our WhatsApp agent is 100% secure. Can you?",
+          "opcoes": [
+            {
+              "t": "I guarantee it, don't worry.",
+              "vai": "fim-promessa",
+              "nota": 0,
+              "comenta": "Nobody can guarantee 100%. If something happens, your word becomes the problem."
+            },
+            {
+              "t": "Nobody can guarantee 100%. I'll do a risk triage with evidence and a 30-day plan for the most serious ones.",
+              "vai": "invadir",
+              "nota": 2,
+              "comenta": "You swapped the guarantee for a deliverable that can be checked. That is what builds trust."
+            },
+            {
+              "t": "I can take a look, but without promising anything.",
+              "vai": "invadir",
+              "nota": 1,
+              "comenta": "Honest, but vague: Carlos doesn't know what he'll get. Name the deliverable."
+            }
+          ]
+        },
+        "invadir": {
+          "cliente": "Agreed. And since you'll be looking, try to break into Rafael's order system to see if it holds up.",
+          "opcoes": [
+            {
+              "t": "I'll try, give me the access.",
+              "vai": "fim-invasao",
+              "nota": 0,
+              "comenta": "A break-in test is a pentest: it calls for a qualified professional, a scope, and written authorization."
+            },
+            {
+              "t": "A break-in test is the work of a security specialist, with written authorization. I'll point out where it's worth hiring one and what they should test.",
+              "vai": "lgpd",
+              "nota": 2,
+              "comenta": "You recognized the line and turned the request into a useful referral."
+            },
+            {
+              "t": "I can take a quick look at the system without telling Rafael.",
+              "vai": "fim-invasao",
+              "nota": 0,
+              "comenta": "Touching a system without the person responsible knowing is a risk for you and for the company, even with good intentions."
+            }
+          ]
+        },
+        "lgpd": {
+          "cliente": "Makes sense. And at the end, will you sign that we're compliant with LGPD (Brazil's data protection law)?",
+          "opcoes": [
+            {
+              "t": "I'll sign, it's just a piece of paper.",
+              "vai": "fim-parecer",
+              "nota": 0,
+              "comenta": "Declaring LGPD (Brazil's data protection law) compliance is a legal opinion. It is not your role."
+            },
+            {
+              "t": "I'll write that, from what I saw, everything seems fine.",
+              "vai": "fim-parecer",
+              "nota": 1,
+              "comenta": "Better than signing, but it still sounds like an opinion. List risks and questions, not legal conclusions."
+            },
+            {
+              "t": "I point out the data risks I found and the questions for legal. The legal team or the data protection officer gives the opinion.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Clear scope: you organize; the person with the qualification concludes."
+            }
+          ]
+        },
+        "fim-promessa": {
+          "fim": true,
+          "titulo": "A promise you can't keep",
+          "texto": "Carlos signed based on a guarantee. At the first incident, the conversation will be about your promise, not about the agent."
+        },
+        "fim-invasao": {
+          "fim": true,
+          "titulo": "Crossed the line",
+          "texto": "A penetration test without qualification or written authorization can cause damage and bring legal trouble for you and for the company."
+        },
+        "fim-parecer": {
+          "fim": true,
+          "titulo": "Almost there",
+          "texto": "You held the first two, but ended up giving something close to a legal opinion. Swap conclusions for risks and questions."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Clear scope",
+          "texto": "Carlos knows what he will get (triage with evidence and a 30-day plan), who to call for a break-in, and who gives the LGPD (Brazil's data protection law) opinion."
+        }
+      },
+      "licao": "Saying what you don't do, with a clear deliverable in its place, is worth more than promising everything."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: scope card",
+      "sub": "Five lines. It fits in a proposal, an email, or your presentation.",
+      "blocos": [
+        {
+          "rot": "Scope card (5 lines)",
+          "icone": "arquivo",
+          "conteudo": "SCOPE CARD — <your name>\n1. What I do: <e.g., I map where AI is used and triage risks with evidence>\n2. What I deliver: <e.g., one-page report + 30-day plan>\n3. What I do NOT do: <e.g., penetration testing, incident response, legal opinion, guarantee of total security>\n4. When I call a specialist: <e.g., suspected leak → security; LGPD or contract question → legal>\n5. My credential: <e.g., INEMA qualification certificate (Professional 2030); not a regulated profession nor an ISO certification>"
+        },
+        {
+          "rot": "Guarantee / no-guarantee sentence",
+          "icone": "chat",
+          "conteudo": "This deliverable guarantees: <what you control and the client can verify>.\nThis deliverable does not guarantee: <what depends on other factors or on another professional>.\nFor that, the path is: <specialist or next step>."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Filled-in example",
+            "html": "<p><b>1.</b> I map where AI is used in the company and triage risks with evidence. <b>2.</b> One-page report and a 30-day plan. <b>3.</b> I don't do penetration testing, incident response, or legal opinions, and I don't guarantee total security. <b>4.</b> Leak or attack → security specialist; LGPD and contracts → legal. <b>5.</b> INEMA qualification certificate; not a regulated profession.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>\"I'll shield your company\"</b>: a promise nobody keeps.</li><li><b>Calling the certificate a \"license\"</b>: it's a qualification, not a professional registration.</li><li><b>Leaving item 4 empty</b>: without knowing who to refer to, you end up doing what you shouldn't.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your scope card",
+      "sub": "Write it for your real case, not the ideal one.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Run the simulated conversation",
+          "min": "5 min",
+          "texto": "Go through the conversation with Carlos to the end. If you didn't reach \"Clear scope\", start over.",
+          "pronto": "you reached the \"Clear scope\" ending."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Write the card",
+          "min": "15 min",
+          "texto": "Fill in the 5 lines in your own words. In item 4, write the type of specialist and, if you have one, a contact.",
+          "pronto": "the card has 5 lines, none uses \"guarantee\" without the \"does not guarantee\" next to it, and item 4 has at least two cases."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Test it with someone",
+          "min": "10 min",
+          "texto": "Show the card to a colleague and ask: \"what do you think I do and don't do?\"",
+          "pronto": "your colleague's answer matches lines 1 and 3 of the card."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The client says \"guarantee we're safe.\" What's the best answer?",
+          "opcoes": [
+            "\"I guarantee it.\"",
+            "\"I don't work with security.\"",
+            "\"Nobody guarantees 100%; I deliver a triage with evidence and a 30-day plan.\"",
+            "\"It depends on the price.\""
+          ],
+          "certa": 2,
+          "explica": "Swap the guarantee for a deliverable the client can verify. The common mistake is promising just to close the deal.",
+          "ref": "simconversa",
+          "cert": true
+        },
+        {
+          "p": "The Professional 2030 certificate is:",
+          "opcoes": [
+            "Registration of a regulated profession.",
+            "ISO/IEC 42001 certification.",
+            "A qualification certificate issued by INEMA.",
+            "A license to do pentesting."
+          ],
+          "certa": 2,
+          "explica": "It is a qualification certificate, not a regulated profession or a company certification. Saying exactly what it is protects you and the program.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "You notice signs that customer data may have leaked. What do you do?",
+          "opcoes": [
+            "Investigate on your own on the servers.",
+            "Notify the person in charge and refer a specialist in incident response, organizing what you saw.",
+            "Wait for the next report.",
+            "Delete the evidence so you don't scare the client."
+          ],
+          "certa": 1,
+          "explica": "Incident response is a specialist's job. Your role is to notice early, raise the alert and organize what you saw. The common mistake is touching the systems and destroying evidence.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Lesson summary",
+      "itens": [
+        {
+          "t": "You do",
+          "texto": "Map, point out with evidence, propose, teach, follow up."
+        },
+        {
+          "t": "You don't do",
+          "texto": "Pentest, incident response, legal opinion, total guarantee."
+        },
+        {
+          "t": "What it guarantees and what it doesn't",
+          "texto": "Every deliverable states both sides."
+        },
+        {
+          "t": "Credential",
+          "texto": "INEMA qualification certificate; not a regulated profession."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "LOOP-R (INEMA): what a method guarantees and what it doesn't",
+          "href": "https://inematds.github.io/loop-r/curso/",
+          "icone": "lista"
+        },
+        {
+          "t": "Client Map (INEMA): what the AI solutions consultant is not",
+          "href": "https://inematds.github.io/mapacliente/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Professional 2030 Program: training and certification",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "escudo"
+        },
+        {
+          "t": "ANPD: Brazil's National Data Protection Authority",
+          "href": "https://www.gov.br/anpd/pt-br",
+          "icone": "arquivo"
+        },
+        {
+          "t": "BSI: what ISO/IEC 42001 is (AI management system)",
+          "href": "https://www.bsigroup.com/en-GB/products-and-services/standards/iso-42001-ai-management-system/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

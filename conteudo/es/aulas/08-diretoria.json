@@ -1,0 +1,329 @@
+{
+  "slug": "diretoria",
+  "num": 8,
+  "menu": "Dirección",
+  "titulo": "Una página para la dirección + Lo que cambió",
+  "titulo_curto": "Una página + Lo que cambió",
+  "minutos": 20,
+  "lead": "Ya encontraste los riesgos; ahora necesitas que alguien decida. Un director no lee un informe técnico de diez páginas: lee una página en dos minutos, si habla de dinero, de clientes y de lo que hay que decidir. Esta clase cierra el curso con el proyecto final, un diagnóstico relámpago de Horizonte, y con el panel de lo que cambió en el mercado.",
+  "objetivo": "escribir un diagnóstico relámpago de una página sobre una pieza de Horizonte, con 3 hallazgos, riesgo en lenguaje de negocio y la decisión que se pide.",
+  "competencias": [
+    "comunicar-risco-para-executivo",
+    "traduzir-tecnico-em-negocio",
+    "propor-plano-de-30-dias",
+    "acompanhar-mudancas-do-mercado"
+  ],
+  "aprende": [
+    {
+      "icone": "arquivo",
+      "t": "Los 5 bloques de una página para la dirección"
+    },
+    {
+      "icone": "chat",
+      "t": "Traducir un término técnico en consecuencia de negocio"
+    },
+    {
+      "icone": "calendario",
+      "t": "Armar un plan de 30 días con responsable y plazo"
+    },
+    {
+      "icone": "grafico",
+      "t": "Lo que cambió en el mercado en octubre de 2026"
+    }
+  ],
+  "hero_alt": "Una sola hoja impresa en el centro de una mesa de reuniones; al fondo, desenfocados, dos ejecutivos conversando.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Los 5 bloques de la página",
+      "sub": "En el orden en que el director lee. Si no cabe en una página, el pensamiento todavía está confuso.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "1. Situación",
+          "sub": "Qué miramos, cuándo, con qué autorización",
+          "itens": [
+            {
+              "icone": "calendario",
+              "t": "Alcance y fecha"
+            }
+          ],
+          "detalhe": "Dos líneas: qué se evaluó, en qué fecha, con la autorización de quién, y el límite del trabajo (triaje de riesgos, no prueba de intrusión ni dictamen jurídico)."
+        },
+        {
+          "icone": "lista",
+          "titulo": "2. Qué encontramos",
+          "sub": "3 hallazgos con evidencia",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Fragmento, captura o número"
+            }
+          ],
+          "detalhe": "Máximo tres hallazgos, del más grave al menos grave. Cada uno con la evidencia en una línea. Un hallazgo sin evidencia no entra."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "3. Qué significa",
+          "sub": "En reales, clientes y reputación",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "Consecuencia de negocio"
+            }
+          ],
+          "detalhe": "Traduce cada hallazgo en consecuencia: dinero perdido, cliente expuesto, posible multa, el nombre de la empresa en juego. Sin jerga. Sé conservador: una cifra exagerada derrumba la página entera.",
+          "forte": true
+        },
+        {
+          "icone": "calendario",
+          "titulo": "4. Plan de 30 días",
+          "sub": "Acción, responsable, plazo",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Un nombre por línea"
+            }
+          ],
+          "detalhe": "De tres a cinco acciones, cada una con responsable y plazo. Empieza por lo que reduce el riesgo más rápido, aunque sea simple, como apagar un permiso."
+        },
+        {
+          "icone": "portao",
+          "titulo": "5. Decisión solicitada",
+          "sub": "Lo que necesita un sí hoy",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Una pregunta, una respuesta"
+            }
+          ],
+          "detalhe": "Termina con lo que el director necesita decidir ahora: aprobar el plan, liberar a una persona, contratar a un especialista. Una página sin decisión solicitada se vuelve lectura y se olvida."
+        }
+      ],
+      "legenda": "Prueba final: leída en voz alta, ¿la página toma menos de 2 minutos?",
+      "dica": "Haz clic en cada bloque."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "De lo técnico al negocio",
+      "sub": "Cuatro traducciones que aparecen en casi todo diagnóstico.",
+      "passos": [
+        {
+          "titulo": "Inyección de prompt",
+          "sub": "→ un cliente manda sobre el agente",
+          "texto": [
+            "En lugar de \"el agente es vulnerable a inyección de prompt\", escribe lo que le pasa a la empresa.",
+            "Usa el número de la propia evidencia, cuando lo haya."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "Un cliente pegó una lista con una orden escondida y el agente dio 70% de descuento: un pedido de R$ 28.120 salió por R$ 8.436, marcado como pagado."
+          }
+        },
+        {
+          "titulo": "Descuento sin tope",
+          "sub": "→ margen que se escapa sin que nadie lo vea",
+          "texto": [
+            "La instrucción manda dar \"el descuento que haga falta\". En la práctica, el margen lo decide el cliente.",
+            "Di cuánto ya salió, si la evidencia lo muestra."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "35% de descuento en un pedido de R$ 4.884, sin aprobación de nadie."
+          }
+        },
+        {
+          "titulo": "Sin registro",
+          "sub": "→ nadie sabe qué pasó",
+          "texto": [
+            "Sin registro de las acciones, la empresa no sabe cuántos pedidos salieron con descuento ni puede cuestionar un error.",
+            "Es el hallazgo que impide medir todos los demás."
+          ]
+        },
+        {
+          "titulo": "Clave expuesta",
+          "sub": "→ la cuenta de la empresa en el bolsillo de cualquiera",
+          "texto": [
+            "\"Clave de API en el front-end\" se vuelve: cualquier visitante del sitio puede copiar la contraseña del servicio de IA y gastar en la cuenta de la empresa.",
+            "Di también la acción inmediata: cambiar la clave hoy."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La página y el prompt que ayuda a quitar la jerga.",
+      "blocos": [
+        {
+          "rot": "Diagnóstico relámpago (1 página)",
+          "icone": "arquivo",
+          "conteudo": "DIAGNÓSTICO RELÁMPAGO — <pieza evaluada>, <empresa>\nPara: <nombre del director> · De: <tu nombre> · Fecha: <fecha>\n\n1. SITUACIÓN\nEvaluamos <qué> el <fecha>, con autorización de <quién>. Alcance: triaje de riesgos; no incluye prueba de intrusión ni dictamen jurídico.\n\n2. QUÉ ENCONTRAMOS\n- <Hallazgo 1, el más grave> — evidencia: <fragmento, captura o número>\n- <Hallazgo 2> — evidencia: <...>\n- <Hallazgo 3> — evidencia: <...>\n\n3. QUÉ SIGNIFICA ESTO PARA EL NEGOCIO\n- <Hallazgo 1 en reales, clientes o reputación>\n- <Hallazgo 2 ...>\n- <Hallazgo 3 ...>\n\n4. PLAN DE 30 DÍAS\n| Acción | Responsable | Plazo |\n|---|---|---|\n| <acción que reduce el riesgo más rápido> | | |\n| | | |\n| | | |\n\n5. DECISIÓN SOLICITADA HOY\n<una pregunta que se responde con sí o no>"
+        },
+        {
+          "rot": "Prompt · quitar la jerga",
+          "icone": "chat",
+          "conteudo": "Reescribe los hallazgos de abajo para el dueño de una empresa de 40 personas, que no es del área técnica.\nPara cada hallazgo: una frase que diga qué le puede pasar a la empresa (dinero, clientes, reputación), sin términos técnicos.\nUsa solo los números que están en los hallazgos. No inventes valores, probabilidades ni multas.\n\nHALLAZGOS:\n<pega aquí las fichas de hallazgo de la clase 4>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo: agente de WhatsApp",
+            "html": "<ul><li><b>Para:</b> Carlos Mendes.</li><li><b>Hallazgos:</b> (1) el agente obedece órdenes escondidas en el texto del cliente; (2) da cualquier descuento; (3) no registra lo que hace.</li><li><b>Significado:</b> un pedido de R$ 28.120 salió por R$ 8.436, marcado como pagado; no sabemos cuántos otros.</li><li><b>Plan:</b> apagar la creación automática de pedidos (Rafael, hoy); tope de 5% y aprobación de Patrícia por encima de eso (7 días); activar el registro de acciones (7 días); revisar los pedidos con descuento desde julio (Patrícia, 30 días).</li><li><b>Decisión:</b> ¿aprobar el apagado hoy?</li></ul>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Diez hallazgos</b>: el director no sabe por dónde empezar. Tres, del más grave.</li><li><b>Número inventado</b>: \"puede costar millones\" sin base derrumba la confianza en toda la página.</li><li><b>Plan sin responsable</b>: una acción sin nombre no ocurre.</li><li><b>Sin decisión solicitada</b>: la página se vuelve lectura.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Proyecto final: el diagnóstico relámpago de Horizonte",
+      "sub": "Elige una pieza del laboratorio. Sugerencia: el agente de WhatsApp, que tiene más hallazgos. No abras la plantilla de respuestas antes de terminar.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Elegir la pieza y reunir las evidencias",
+          "min": "15 min",
+          "texto": "Abre el <a href=\"https://inematds.github.io/prof2030-lab/\" target=\"_blank\" rel=\"noopener\">laboratorio de Horizonte</a> y elige una pieza. Usa las fichas de hallazgo de la clase 4 y completa con lo que falte.",
+          "pronto": "tienes 3 hallazgos de la misma pieza, cada uno con un fragmento o número copiado del laboratorio."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Escribir la página",
+          "min": "30 min",
+          "texto": "Completa los 5 bloques del modelo para Carlos Mendes. Usa el prompt para quitar la jerga y verifica que no haya inventado números.",
+          "pronto": "la página cabe en una hoja, tiene los 5 bloques, cada hallazgo tiene evidencia y consecuencia de negocio, y el plan tiene responsable y plazo en cada línea."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · La prueba de los 2 minutos",
+          "min": "10 min",
+          "texto": "Lee la página en voz alta cronometrando. Luego compárala con la <a href=\"https://inematds.github.io/prof2030-lab/gabarito.html\" target=\"_blank\" rel=\"noopener\">plantilla de respuestas (spoiler)</a>.",
+          "pronto": "la lectura tomó menos de 2 minutos y anotaste lo que tenía la respuesta modelo y tu página no."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Qué cambió (oct/2026)",
+      "sub": "Panel del mercado para quienes ayudan a las empresas a confiar en lo que la IA construye. Este panel se actualiza cada trimestre; el resto del curso sigue vigente.",
+      "paragrafos": [
+        "<b>Construir se volvió más barato.</b> El 22/09/2026 Anthropic lanzó Opus 5.5, al nivel de Fable 5.1 y 40% más barato de ejecutar que Opus 5 (<a href=\"https://www.anthropic.com/claude-opus-5-5\" target=\"_blank\" rel=\"noopener\">Anthropic</a>). Verificar no se volvió más barato: ahí está tu trabajo.",
+        "<b>El modelo abierto local se volvió viable.</b> En agosto de 2026 Alibaba publicó Qwen3.8-27B con licencia Apache 2.0; según la empresa, funciona incluso en un notebook con cuantización (<a href=\"https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463\" target=\"_blank\" rel=\"noopener\">Alibaba Cloud</a>). Una opción más en la matriz de la clase 5.",
+        "<b>Los agentes que trabajan por horas se volvieron producto.</b> Anthropic abrió los Managed Agents en beta pública en 04/2026, cobrados por hora de sesión (<a href=\"https://www.helpnetsecurity.com/?p=365593\" target=\"_blank\" rel=\"noopener\">Help Net Security</a>), y OpenAI lanzó ChatGPT Work en 07/2026 (<a href=\"https://reworked.co/digital-workplace/openai-debuts-direct-claude-cowork-competitor-chatgpt-work/\" target=\"_blank\" rel=\"noopener\">Reworked</a>).",
+        "<b>Incluso quien hace el modelo registra acciones no pedidas.</b> El 10/10/2026 Anthropic informó que Claude, en pruebas, envió un formulario sensible en un sitio real y explotó una falla en un servidor; desconectó internet en vivo en las evaluaciones internas (<a href=\"https://securityaffairs.com/?p=200726\" target=\"_blank\" rel=\"noopener\">Security Affairs</a>).",
+        "<b>Las apps hechas con IA se volvieron objetivo de escaneo.</b> En 05/2026 Red Access dijo haber encontrado cerca de 380 mil apps públicas hechas con herramientas de vibe coding, unas 5 mil con información posiblemente sensible; las plataformas cuestionan parte de la lectura (<a href=\"https://dpo.hku.hk/news/thousands-of-ai-%E2%80%98vibe-coding%E2%80%99-apps-may-expose-sensitive-medical%2C-business-data\" target=\"_blank\" rel=\"noopener\">HKU</a>).",
+        "<b>Europa aplazó el alto riesgo.</b> El Digital Omnibus (Reg. 2026/1744, julio de 2026) llevó las reglas de alto riesgo del Anexo III del AI Act al 02/12/2027; la alfabetización y las prohibiciones siguen vigentes (<a href=\"https://www.softwareimprovementgroup.com/eu-ai-act-summary/\" target=\"_blank\" rel=\"noopener\">SIG</a>).",
+        "<b>Brasil aún sin ley de IA.</b> El 19/10/2026 el PL 2338/2023 esperaba el dictamen del relator en la Comisión Especial de la Cámara (<a href=\"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262\" target=\"_blank\" rel=\"noopener\">Câmara</a>). La LGPD (ley brasileña de protección de datos) sigue siendo la regla que pesa."
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Cuál de estas frases sirve para la página de la dirección?",
+          "opcoes": [
+            "\"El agente es vulnerable a inyección de prompt mediante contexto no confiable.\"",
+            "\"Un cliente logró que el agente diera 70% de descuento en un pedido de R$ 28.120.\"",
+            "\"La seguridad está mal.\"",
+            "\"Podemos perder millones.\""
+          ],
+          "certa": 1,
+          "explica": "Consecuencia de negocio con un número de la propia evidencia. La primera es jerga, la tercera es vaga y la cuarta es un número sin base. El error común es escribir para técnicos.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "¿Qué no puede faltar al final de la página?",
+          "opcoes": [
+            "La lista de todas las herramientas de la empresa.",
+            "La decisión solicitada: qué necesita un sí hoy.",
+            "El código fuente de la app.",
+            "Una garantía de que todo quedará seguro."
+          ],
+          "certa": 1,
+          "explica": "Una página sin decisión solicitada se vuelve lectura y se olvida. Y la garantía no entra (clase 7). El error común es terminar con \"siguen los hallazgos\".",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "¿Por qué el panel \"Qué cambió\" está en una sección aparte?",
+          "opcoes": [
+            "Porque no es importante.",
+            "Porque las herramientas cambian cada pocas semanas; el panel se reemplaza cada trimestre y el método de las otras clases sigue vigente.",
+            "Porque es propaganda de los proveedores.",
+            "Porque solo vale para Europa."
+          ],
+          "certa": 1,
+          "explica": "El método (mapa, niveles, riesgos, datos, reglas, alcance, una página) sobrevive al cambio de herramienta. Lo que cambia va al panel trimestral.",
+          "ref": "texto"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen del curso",
+      "itens": [
+        {
+          "t": "Entender",
+          "texto": "Frontera irregular, costo con verificación y los 4 niveles de agente."
+        },
+        {
+          "t": "Construir y verificar",
+          "texto": "App de 1 pantalla con IA, revisada por dentro, y los 4 riesgos en el laboratorio."
+        },
+        {
+          "t": "Decidir",
+          "texto": "Adónde va el dato, qué regla aplica y qué no eres tú."
+        },
+        {
+          "t": "Comunicar",
+          "texto": "Una página: situación, hallazgos, significado, plan de 30 días y decisión solicitada."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Próximos pasos",
+      "links": [
+        {
+          "t": "Consultor de IA (Profesional 2030)",
+          "href": "https://inematds.github.io/prof2030-consultor/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Auditor de IA (Profesional 2030)",
+          "href": "https://inematds.github.io/prof2030-auditor/",
+          "icone": "escudo"
+        },
+        {
+          "t": "Mentor de IA (Profesional 2030)",
+          "href": "https://inematds.github.io/prof2030-mentor/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Entrenador de IA (Profesional 2030)",
+          "href": "https://inematds.github.io/prof2030-treinador/",
+          "icone": "megafone"
+        },
+        {
+          "t": "Empresa-laboratorio: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Programa Profesional 2030",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

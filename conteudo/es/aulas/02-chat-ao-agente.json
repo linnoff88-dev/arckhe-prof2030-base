@@ -1,0 +1,306 @@
+{
+  "slug": "chat-ao-agente",
+  "num": 2,
+  "menu": "Niveles",
+  "titulo": "Del chat al agente que trabaja solo",
+  "titulo_curto": "Del chat al agente",
+  "minutos": 15,
+  "lead": "\"Agente\" se volvió una palabra de publicidad. Para ayudar a una empresa, necesitas saber qué hace realmente cada herramienta: solo responde, usa los archivos de la empresa, actúa en el mundo o trabaja sola durante horas. Cada nivel adicional pide más control. Esta clase te da la escalera y el criterio para clasificar cualquier herramienta.",
+  "objetivo": "clasificar 5 herramientas de IA de tu empresa en los 4 niveles y decir qué control necesita cada una.",
+  "competencias": [
+    "diferenciar-chat-asistente-agente",
+    "clasificar-herramientas-de-ia",
+    "definir-nivel-de-control"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "Los 4 niveles: chat, asistente, agente y agente autónomo"
+    },
+    {
+      "icone": "lupa",
+      "t": "Las 4 preguntas que clasifican cualquier herramienta"
+    },
+    {
+      "icone": "cadeado",
+      "t": "Qué control pide cada nivel"
+    },
+    {
+      "icone": "robo",
+      "t": "Los agentes que se volvieron producto en 2026"
+    }
+  ],
+  "hero_alt": "Cuatro niveles sobre un mesón: un celular con una conversación, un notebook, una pequeña computadora y, al fondo, un robot humanoide trabajando.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La escalera de los 4 niveles",
+      "sub": "Cada nivel hace más y pide más control.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Chat",
+          "sub": "Responde a lo que escribes",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "Pregunta y respuesta"
+            }
+          ],
+          "detalhe": "Tú escribes, él responde, y nada sale de la conversación. El riesgo principal es lo que pegas en ella (datos de clientes, contraseñas) y confiar en una respuesta equivocada."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Asistente",
+          "sub": "Usa instrucciones y archivos tuyos",
+          "itens": [
+            {
+              "icone": "pasta",
+              "t": "Lee documentos y reglas"
+            }
+          ],
+          "detalhe": "Tiene instrucciones fijas y acceso a archivos: la tabla de precios, el manual, la carpeta del proyecto. Todavía no actúa fuera. El riesgo crece con lo que puede leer."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agente",
+          "sub": "Actúa: envía, cambia, agenda",
+          "itens": [
+            {
+              "icone": "enviar",
+              "t": "Usa herramientas y conexiones"
+            }
+          ],
+          "detalhe": "Usa herramientas: manda mensajes, cambia una hoja de cálculo, crea un pedido. Se equivoca a la misma velocidad con la que acierta. Aquí entran el permiso mínimo, la aprobación para lo que es serio y el registro de lo que hizo.",
+          "forte": true
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Agente autónomo",
+          "sub": "Trabaja solo, durante horas",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "En segundo plano, sin que lo mires"
+            }
+          ],
+          "detalhe": "Recibe una meta y trabaja solo, a veces durante horas, en segundo plano. Tu trabajo cambia de \"escribir prompts\" a delegar, revisar y aprobar. Necesita un tope de gasto, un botón de apagado y un registro que alguien lea."
+        }
+      ],
+      "legenda": "Regla práctica: si la tarea toca dinero, incluye una acción que no se puede deshacer o habla con gente de fuera, nada sale sin el OK de una persona, en cualquier nivel.",
+      "dica": "Haz clic en cada nivel."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Las 4 preguntas que clasifican",
+      "sub": "Haz las preguntas en orden. La primera respuesta \"sí\" de abajo hacia arriba te da el nivel.",
+      "passos": [
+        {
+          "titulo": "¿Solo responde?",
+          "sub": "Nada sale de la conversación",
+          "texto": [
+            "Si la herramienta solo responde a lo que escribes y no guarda instrucciones ni lee archivos de la empresa, es chat.",
+            "Ejemplo: Juliana, de atención al cliente, usa un chat gratuito para mejorar el español de una respuesta."
+          ]
+        },
+        {
+          "titulo": "¿Lee cosas de la empresa?",
+          "sub": "Instrucciones, archivos, base",
+          "texto": [
+            "Si tiene instrucciones fijas o lee documentos, hojas de cálculo y carpetas de la empresa, es por lo menos asistente.",
+            "Anota lo que lee. Un acceso que nadie eligió es el más peligroso."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "Un asistente con la tabla de precios y el manual de productos para el equipo de ventas."
+          }
+        },
+        {
+          "titulo": "¿Actúa fuera de la conversación?",
+          "sub": "Envía, cambia, borra, paga",
+          "texto": [
+            "Si envía mensajes, modifica un sistema, crea pedidos o toca el correo electrónico, es un agente.",
+            "Para cada acción, anota: ¿necesita la aprobación de alguien antes? ¿Queda registrada?"
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "El agente de WhatsApp que responde a clientes y cierra pedidos con descuento."
+          }
+        },
+        {
+          "titulo": "¿Trabaja sin que nadie lo vigile?",
+          "sub": "Por horas, en segundo plano",
+          "texto": [
+            "Si recibe una meta y sigue sola, de noche o por horas, es un agente autónomo.",
+            "Pregunta quién lo apaga, en cuánto tiempo y cuál es el tope de gasto."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: inventario por nivel",
+      "sub": "Una línea por herramienta. Vale también para lo que los empleados usan por su cuenta.",
+      "blocos": [
+        {
+          "rot": "Inventario de herramientas de IA",
+          "icone": "lista",
+          "conteudo": "INVENTARIO DE IA — <empresa>, <fecha>\n\n| Herramienta | Quién la usa | Qué lee | Dónde actúa (envía/cambia/borra/paga) | ¿Necesita aprobación? | ¿Queda registrado? | Nivel (chat/asistente/agente/autónomo) |\n|---|---|---|---|---|---|---|\n| <herramienta 1> | | | | | | |\n| <herramienta 2> | | | | | | |\n| <herramienta 3> | | | | | | |\n| <herramienta 4> | | | | | | |\n| <herramienta 5> | | | | | | |\n\nPara cada agente o autónomo, responde:\n- ¿Quién lo apaga, y cómo, en 1 minuto?\n- ¿Cuál es el tope de gasto?\n- ¿Qué toca dinero, no se puede deshacer o habla con gente de afuera? ¿Eso espera un OK humano?"
+        },
+        {
+          "rot": "Prompt · descubrir qué hace una herramienta",
+          "icone": "chat",
+          "conteudo": "Voy a describirte una herramienta de IA que usa la empresa. Ayúdame a clasificar su nivel.\nHerramienta: <nombre y para qué sirve>\nLo que sé: <dónde está instalada, qué conexiones tiene, quién la usa>\n\nResponde:\n1. ¿Solo responde, lee archivos, actúa fuera de la conversación o trabaja sola?\n2. ¿Qué preguntas debo hacerle al proveedor o a TI para estar seguro?\nNo inventes funciones de la herramienta: si no lo sabes, dilo."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo: Horizonte",
+            "html": "<ul><li><b>Chat gratuito de Juliana</b>: chat. Riesgo: que pegue datos de clientes.</li><li><b>Asistente de ventas con la tabla de precios</b>: asistente.</li><li><b>Agente de WhatsApp de ventas</b>: agente. Da descuentos y crea pedidos.</li><li><b>Integración con el correo electrónico</b>: agente que puede enviar y borrar correos.</li><li><b>Resumen de atención por API</b>: asistente, pero envía conversaciones de clientes hacia afuera.</li></ul>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Clasificar por el nombre del producto</b>: \"agente\" en el nombre no dice qué hace. Pregunta qué lee y dónde actúa.</li><li><b>Olvidar lo que los empleados usan por su cuenta</b>: es la \"IA en la sombra\", que TI no conoce.</li><li><b>Creer que el chat no tiene riesgo</b>: lo que se pega en él puede ser dato personal.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Los agentes que se volvieron producto en 2026",
+      "paragrafos": [
+        "En 2026 el agente que trabaja solo salió del laboratorio. En julio de 2026 OpenAI lanzó <b>ChatGPT Work</b>, un agente que entrega documentos, hojas de cálculo y diapositivas y pide aprobación antes de acciones sensibles, como enviar un correo. En abril, Anthropic abrió en beta pública los <b>Managed Agents</b>, agentes que corren en la nube y se cobran por hora de sesión.",
+        "En Claude Code, la actualización de septiembre trajo el uso del computador en segundo plano, en beta. El patrón es el mismo: la herramienta hace más por sí sola y tu papel pasa a ser delegar, revisar y aprobar. Los nombres van a cambiar; las 4 preguntas siguen sirviendo."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: clasificar 5 herramientas",
+      "sub": "Usa tu empresa. Si no tienes acceso, usa Horizonte.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Listar las herramientas",
+          "min": "10 min",
+          "texto": "Lista 5 herramientas de IA en uso, incluyendo las que los empleados usan por su cuenta. Pregunta a 2 colegas qué usan.",
+          "pronto": "el inventario tiene 5 líneas, con quién usa cada herramienta."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Responder las 4 preguntas",
+          "min": "20 min",
+          "texto": "Para cada herramienta, completa qué lee, dónde actúa, si necesita aprobación y si queda registrado. Donde no sepas, escribe \"no sé\" y anota a quién preguntar.",
+          "pronto": "las 5 herramientas están clasificadas en uno de los 4 niveles, y cada \"no sé\" tiene el nombre de quien va a responder."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · El control del nivel más alto",
+          "min": "10 min",
+          "texto": "Toma la herramienta de nivel más alto y responde: quién la apaga, cuál es el tope de gasto, qué espera un OK humano.",
+          "pronto": "las tres respuestas están escritas, con el nombre de una persona en \"quién la apaga\"."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "Una herramienta lee la tabla de precios y responde dudas del equipo, pero no envía nada. ¿Qué nivel es?",
+          "opcoes": [
+            "Chat",
+            "Asistente",
+            "Agente",
+            "Agente autónomo"
+          ],
+          "certa": 1,
+          "explica": "Tiene acceso a archivos de la empresa, pero no actúa fuera de la conversación: es asistente. El error común es llamar agente a todo lo que tiene \"IA\" en el nombre.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "El agente de WhatsApp de Horizonte crea pedidos y da descuentos. ¿Qué necesita, como mínimo?",
+          "opcoes": [
+            "Nada: si está funcionando, está bien.",
+            "Un prompt más bonito.",
+            "Permiso mínimo, aprobación humana para lo que toca dinero y registro de las acciones.",
+            "Cambiarlo por un modelo más caro."
+          ],
+          "certa": 2,
+          "explica": "Un agente actúa, así que se equivoca a la misma velocidad con que acierta. El dinero y las acciones que no se pueden deshacer esperan un OK humano, y el registro muestra qué hizo. El error común es creer que un modelo mejor resuelve el control.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Con agentes que trabajan solos por horas, el trabajo del profesional cambia a:",
+          "opcoes": [
+            "Escribir prompts cada vez más largos.",
+            "Delegar, revisar y aprobar.",
+            "Dejarlo correr y no mirar más.",
+            "Apagar todos los agentes."
+          ],
+          "certa": 1,
+          "explica": "Cuanto más hace la herramienta por sí sola, más está el valor en definir la tarea, revisar y aprobar. El error común es soltar al agente sin tope de gasto ni botón de apagado.",
+          "ref": "texto"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen de la clase",
+      "itens": [
+        {
+          "t": "4 niveles",
+          "texto": "El chat responde; el asistente lee; el agente actúa; el autónomo trabaja solo."
+        },
+        {
+          "t": "4 preguntas",
+          "texto": "¿Solo responde? ¿Lee cosas de la empresa? ¿Actúa afuera? ¿Trabaja sin que nadie lo mire?"
+        },
+        {
+          "t": "Regla del OK",
+          "texto": "El dinero, las acciones sin vuelta atrás y las personas de afuera esperan la aprobación de un humano."
+        },
+        {
+          "t": "Inventario",
+          "texto": "Incluye lo que los empleados usan por cuenta propia."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fuentes y para ir más allá",
+      "links": [
+        {
+          "t": "Reworked: OpenAI lanza ChatGPT Work (07/2026)",
+          "href": "https://reworked.co/digital-workplace/openai-debuts-direct-claude-cowork-competitor-chatgpt-work/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Help Net Security: Claude Managed Agents (04/2026)",
+          "href": "https://www.helpnetsecurity.com/?p=365593",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Claude Code: novedades de la semana 36 de 2026 (uso del computador en segundo plano)",
+          "href": "https://code.claude.com/docs/en/whats-new/2026-w36",
+          "icone": "terminal"
+        },
+        {
+          "t": "Del chat al agente (INEMA): los cuatro niveles en la práctica",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Gestión de Agentes: los 7 principios (INEMA)",
+          "href": "https://inematds.github.io/curso-7pa/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

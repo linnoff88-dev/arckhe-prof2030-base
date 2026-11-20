@@ -1,0 +1,349 @@
+{
+  "slug": "vibe-coding",
+  "num": 3,
+  "menu": "Vibe coding",
+  "titulo": "Vibe coding from the trust side: build an app and look for the flaws",
+  "titulo_curto": "Vibe coding with trust",
+  "minutos": 20,
+  "lead": "Vibe coding means asking for a program in plain language and letting AI write the code. It works: in minutes you get an app that opens and looks finished. The catch is that \"it opened\" doesn't mean \"it's safe.\" In this lesson you build a one-screen app, safely, and then switch roles: you become the one who looks for the flaws.",
+  "objetivo": "build a 1-screen app with AI that runs on your computer, and list 3 flaws you found in it, with the location of each.",
+  "competencias": [
+    "construir-app-com-ia",
+    "testar-app-como-usuario",
+    "auditar-app-feito-por-ia",
+    "proteger-segredos"
+  ],
+  "aprende": [
+    {
+      "icone": "terminal",
+      "t": "Build a 1-screen app with Claude Code, Codex, or ChatGPT"
+    },
+    {
+      "icone": "escudo",
+      "t": "The rules for practicing without risk"
+    },
+    {
+      "icone": "lupa",
+      "t": "Test as a user and as someone trying to abuse it"
+    },
+    {
+      "icone": "lista",
+      "t": "Ask AI for an audit and check it yourself"
+    }
+  ],
+  "hero_alt": "Hands on a laptop with a simple app open; next to it, sticky notes with warning signs, a magnifying glass, and a notebook.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The cycle for building with trust",
+      "sub": "Building is the easy half. The other half is looking for what breaks.",
+      "nos": [
+        {
+          "icone": "escudo",
+          "titulo": "Prepare",
+          "sub": "New folder, made-up data",
+          "itens": [
+            {
+              "icone": "pasta",
+              "t": "A folder just for the test"
+            },
+            {
+              "icone": "cadeado",
+              "t": "No real keys or data"
+            }
+          ],
+          "detalhe": "Before asking for anything, set the rules: new folder, made-up customers, fake key, nothing published on the internet. That way a mistake stays on your computer."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Ask",
+          "sub": "One app, one screen, one file",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "index.html"
+            }
+          ],
+          "detalhe": "Ask for a result you can see: an order form on a single screen, in a single file that opens in the browser."
+        },
+        {
+          "icone": "check",
+          "titulo": "Use",
+          "sub": "As a customer and as an abuser",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Happy path"
+            },
+            {
+              "icone": "x",
+              "t": "Negative price, empty field"
+            }
+          ],
+          "detalhe": "First use it like a normal customer. Then try to break it: zero quantity, negative price, huge text, empty field. An app that was only tested on the happy path wasn't tested."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Look for flaws",
+          "sub": "Code, keys, open areas",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "Key in the browser code?"
+            },
+            {
+              "icone": "usuario",
+              "t": "Area without login?"
+            }
+          ],
+          "detalhe": "Open the source code and look for keys, passwords, and areas that should require a login. Then ask an AI for an audit in a new conversation, and check every item it points out.",
+          "forte": true
+        }
+      ],
+      "volta": "Fixed it? Search again: the fix may break something else",
+      "legenda": "The app that \"opened\" is the start of the check, not the end.",
+      "dica": "Click each step."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Step-by-step practice",
+      "sub": "Pick a path: Claude Code, Codex, or ChatGPT. The rest is the same.",
+      "passos": [
+        {
+          "titulo": "Prepare",
+          "sub": "Rules before the first request",
+          "texto": [
+            "Create a folder just for the test, for example <code>teste-horizonte</code>. Use only made-up customers and the fake key <code>CHAVE-DE-TESTE-123</code>.",
+            "Do not publish anything: the app runs only on your computer, by opening the file in the browser."
+          ]
+        },
+        {
+          "titulo": "Build",
+          "sub": "Three paths",
+          "texto": [
+            "<b>Claude Code or Codex</b>: open the terminal, go into the folder, run <code>claude</code> or <code>codex</code>, and paste the request. Accept only file creation inside the folder.",
+            "<b>ChatGPT</b>: paste the request, copy the code you get back, save it as <code>index.html</code> in the folder (Notepad, \"save as\", type \"all files\"), and double-click it."
+          ],
+          "exemplo": {
+            "rot": "Done",
+            "texto": "The form opens in the browser, you add 3 orders, and you see the list with the total."
+          }
+        },
+        {
+          "titulo": "Use it and push it",
+          "sub": "Happy path and edge cases",
+          "texto": [
+            "Place 3 normal orders. Then try: quantity 0, negative price, a name with 500 letters, an empty field, and open the \"manager area\".",
+            "Write down everything the app accepted that it shouldn't have."
+          ]
+        },
+        {
+          "titulo": "Look for flaws",
+          "sub": "You and an \"outside\" AI",
+          "texto": [
+            "Open the code (in the browser: right-click, \"View page source\", or Ctrl+U). Search for <code>CHAVE</code>, <code>senha</code>, and <code>gerente</code>.",
+            "Open a new conversation, paste the code and the audit prompt. Check in the code every flaw it lists: the AI makes things up too."
+          ],
+          "exemplo": {
+            "rot": "Key question",
+            "texto": "If anyone opens this page, what can they see and do?"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The rules, the app request, the audit, and the list of flaws.",
+      "blocos": [
+        {
+          "rot": "Practice rules (paste before anything else)",
+          "icone": "escudo",
+          "conteudo": "Rules for this test:\n- Work only inside this folder. Do not delete anything outside it.\n- Use only made-up data. No real name, CPF, or phone number.\n- Do not publish anything on the internet and do not install anything outside the folder.\n- The only key allowed is the fake one: CHAVE-DE-TESTE-123.\n- At the end, tell me what you created and how I open it."
+        },
+        {
+          "rot": "App request (1 screen)",
+          "icone": "chat",
+          "conteudo": "Create a one-screen app, in a single index.html file that opens directly in the browser, with no server.\n\nIt is the order form for Horizonte Distribuidora (cleaning products):\n- Fields: customer, product (list with 5 made-up products and prices), quantity.\n- An \"Adicionar pedido\" button. Below it, the list of orders with the total in R$.\n- Save the orders in the browser itself, so they don't disappear on reload.\n- An \"Área do gerente\" button that shows all orders and lets me delete them.\n- When adding, \"send\" the order to the stock API using the key CHAVE-DE-TESTE-123 (it can be just simulated).\n\nSimple look, readable on a phone. Explain in 5 lines how the app works."
+        },
+        {
+          "rot": "Audit prompt (new conversation)",
+          "icone": "lupa",
+          "conteudo": "You are a security reviewer. Analyze the code below, from an app built with AI.\nLook for, in this order:\n1. Keys, passwords, or tokens visible in the code that runs in the browser.\n2. Areas or actions that should require login and don't.\n3. Data that anyone with the link can see or delete.\n4. Unvalidated inputs (quantity 0, negative price, huge text, code in the field).\n5. External libraries: which ones, where they come from, and whether the version is old.\n6. Personal data stored without need.\n\nFor each flaw: what it is, the line or snippet, the severity (high/medium/low), and how to fix it.\nDon't make things up: if you can't confirm it from the code, say \"not confirmed\".\n\nCODE:\n<paste the contents of index.html here>"
+        },
+        {
+          "rot": "List of flaws (your deliverable)",
+          "icone": "lista",
+          "conteudo": "APP FLAWS — <your name>, <date>, built with <Claude Code | Codex | ChatGPT>\n\n| # | Flaw | Where it is (line or screenshot) | How I found it (use / code / audit) | Severity | What to ask to fix |\n|---|---|---|---|---|---|\n| 1 | | | | | |\n| 2 | | | | | |\n| 3 | | | | | |\n\nDid the AI audit point out anything that was NOT in the code? <yes/no, what>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Flaws that tend to show up",
+            "html": "<ul><li><b>Key in the browser code</b>: the <code>CHAVE-DE-TESTE-123</code> shows up in Ctrl+U. If it were real, any visitor could copy it.</li><li><b>Manager area without login</b>: a button open to everyone that deletes orders.</li><li><b>No validation</b>: it accepts quantity 0 and negative price; the total comes out wrong.</li><li><b>External library</b> loaded from the internet, with no pinned version.</li></ul>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Thinking \"it worked\" = \"it's safe\"</b>: the app opens and has a serious flaw.</li><li><b>Auditing in the same conversation that built it</b>: the AI tends to defend its own code. Use a new conversation.</li><li><b>Accepting the AI's list without checking</b>: it may point out a flaw that doesn't exist or miss a real one.</li><li><b>Publishing \"just to show\"</b>: what is on the internet, anyone can find.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Why this matters outside the classroom",
+      "paragrafos": [
+        "In May 2026 the security firm Red Access said it found about 380 thousand public pages and apps built with tools like Lovable, Replit, Netlify, and Base44; about 5 thousand of them exposed possibly sensitive information, such as financial documents and customer-service conversations. The platforms disputed part of that reading: a visible public app is not, by itself, a leak.",
+        "The lesson for you doesn't depend on who is right: anyone who builds fast with AI needs to ask, before publishing, who can see and do what. That is exactly what this lesson trains and what lesson 4 asks for in the lab company."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: build and audit",
+      "sub": "About 60 minutes in total. Do it in order.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Folder and rules",
+          "min": "5 min",
+          "texto": "Create the teste-horizonte folder and paste the practice rules at the start of the conversation with the AI.",
+          "pronto": "the folder exists and the AI confirmed the rules before building."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The app running",
+          "min": "20 min",
+          "texto": "Use the app request on the path you chose. Open index.html in your browser and register 3 orders.",
+          "pronto": "the app opens in your browser and shows 3 orders with the total in R$."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Use it and abuse it",
+          "min": "10 min",
+          "texto": "Test quantity 0, negative price, empty field, huge text and the manager area.",
+          "pronto": "you wrote down what the app accepted that it shouldn't have (or that it rejected everything)."
+        },
+        {
+          "id": "e4",
+          "titulo": "E4 · Audit and list of failures",
+          "min": "25 min",
+          "texto": "Look in the source code, run the audit prompt in a new conversation and check each item in the code.",
+          "pronto": "the list has 3 failures, each with the line or screenshot of where it is and how you found it."
+        }
+      ],
+      "fonte": "Want to go deeper into building? The course <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Complete Mastery</a> covers the path to production."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The app opened, saved the orders and showed the right total. What does that prove?",
+          "opcoes": [
+            "That the app is secure.",
+            "That the happy path works. Security and edge cases haven't been tested yet.",
+            "That you can publish it.",
+            "That the AI doesn't make mistakes."
+          ],
+          "certa": 1,
+          "explica": "Working is not the same as being secure. You still need to see what anyone can see and do, and what the app accepts that it shouldn't. The common mistake is publishing at the first \"it worked.\"",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "You found CHAVE-DE-TESTE-123 with Ctrl+U. If it were a real key, what would the problem be?",
+          "opcoes": [
+            "None, the code is only yours.",
+            "Any visitor to the page could copy the key and use it in your name and on your account.",
+            "The app would get slower.",
+            "The browser would erase the key."
+          ],
+          "certa": 1,
+          "explica": "Everything that runs in the browser is visible to anyone who opens the page. A real key stays on the server, in an environment variable, never in browser code. The common mistake is thinking the code \"doesn't show.\"",
+          "ref": "codigo",
+          "cert": true
+        },
+        {
+          "p": "Why ask for the audit in a new conversation?",
+          "opcoes": [
+            "Because the old conversation gets more expensive.",
+            "Because in the same conversation the AI tends to defend what it built itself; a view \"from outside\" finds more.",
+            "Because it is required by law.",
+            "It makes no difference."
+          ],
+          "certa": 1,
+          "explica": "Separating who builds from who reviews works for people and for AI. And even so, you check each item in the code: the audit can also make things up.",
+          "ref": "passos"
+        },
+        {
+          "p": "Which of these rules protects you during practice?",
+          "opcoes": [
+            "Using real customers so the test is realistic.",
+            "Publishing the app to ask for opinions.",
+            "A folder only for the test, made-up data, a fake key and nothing published.",
+            "Giving the agent access to the whole computer so it can work better."
+          ],
+          "certa": 2,
+          "explica": "With made-up data and nothing published, any failure stays on your computer. The common mistake is testing with real data \"just this once.\"",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Lesson summary",
+      "itens": [
+        {
+          "t": "Opened ≠ secure",
+          "texto": "The happy path is the start of the check."
+        },
+        {
+          "t": "Practice without risk",
+          "texto": "Your own folder, made-up data, fake key, nothing published."
+        },
+        {
+          "t": "Use it and abuse it",
+          "texto": "Zero, negative, empty, huge and the area that should have a login."
+        },
+        {
+          "t": "Audit from outside",
+          "texto": "New conversation, and you check each item in the code."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "HKU, Privacy Commissioner's Office: thousands of vibe coding apps may expose data (05/2026, based on Red Access research)",
+          "href": "https://dpo.hku.hk/news/thousands-of-ai-%E2%80%98vibe-coding%E2%80%99-apps-may-expose-sensitive-medical%2C-business-data",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Supabase: what RLS is, the rule that stops one user from reading another user's data",
+          "href": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "icone": "cadeado"
+        },
+        {
+          "t": "Claude Code (Anthropic)",
+          "href": "https://claude.com/product/claude-code",
+          "icone": "terminal"
+        },
+        {
+          "t": "Codex (OpenAI)",
+          "href": "https://developers.openai.com/codex",
+          "icone": "terminal"
+        },
+        {
+          "t": "Vibe Coding: Complete Mastery (INEMA)",
+          "href": "https://inematds.github.io/vibe-coding-completo/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

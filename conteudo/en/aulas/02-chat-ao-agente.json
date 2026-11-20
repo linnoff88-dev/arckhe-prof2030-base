@@ -1,0 +1,306 @@
+{
+  "slug": "chat-ao-agente",
+  "num": 2,
+  "menu": "Levels",
+  "titulo": "From chat to the agent that works on its own",
+  "titulo_curto": "From chat to agent",
+  "minutos": 15,
+  "lead": "\"Agent\" has become an advertising word. To help a company, you need to know what each tool really does: it only answers, it uses the company's files, it acts in the world, or it works on its own for hours. Each step up calls for more control. This lesson gives you the ladder and the criteria to classify any tool.",
+  "objetivo": "classify 5 AI tools at your company into the 4 levels and say what control each one needs.",
+  "competencias": [
+    "tell-chat-assistant-agent-apart",
+    "classify-ai-tools",
+    "define-control-level"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "The 4 levels: chat, assistant, agent and autonomous agent"
+    },
+    {
+      "icone": "lupa",
+      "t": "The 4 questions that classify any tool"
+    },
+    {
+      "icone": "cadeado",
+      "t": "What control each level calls for"
+    },
+    {
+      "icone": "robo",
+      "t": "The agents that became products in 2026"
+    }
+  ],
+  "hero_alt": "Four steps on a workbench: a phone with a conversation, a laptop, a small computer and, in the background, a humanoid robot at work.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The ladder of the 4 levels",
+      "sub": "Each step does more and calls for more control.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Chat",
+          "sub": "Answers what you write",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "Question and answer"
+            }
+          ],
+          "detalhe": "You write, it answers, and nothing leaves the conversation. The main risk is what you paste into it (customer data, passwords) and trusting a wrong answer."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Assistant",
+          "sub": "Uses your instructions and files",
+          "itens": [
+            {
+              "icone": "pasta",
+              "t": "Reads documents and rules"
+            }
+          ],
+          "detalhe": "It has fixed instructions and access to files: the price list, the manual, the project folder. It still doesn't act outside. The risk grows with what it can read."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agent",
+          "sub": "Acts: sends, changes, schedules",
+          "itens": [
+            {
+              "icone": "enviar",
+              "t": "Uses tools and connections"
+            }
+          ],
+          "detalhe": "It uses tools: sends a message, changes a spreadsheet, creates an order. It makes mistakes at the same speed it gets things right. This is where minimum permission, approval for anything serious and a record of what it did come in.",
+          "forte": true
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Autonomous agent",
+          "sub": "Works on its own, for hours",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "In the background, with no one watching"
+            }
+          ],
+          "detalhe": "It receives a goal and works on its own, sometimes for hours, in the background. Your job changes from \"writing prompts\" to delegating, reviewing and approving. It needs a spending cap, an off switch and a log that someone reads."
+        }
+      ],
+      "legenda": "Rule of thumb: if the task involves money, has an action that can't be undone or talks to people outside the company, nothing goes out without a person's OK, at any level.",
+      "dica": "Click each step."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The 4 questions that classify",
+      "sub": "Ask the questions in order. The first \"yes\" from the bottom up gives the level.",
+      "passos": [
+        {
+          "titulo": "Does it only answer?",
+          "sub": "Nothing leaves the conversation",
+          "texto": [
+            "If the tool only answers what you write and doesn't keep instructions or read the company's files, it's a chat.",
+            "Example: Juliana, in customer service, uses a free chat to improve the English of a reply."
+          ]
+        },
+        {
+          "titulo": "Does it read company things?",
+          "sub": "Instructions, files, knowledge base",
+          "texto": [
+            "If it has fixed instructions or reads the company's documents, spreadsheets and folders, it's at least an assistant.",
+            "Write down what it reads. An access nobody chose is the most dangerous one."
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "An assistant with the price list and the product manual for the sales team."
+          }
+        },
+        {
+          "titulo": "Does it act outside the conversation?",
+          "sub": "Sends, changes, deletes, pays",
+          "texto": [
+            "If it sends messages, changes a system, creates orders or touches email, it's an agent.",
+            "For each action, note: does it need someone's approval first? Is it logged?"
+          ],
+          "exemplo": {
+            "rot": "Horizonte",
+            "texto": "The WhatsApp agent that answers customers and closes orders with discounts."
+          }
+        },
+        {
+          "titulo": "Does it work with no one watching?",
+          "sub": "For hours, in the background",
+          "texto": [
+            "If it gets a goal and keeps going on its own, overnight or for hours, it's an autonomous agent.",
+            "Ask who shuts it off, how fast, and what the spending cap is."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: inventory by level",
+      "sub": "One line per tool. This also covers what employees use on their own.",
+      "blocos": [
+        {
+          "rot": "AI tools inventory",
+          "icone": "lista",
+          "conteudo": "AI INVENTORY — <company>, <date>\n\n| Tool | Who uses it | Reads what | Acts where (sends/changes/deletes/pays) | Needs approval? | Is it logged? | Level (chat/assistant/agent/autonomous) |\n|---|---|---|---|---|---|---|\n| <tool 1> | | | | | | |\n| <tool 2> | | | | | | |\n| <tool 3> | | | | | | |\n| <tool 4> | | | | | | |\n| <tool 5> | | | | | | |\n\nFor each agent or autonomous tool, answer:\n- Who shuts it off, and how, within 1 minute?\n- What is the spending cap?\n- What touches money, can't be undone or talks to people outside the company? Does that wait for a human OK?"
+        },
+        {
+          "rot": "Prompt · find out what a tool does",
+          "icone": "chat",
+          "conteudo": "I'm going to describe an AI tool the company uses. Help me classify its level.\nTool: <name and what it's for>\nWhat I know: <where it's installed, what connections it has, who uses it>\n\nAnswer:\n1. Does it only reply, read files, act outside the conversation, or work on its own?\n2. What questions should I ask the vendor or IT to be sure?\nDon't invent features of the tool: if you don't know, say so."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Example: Horizonte",
+            "html": "<ul><li><b>Juliana's free chat</b>: chat. Risk: she pastes customer data into it.</li><li><b>Sales assistant with the price table</b>: assistant.</li><li><b>Sales WhatsApp agent</b>: agent. Gives discounts and creates orders.</li><li><b>Email integration</b>: agent that can send and delete email.</li><li><b>Customer service summary via API</b>: assistant, but it sends customer conversations outside the company.</li></ul>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Classifying by the product name</b>: \"agent\" in the name doesn't tell you what it does. Ask what it reads and where it acts.</li><li><b>Forgetting what employees use on their own</b>: that's \"shadow AI,\" which IT doesn't know about.</li><li><b>Thinking chat has no risk</b>: what gets pasted into it can be personal data.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "texto",
+      "titulo": "The agents that became products in 2026",
+      "paragrafos": [
+        "In 2026, the agent that works on its own left the lab. In July 2026, OpenAI launched <b>ChatGPT Work</b>, an agent that delivers documents, spreadsheets and slides and asks for approval before sensitive actions, like sending email. In April, Anthropic opened <b>Managed Agents</b> in public beta: agents that run in the cloud and are billed by the hour of session.",
+        "In Claude Code, the September update brought background computer use, in beta. The pattern is the same: the tool does more on its own, and your role becomes delegating, reviewing and approving. The names will change; the 4 questions will still work."
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: classify 5 tools",
+      "sub": "Use your own company. If you don't have access, use Horizonte.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "S1 · List the tools",
+          "min": "10 min",
+          "texto": "List 5 AI tools in use, including the ones employees use on their own. Ask 2 colleagues what they use.",
+          "pronto": "the inventory has 5 rows, with who uses each tool."
+        },
+        {
+          "id": "e2",
+          "titulo": "S2 · Answer the 4 questions",
+          "min": "20 min",
+          "texto": "For each tool, fill in what it reads, where it acts, whether it needs approval and whether it's logged. Where you don't know, write \"don't know\" and note who to ask.",
+          "pronto": "all 5 tools are classified into one of the 4 levels, and every \"don't know\" has the name of who will answer."
+        },
+        {
+          "id": "e3",
+          "titulo": "S3 · The control for the highest step",
+          "min": "10 min",
+          "texto": "Take the highest-level tool and answer: who shuts it off, what the spending cap is, what waits for a human OK.",
+          "pronto": "all three answers are written down, with a person's name under \"who shuts it off.\""
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "A tool reads the price table and answers the team's questions, but doesn't send anything. What level is it?",
+          "opcoes": [
+            "Chat",
+            "Assistant",
+            "Agent",
+            "Autonomous agent"
+          ],
+          "certa": 1,
+          "explica": "It has access to company files, but doesn't act outside the conversation: it's an assistant. The common mistake is calling everything with \"AI\" in the name an agent.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Horizonte's WhatsApp agent creates orders and gives discounts. What does it need, at a minimum?",
+          "opcoes": [
+            "Nothing: if it's working, it's right.",
+            "A nicer prompt.",
+            "Minimum permissions, human approval for anything that touches money, and a log of its actions.",
+            "Switching to a more expensive model."
+          ],
+          "certa": 2,
+          "explica": "An agent acts, so it makes mistakes at the same speed it gets things right. Money and actions that can't be undone wait for a human OK, and the log shows what it did. The common mistake is thinking a better model solves control.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "With agents that work on their own for hours, the professional's job shifts to:",
+          "opcoes": [
+            "Writing longer and longer prompts.",
+            "Delegating, reviewing and approving.",
+            "Letting it run and never looking again.",
+            "Shutting down all the agents."
+          ],
+          "certa": 1,
+          "explica": "The more the tool does on its own, the more the value lies in defining the task, checking and approving. The common mistake is releasing the agent with no spending cap and no off switch.",
+          "ref": "texto"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Lesson summary",
+      "itens": [
+        {
+          "t": "4 levels",
+          "texto": "Chat answers; assistant reads; agent acts; autonomous works on its own."
+        },
+        {
+          "t": "4 questions",
+          "texto": "Does it only answer? Does it read company data? Does it act outside? Does it work with no one watching?"
+        },
+        {
+          "t": "The OK rule",
+          "texto": "Money, actions that can't be undone, and outside people wait for human approval."
+        },
+        {
+          "t": "Inventory",
+          "texto": "Include what employees use on their own."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "Reworked: OpenAI launches ChatGPT Work (07/2026)",
+          "href": "https://reworked.co/digital-workplace/openai-debuts-direct-claude-cowork-competitor-chatgpt-work/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Help Net Security: Claude Managed Agents (04/2026)",
+          "href": "https://www.helpnetsecurity.com/?p=365593",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Claude Code: what's new in week 36 of 2026 (background computer use)",
+          "href": "https://code.claude.com/docs/en/whats-new/2026-w36",
+          "icone": "terminal"
+        },
+        {
+          "t": "From chat to agent (INEMA): the four steps in practice",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Agent Management: the 7 principles (INEMA)",
+          "href": "https://inematds.github.io/curso-7pa/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}
