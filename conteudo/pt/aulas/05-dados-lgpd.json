@@ -22,7 +22,7 @@
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "Do dado à decisão",
+      "titulo": "Do dado à decisêo",
       "sub": "Três perguntas na ordem. A resposta mais restritiva vence.",
       "nos": [
         {
@@ -31,9 +31,9 @@
           "sub": "Público, interno, pessoal, sensível",
           "itens": [
             { "icone": "usuario", "t": "Pessoal: nome, CPF, telefone" },
-            { "icone": "cadeado", "t": "Sensível: saúde, religião, biometria" }
+            { "icone": "cadeado", "t": "Sensível: saúde, religiêo, biometria" }
           ],
-          "detalhe": "Público (catálogo do site), interno (preços de custo, metas), pessoal (identifica alguém: nome, CPF, telefone, endereço) e sensível (saúde, origem racial, religião, biometria, entre outros). Quanto mais à direita, menos lugares ele pode ir."
+          "detalhe": "Público (catálogo do site), interno (preços de custo, metas), pessoal (identifica alguém: nome, CPF, telefone, endereço) e sensível (saúde, origem racial, religiêo, biometria, entre outros). Quanto mais à direita, menos lugares ele pode ir."
         },
         {
           "icone": "nuvem",
@@ -43,12 +43,12 @@
             { "icone": "nuvem", "t": "Servidor do fornecedor" },
             { "icone": "chip", "t": "Computador da empresa" }
           ],
-          "detalhe": "Modelo fechado por API: o dado vai ao servidor do fornecedor, muitas vezes fora do Brasil. Modelo aberto rodando local: o dado não sai da empresa, mas alguém cuida da máquina. App gratuito com termos genéricos: o pior caso, porque os termos podem permitir usar o dado para treinar."
+          "detalhe": "Modelo fechado por API: o dado vai ao servidor do fornecedor, muitas vezes fora do Brasil. Modelo aberto rodando local: o dado nêo sai da empresa, mas alguém cuida da máquina. App gratuito com termos genéricos: o pior caso, porque os termos podem permitir usar o dado para treinar."
         },
         {
           "icone": "lista",
           "titulo": "Com que contrato e licença?",
-          "sub": "Termos, país, retenção, uso para treino",
+          "sub": "Termos, país, retençêo, uso para treino",
           "itens": [
             { "icone": "arquivo", "t": "Contrato e acordo de dados" },
             { "icone": "check", "t": "Licença do modelo aberto" }
@@ -58,10 +58,10 @@
         },
         {
           "icone": "portao",
-          "titulo": "Decisão",
-          "sub": "Vai, vai anonimizado ou não vai",
+          "titulo": "Decisêo",
+          "sub": "Vai, vai anonimizado ou nêo vai",
           "itens": [ { "icone": "check", "t": "Com base legal escrita" } ],
-          "detalhe": "Três saídas: pode ir como está; pode ir depois de anonimizar (trocar nome por código, tirar CPF e telefone); não vai. Toda decisão com dado pessoal precisa de uma base legal da LGPD escrita, e o encarregado de dados da empresa deve ser ouvido antes, não depois."
+          "detalhe": "Três saídas: pode ir como está; pode ir depois de anonimizar (trocar nome por código, tirar CPF e telefone); nêo vai. Toda decisêo com dado pessoal precisa de uma base legal da LGPD escrita, e o encarregado de dados da empresa deve ser ouvido antes, nêo depois."
         }
       ],
       "legenda": "Anonimizar resolve muita coisa: \"Mercadinho Boa Vista, Seu Antônio, (19) 9...\" vira \"Cliente A, pedido de 10 caixas\".",
@@ -70,13 +70,13 @@
     {
       "tipo": "passos",
       "titulo": "A LGPD que aparece em projeto de IA",
-      "sub": "Não é parecer jurídico: é o mínimo para saber quando chamar o jurídico.",
+      "sub": "Nêo é parecer jurídico: é o mínimo para saber quando chamar o jurídico.",
       "passos": [
         {
           "titulo": "Art. 5º",
           "sub": "O que é dado pessoal e sensível",
           "texto": [
-            "Dado pessoal é o que identifica ou pode identificar uma pessoa. Sensível inclui saúde, origem racial, convicção religiosa, opinião política, biometria e genética.",
+            "Dado pessoal é o que identifica ou pode identificar uma pessoa. Sensível inclui saúde, origem racial, convicçêo religiosa, opiniêo política, biometria e genética.",
             "Conversa de atendimento quase sempre tem dado pessoal: nome, telefone, endereço."
           ]
         },
@@ -84,7 +84,7 @@
           "titulo": "Art. 7º e 11",
           "sub": "Bases legais",
           "texto": [
-            "Todo tratamento precisa de uma base legal: consentimento, execução de contrato, obrigação legal, legítimo interesse, entre outras. O dado sensível tem regras mais estreitas (art. 11).",
+            "Todo tratamento precisa de uma base legal: consentimento, execuçêo de contrato, obrigaçêo legal, legítimo interesse, entre outras. O dado sensível tem regras mais estreitas (art. 11).",
             "Pergunta prática: \"com base em quê mandamos isto para a IA?\" Se ninguém sabe responder, pare."
           ]
         },
@@ -98,10 +98,10 @@
         },
         {
           "titulo": "Art. 20 e 46",
-          "sub": "Decisão automatizada e segurança",
+          "sub": "Decisêo automatizada e segurança",
           "texto": [
-            "O titular pode pedir revisão de decisão tomada só por meio automatizado que afete seus interesses (art. 20), como uma recusa de crédito.",
-            "A empresa precisa de medidas de segurança para proteger os dados (art. 46): chave exposta e planilha aberta são o oposto disso."
+            "O titular pode pedir revisêo de decisêo tomada só por meio automatizado que afete seus interesses (art. 20), como uma recusa de crédito.",
+            "A empresa precisa de medidas de segurança para proteger os dados (art. 46): chave exposta e planilha aberta sêo o oposto disso."
           ]
         }
       ]
@@ -109,12 +109,12 @@
     {
       "tipo": "codigo",
       "titulo": "Modelos para copiar",
-      "sub": "A matriz de decisão e o prompt para anonimizar.",
+      "sub": "A matriz de decisêo e o prompt para anonimizar.",
       "blocos": [
         {
           "rot": "Matriz dado × fornecedor × licença",
           "icone": "lista",
-          "conteudo": "MATRIZ DE DADOS — <caso>, <data>\n\nO caso: <o que se quer fazer com IA>\nDados envolvidos: <lista> → tipo: <público | interno | pessoal | sensível>\n\n| Opção | Para onde vai o dado | País do servidor | Contrato / acordo de dados | Usa para treinar? | Licença (se aberto) | Custo | Risco |\n|---|---|---|---|---|---|---|---|\n| A. Modelo fechado por API | | | | | — | | |\n| B. Modelo aberto local | computador da empresa | Brasil | — | não | <licença> | | |\n| C. Anonimizar antes | | | | | | | |\n| D. Não usar IA | — | — | — | — | — | | |\n\nBase legal (LGPD art. 7º ou 11): <qual e por quê>\nTransferência internacional? <sim/não; se sim, que hipótese do art. 33>\nQuem foi ouvido: <encarregado de dados / jurídico / TI>\nDecisão: <opção> porque <motivo em uma frase>"
+          "conteudo": "MATRIZ DE DADOS — <caso>, <data>\n\nO caso: <o que se quer fazer com IA>\nDados envolvidos: <lista> → tipo: <público | interno | pessoal | sensível>\n\n| Opçêo | Para onde vai o dado | País do servidor | Contrato / acordo de dados | Usa para treinar? | Licença (se aberto) | Custo | Risco |\n|---|---|---|---|---|---|---|---|\n| A. Modelo fechado por API | | | | | — | | |\n| B. Modelo aberto local | computador da empresa | Brasil | — | nêo | <licença> | | |\n| C. Anonimizar antes | | | | | | | |\n| D. Nêo usar IA | — | — | — | — | — | | |\n\nBase legal (LGPD art. 7º ou 11): <qual e por quê>\nTransferência internacional? <sim/nêo; se sim, que hipótese do art. 33>\nQuem foi ouvido: <encarregado de dados / jurídico / TI>\nDecisêo: <opçêo> porque <motivo em uma frase>"
         },
         {
           "rot": "Prompt · anonimizar antes de enviar",
@@ -127,7 +127,7 @@
         "abas": [
           {
             "rot": "Exemplo: resumo de atendimento (F10)",
-            "html": "<p><b>Caso:</b> resumo diário das conversas de WhatsApp da Horizonte. <b>Dados:</b> nome, telefone, CPF e endereço de clientes → pessoal. <b>Hoje:</b> enviado a um serviço gratuito fora do Brasil, sem contrato, com termos que permitem usar os dados para treinar. <b>Decisão:</b> parar já; opção C (anonimizar antes) com fornecedor com contrato, ou B (modelo aberto local).</p>"
+            "html": "<p><b>Caso:</b> resumo diário das conversas de WhatsApp da Horizonte. <b>Dados:</b> nome, telefone, CPF e endereço de clientes → pessoal. <b>Hoje:</b> enviado a um serviço gratuito fora do Brasil, sem contrato, com termos que permitem usar os dados para treinar. <b>Decisêo:</b> parar já; opçêo C (anonimizar antes) com fornecedor com contrato, ou B (modelo aberto local).</p>"
           },
           {
             "rot": "Erros comuns",
@@ -140,8 +140,8 @@
       "tipo": "texto",
       "titulo": "Modelo aberto local ficou viável",
       "paragrafos": [
-        "Em agosto de 2026 a Alibaba publicou o Qwen3.8-27B com licença Apache 2.0, que permite uso comercial; segundo a empresa, com quantização ele roda até num notebook. Para uma PME, isso abre uma opção de custo fixo em que o dado não sai da empresa.",
-        "Mas aberto não é o mesmo que livre de risco. Leia a licença: algumas têm teto de receita ou são só para pesquisa. Veja quem publicou o modelo e de onde ele veio, e lembre que a máquina local também precisa de segurança."
+        "Em agosto de 2026 a Alibaba publicou o Qwen3.8-27B com licença Apache 2.0, que permite uso comercial; segundo a empresa, com quantizaçêo ele roda até num notebook. Para uma PME, isso abre uma opçêo de custo fixo em que o dado nêo sai da empresa.",
+        "Mas aberto nêo é o mesmo que livre de risco. Leia a licença: algumas têm teto de receita ou sêo só para pesquisa. Veja quem publicou o modelo e de onde ele veio, e lembre que a máquina local também precisa de segurança."
       ]
     },
     {
@@ -160,22 +160,22 @@
           "id": "e2",
           "titulo": "E2 · Preencher as 4 opções",
           "min": "20 min",
-          "texto": "Para a opção A, procure nos termos do fornecedor: país do servidor, retenção e uso para treino. Para a B, a licença de um modelo aberto.",
-          "pronto": "a matriz tem as 4 linhas preenchidas; onde não achou a informação, está escrito \"não informado\"."
+          "texto": "Para a opçêo A, procure nos termos do fornecedor: país do servidor, retençêo e uso para treino. Para a B, a licença de um modelo aberto.",
+          "pronto": "a matriz tem as 4 linhas preenchidas; onde nêo achou a informaçêo, está escrito \"nêo informado\"."
         },
         {
           "id": "e3",
           "titulo": "E3 · Decidir com base legal",
           "min": "10 min",
-          "texto": "Escreva a decisão, a base legal e quem precisa ser ouvido.",
-          "pronto": "a decisão cabe numa frase e cita a base legal e a pessoa que precisa ser ouvida."
+          "texto": "Escreva a decisêo, a base legal e quem precisa ser ouvido.",
+          "pronto": "a decisêo cabe numa frase e cita a base legal e a pessoa que precisa ser ouvida."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "A Juliana quer colar conversas com nome e telefone de clientes num app gratuito de resumo. O que fazer primeiro?",
@@ -186,7 +186,7 @@
             "Usar o app pago do mesmo fornecedor sem ler os termos."
           ],
           "certa": 1,
-          "explica": "Conversa com nome e telefone é dado pessoal. Antes de enviar: destino, contrato, uso para treino e base legal. Anonimizar reduz muito o risco. O erro comum é achar que \"só resumir\" não é tratamento de dado.",
+          "explica": "Conversa com nome e telefone é dado pessoal. Antes de enviar: destino, contrato, uso para treino e base legal. Anonimizar reduz muito o risco. O erro comum é achar que \"só resumir\" nêo é tratamento de dado.",
           "ref": "diagrama",
           "cert": true
         },
@@ -199,7 +199,7 @@
             "Assunto só da TI."
           ],
           "certa": 1,
-          "explica": "É transferência internacional e precisa de uma hipótese prevista, como cláusulas contratuais aprovadas pela ANPD. O erro comum é tratar \"nuvem\" como se não tivesse país.",
+          "explica": "É transferência internacional e precisa de uma hipótese prevista, como cláusulas contratuais aprovadas pela ANPD. O erro comum é tratar \"nuvem\" como se nêo tivesse país.",
           "ref": "passos",
           "cert": true
         },
@@ -212,7 +212,7 @@
             "Se ele fala português."
           ],
           "certa": 1,
-          "explica": "Local resolve a viagem do dado, não a licença nem a segurança da máquina. O erro comum é confundir \"aberto\" com \"sem regra\".",
+          "explica": "Local resolve a viagem do dado, nêo a licença nem a segurança da máquina. O erro comum é confundir \"aberto\" com \"sem regra\".",
           "ref": "texto"
         }
       ]
@@ -224,16 +224,16 @@
         { "t": "Três perguntas", "texto": "Que dado é? Para onde iria? Com que contrato e licença?" },
         { "t": "LGPD vale para IA", "texto": "Base legal, transferência internacional (arts. 33–36), segurança (art. 46)." },
         { "t": "Anonimizar", "texto": "Trocar nome por código resolve muitos casos." },
-        { "t": "Aberto local", "texto": "Dado não sai, mas licença, procedência e máquina segura continuam." }
+        { "t": "Aberto local", "texto": "Dado nêo sai, mas licença, procedência e máquina segura continuam." }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Fontes e para ir além",
       "links": [
-        { "t": "Lei Geral de Proteção de Dados (Lei 13.709/2018), texto oficial", "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm", "icone": "arquivo" },
+        { "t": "Lei Geral de Proteçêo de Dados (Lei 13.709/2018), texto oficial", "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm", "icone": "arquivo" },
         { "t": "ANPD: transferência internacional de dados", "href": "https://www.gov.br/anpd/pt-br/assuntos/assuntos-internacionais", "icone": "escudo" },
-        { "t": "Alibaba Cloud: Qwen3.8-27B, Apache 2.0, roda em notebook com quantização (08/2026)", "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463", "icone": "chip" },
+        { "t": "Alibaba Cloud: Qwen3.8-27B, Apache 2.0, roda em notebook com quantizaçêo (08/2026)", "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463", "icone": "chip" },
         { "t": "The Next Web: o modelo pequeno da Alibaba que roda em notebook (08/2026)", "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model", "icone": "arquivo" },
         { "t": "Empresa-laboratório: resumo de atendimento (F10)", "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/", "icone": "pasta" }
       ]

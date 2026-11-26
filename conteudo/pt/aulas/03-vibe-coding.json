@@ -5,7 +5,7 @@
   "titulo": "Vibe coding pelo lado da confiança: construa um app e procure as falhas",
   "titulo_curto": "Vibe coding com confiança",
   "minutos": 20,
-  "lead": "Vibe coding é pedir um programa em português e deixar a IA escrever o código. Funciona: em minutos sai um app que abre e parece pronto. O problema é que \"abriu\" não quer dizer \"está seguro\". Nesta aula você constrói um app de uma tela, com segurança, e depois troca de papel: vira quem procura as falhas.",
+  "lead": "Vibe coding é pedir um programa em português e deixar a IA escrever o código. Funciona: em minutos sai um app que abre e parece pronto. O problema é que \"abriu\" nêo quer dizer \"está seguro\". Nesta aula você constrói um app de uma tela, com segurança, e depois troca de papel: vira quem procura as falhas.",
   "objetivo": "construir com IA um app de 1 tela que roda no seu computador e listar 3 falhas que você achou nele, com o lugar de cada uma.",
   "competencias": [
     "construir-app-com-ia",
@@ -19,7 +19,7 @@
     { "icone": "lupa", "t": "Testar como usuário e como quem quer abusar" },
     { "icone": "lista", "t": "Pedir uma auditoria à IA e conferir você mesmo" }
   ],
-  "hero_alt": "Mãos num notebook com um aplicativo simples aberto; ao lado, bilhetes adesivos com sinais de alerta, uma lupa e um caderno.",
+  "hero_alt": "Mêos num notebook com um aplicativo simples aberto; ao lado, bilhetes adesivos com sinais de alerta, uma lupa e um caderno.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -51,7 +51,7 @@
             { "icone": "check", "t": "Caminho feliz" },
             { "icone": "x", "t": "Preço negativo, campo vazio" }
           ],
-          "detalhe": "Primeiro use como um cliente normal. Depois tente quebrar: quantidade zero, preço negativo, texto enorme, campo vazio. App que só foi testado no caminho feliz não foi testado."
+          "detalhe": "Primeiro use como um cliente normal. Depois tente quebrar: quantidade zero, preço negativo, texto enorme, campo vazio. App que só foi testado no caminho feliz nêo foi testado."
         },
         {
           "icone": "lupa",
@@ -65,8 +65,8 @@
           "forte": true
         }
       ],
-      "volta": "Corrigiu? Procure de novo: a correção pode quebrar outra coisa",
-      "legenda": "O app que \"abriu\" é o começo da conferência, não o fim.",
+      "volta": "Corrigiu? Procure de novo: a correçêo pode quebrar outra coisa",
+      "legenda": "O app que \"abriu\" é o começo da conferência, nêo o fim.",
       "dica": "Clique em cada etapa."
     },
     {
@@ -86,7 +86,7 @@
           "titulo": "Construir",
           "sub": "Três caminhos",
           "texto": [
-            "<b>Claude Code ou Codex</b>: abra o terminal, entre na pasta, rode <code>claude</code> ou <code>codex</code> e cole o pedido. Aceite só a criação de arquivos dentro da pasta.",
+            "<b>Claude Code ou Codex</b>: abra o terminal, entre na pasta, rode <code>claude</code> ou <code>codex</code> e cole o pedido. Aceite só a criaçêo de arquivos dentro da pasta.",
             "<b>ChatGPT</b>: cole o pedido, copie o código que vier, salve como <code>index.html</code> na pasta (Bloco de Notas, \"salvar como\", tipo \"todos os arquivos\") e dê dois cliques."
           ],
           "exemplo": { "rot": "Pronto", "texto": "O formulário abre no navegador, você cadastra 3 pedidos e vê a lista com o total." }
@@ -96,14 +96,14 @@
           "sub": "Caminho feliz e casos de borda",
           "texto": [
             "Faça 3 pedidos normais. Depois tente: quantidade 0, preço negativo, nome com 500 letras, campo vazio, e abra a \"área do gerente\".",
-            "Anote tudo que o app aceitou e não deveria."
+            "Anote tudo que o app aceitou e nêo deveria."
           ]
         },
         {
           "titulo": "Procurar falhas",
           "sub": "Você e uma IA \"de fora\"",
           "texto": [
-            "Abra o código (no navegador: botão direito, \"Exibir código-fonte\", ou Ctrl+U). Procure por <code>CHAVE</code>, <code>senha</code> e <code>gerente</code>.",
+            "Abra o código (no navegador: botêo direito, \"Exibir código-fonte\", ou Ctrl+U). Procure por <code>CHAVE</code>, <code>senha</code> e <code>gerente</code>.",
             "Abra uma conversa nova, cole o código e o prompt de auditoria. Confira no código cada falha que ela listar: a IA também inventa."
           ],
           "exemplo": { "rot": "Pergunta-chave", "texto": "Se qualquer pessoa abrir esta página, o que ela consegue ver e fazer?" }
@@ -118,22 +118,22 @@
         {
           "rot": "Regras da prática (cole antes de tudo)",
           "icone": "escudo",
-          "conteudo": "Regras deste teste:\n- Trabalhe só dentro desta pasta. Não apague nada fora dela.\n- Use apenas dados inventados. Nenhum nome, CPF ou telefone real.\n- Não publique nada na internet e não instale nada fora da pasta.\n- A única chave permitida é a falsa: CHAVE-DE-TESTE-123.\n- No fim, diga o que você criou e como eu abro."
+          "conteudo": "Regras deste teste:\n- Trabalhe só dentro desta pasta. Nêo apague nada fora dela.\n- Use apenas dados inventados. Nenhum nome, CPF ou telefone real.\n- Nêo publique nada na internet e nêo instale nada fora da pasta.\n- A única chave permitida é a falsa: CHAVE-DE-TESTE-123.\n- No fim, diga o que você criou e como eu abro."
         },
         {
           "rot": "Pedido do app (1 tela)",
           "icone": "chat",
-          "conteudo": "Crie um app de uma tela só, num único arquivo index.html que abre direto no navegador, sem servidor.\n\nÉ o formulário de pedidos da Horizonte Distribuidora (produtos de limpeza):\n- Campos: cliente, produto (lista com 5 produtos inventados e preço), quantidade.\n- Botão \"Adicionar pedido\". Abaixo, a lista de pedidos com o total em R$.\n- Guarde os pedidos no próprio navegador, para não sumirem ao recarregar.\n- Um botão \"Área do gerente\" que mostra todos os pedidos e permite apagar.\n- Ao adicionar, \"envie\" o pedido para a API de estoque usando a chave CHAVE-DE-TESTE-123 (pode ser só simulado).\n\nVisual simples e legível no celular. Explique em 5 linhas como o app funciona."
+          "conteudo": "Crie um app de uma tela só, num único arquivo index.html que abre direto no navegador, sem servidor.\n\nÉ o formulário de pedidos da Horizonte Distribuidora (produtos de limpeza):\n- Campos: cliente, produto (lista com 5 produtos inventados e preço), quantidade.\n- Botêo \"Adicionar pedido\". Abaixo, a lista de pedidos com o total em R$.\n- Guarde os pedidos no próprio navegador, para nêo sumirem ao recarregar.\n- Um botêo \"Área do gerente\" que mostra todos os pedidos e permite apagar.\n- Ao adicionar, \"envie\" o pedido para a API de estoque usando a chave CHAVE-DE-TESTE-123 (pode ser só simulado).\n\nVisual simples e legível no celular. Explique em 5 linhas como o app funciona."
         },
         {
           "rot": "Prompt de auditoria (conversa nova)",
           "icone": "lupa",
-          "conteudo": "Você é um revisor de segurança. Analise o código abaixo, de um app feito com IA.\nProcure, nesta ordem:\n1. Chaves, senhas ou tokens visíveis no código que roda no navegador.\n2. Áreas ou ações que deveriam exigir login e não exigem.\n3. Dados que qualquer pessoa com o link consegue ver ou apagar.\n4. Entradas não validadas (quantidade 0, preço negativo, texto enorme, código no campo).\n5. Bibliotecas externas: quais são, de onde vêm e se a versão é antiga.\n6. Dados pessoais guardados sem necessidade.\n\nPara cada falha: o que é, a linha ou trecho, a gravidade (alta/média/baixa) e como corrigir.\nNão invente: se não der para confirmar pelo código, diga \"não confirmado\".\n\nCÓDIGO:\n<cole aqui o conteúdo do index.html>"
+          "conteudo": "Você é um revisor de segurança. Analise o código abaixo, de um app feito com IA.\nProcure, nesta ordem:\n1. Chaves, senhas ou tokens visíveis no código que roda no navegador.\n2. Áreas ou ações que deveriam exigir login e nêo exigem.\n3. Dados que qualquer pessoa com o link consegue ver ou apagar.\n4. Entradas nêo validadas (quantidade 0, preço negativo, texto enorme, código no campo).\n5. Bibliotecas externas: quais sêo, de onde vêm e se a versêo é antiga.\n6. Dados pessoais guardados sem necessidade.\n\nPara cada falha: o que é, a linha ou trecho, a gravidade (alta/média/baixa) e como corrigir.\nNêo invente: se nêo der para confirmar pelo código, diga \"nêo confirmado\".\n\nCÓDIGO:\n<cole aqui o conteúdo do index.html>"
         },
         {
           "rot": "Lista de falhas (sua entrega)",
           "icone": "lista",
-          "conteudo": "FALHAS DO APP — <seu nome>, <data>, feito com <Claude Code | Codex | ChatGPT>\n\n| # | Falha | Onde está (linha ou print) | Como achei (uso / código / auditoria) | Gravidade | O que pedir para corrigir |\n|---|---|---|---|---|---|\n| 1 | | | | | |\n| 2 | | | | | |\n| 3 | | | | | |\n\nA auditoria da IA apontou algo que NÃO estava no código? <sim/não, qual>"
+          "conteudo": "FALHAS DO APP — <seu nome>, <data>, feito com <Claude Code | Codex | ChatGPT>\n\n| # | Falha | Onde está (linha ou print) | Como achei (uso / código / auditoria) | Gravidade | O que pedir para corrigir |\n|---|---|---|---|---|---|\n| 1 | | | | | |\n| 2 | | | | | |\n| 3 | | | | | |\n\nA auditoria da IA apontou algo que NêO estava no código? <sim/nêo, qual>"
         }
       ],
       "saida": {
@@ -141,11 +141,11 @@
         "abas": [
           {
             "rot": "Falhas que costumam aparecer",
-            "html": "<ul><li><b>Chave no código do navegador</b>: a <code>CHAVE-DE-TESTE-123</code> aparece no Ctrl+U. Se fosse real, qualquer visitante copiaria.</li><li><b>Área do gerente sem login</b>: um botão aberto a todos, que apaga pedidos.</li><li><b>Sem validação</b>: aceita quantidade 0 e preço negativo; o total fica errado.</li><li><b>Biblioteca externa</b> carregada da internet, sem versão fixa.</li></ul>"
+            "html": "<ul><li><b>Chave no código do navegador</b>: a <code>CHAVE-DE-TESTE-123</code> aparece no Ctrl+U. Se fosse real, qualquer visitante copiaria.</li><li><b>Área do gerente sem login</b>: um botêo aberto a todos, que apaga pedidos.</li><li><b>Sem validaçêo</b>: aceita quantidade 0 e preço negativo; o total fica errado.</li><li><b>Biblioteca externa</b> carregada da internet, sem versêo fixa.</li></ul>"
           },
           {
             "rot": "Erros comuns",
-            "html": "<ul><li><b>Achar que \"funcionou\" = \"está seguro\"</b>: o app abre e tem falha grave.</li><li><b>Auditar na mesma conversa que construiu</b>: a IA tende a defender o próprio código. Use conversa nova.</li><li><b>Aceitar a lista da IA sem conferir</b>: ela pode apontar falha que não existe ou esquecer uma real.</li><li><b>Publicar \"só para mostrar\"</b>: o que está na internet, qualquer um acha.</li></ul>"
+            "html": "<ul><li><b>Achar que \"funcionou\" = \"está seguro\"</b>: o app abre e tem falha grave.</li><li><b>Auditar na mesma conversa que construiu</b>: a IA tende a defender o próprio código. Use conversa nova.</li><li><b>Aceitar a lista da IA sem conferir</b>: ela pode apontar falha que nêo existe ou esquecer uma real.</li><li><b>Publicar \"só para mostrar\"</b>: o que está na internet, qualquer um acha.</li></ul>"
           }
         ]
       }
@@ -154,8 +154,8 @@
       "tipo": "texto",
       "titulo": "Por que isso importa fora da sala de aula",
       "paragrafos": [
-        "Em maio de 2026 a empresa de segurança Red Access disse ter encontrado cerca de 380 mil páginas e apps públicos feitos com ferramentas como Lovable, Replit, Netlify e Base44; cerca de 5 mil deles expunham informação possivelmente sensível, como documentos financeiros e conversas de atendimento. As plataformas contestaram parte da leitura: app público visível não é, por si só, um vazamento.",
-        "A lição para você não depende de quem tem razão: quem constrói rápido com IA precisa perguntar, antes de publicar, quem consegue ver e fazer o quê. É exatamente o que esta aula treina e o que a aula 4 pede na empresa-laboratório."
+        "Em maio de 2026 a empresa de segurança Red Access disse ter encontrado cerca de 380 mil páginas e apps públicos feitos com ferramentas como Lovable, Replit, Netlify e Base44; cerca de 5 mil deles expunham informaçêo possivelmente sensível, como documentos financeiros e conversas de atendimento. As plataformas contestaram parte da leitura: app público visível nêo é, por si só, um vazamento.",
+        "A liçêo para você nêo depende de quem tem razêo: quem constrói rápido com IA precisa perguntar, antes de publicar, quem consegue ver e fazer o quê. É exatamente o que esta aula treina e o que a aula 4 pede na empresa-laboratório."
       ]
     },
     {
@@ -182,7 +182,7 @@
           "titulo": "E3 · Usar e abusar",
           "min": "10 min",
           "texto": "Teste quantidade 0, preço negativo, campo vazio, texto enorme e a área do gerente.",
-          "pronto": "você anotou o que o app aceitou e não deveria (ou que recusou tudo)."
+          "pronto": "você anotou o que o app aceitou e nêo deveria (ou que recusou tudo)."
         },
         {
           "id": "e4",
@@ -192,23 +192,23 @@
           "pronto": "a lista tem 3 falhas, cada uma com a linha ou o print de onde está e como você achou."
         }
       ],
-      "fonte": "Quer ir mais fundo em construção? O curso <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cobre o caminho até a produção."
+      "fonte": "Quer ir mais fundo em construçêo? O curso <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cobre o caminho até a produçêo."
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "O app abriu, salvou os pedidos e mostrou o total certo. O que isso prova?",
           "opcoes": [
             "Que o app está seguro.",
-            "Que o caminho feliz funciona. Segurança e casos de borda ainda não foram testados.",
+            "Que o caminho feliz funciona. Segurança e casos de borda ainda nêo foram testados.",
             "Que pode publicar.",
-            "Que a IA não erra."
+            "Que a IA nêo erra."
           ],
           "certa": 1,
-          "explica": "Funcionar não é estar seguro. Falta ver o que qualquer pessoa consegue ver e fazer, e o que o app aceita e não deveria. O erro comum é publicar no primeiro \"deu certo\".",
+          "explica": "Funcionar nêo é estar seguro. Falta ver o que qualquer pessoa consegue ver e fazer, e o que o app aceita e nêo deveria. O erro comum é publicar no primeiro \"deu certo\".",
           "ref": "diagrama",
           "cert": true
         },
@@ -221,7 +221,7 @@
             "O navegador apagaria a chave."
           ],
           "certa": 1,
-          "explica": "Tudo que roda no navegador é visível para quem abre a página. Chave real fica no servidor, em variável de ambiente, nunca no código do navegador. O erro comum é achar que o código \"não aparece\".",
+          "explica": "Tudo que roda no navegador é visível para quem abre a página. Chave real fica no servidor, em variável de ambiente, nunca no código do navegador. O erro comum é achar que o código \"nêo aparece\".",
           "ref": "codigo",
           "cert": true
         },
@@ -231,7 +231,7 @@
             "Porque a conversa antiga fica mais cara.",
             "Porque na mesma conversa a IA tende a defender o que ela mesma fez; um olhar \"de fora\" acha mais.",
             "Porque é obrigatório por lei.",
-            "Não faz diferença."
+            "Nêo faz diferença."
           ],
           "certa": 1,
           "explica": "Separar quem constrói de quem revisa vale para gente e para IA. E mesmo assim você confere no código cada item: a auditoria também pode inventar.",
@@ -241,7 +241,7 @@
           "p": "Qual destas regras protege você durante a prática?",
           "opcoes": [
             "Usar os clientes reais para o teste ficar realista.",
-            "Publicar o app para pedir opinião.",
+            "Publicar o app para pedir opiniêo.",
             "Pasta só para o teste, dados inventados, chave falsa e nada publicado.",
             "Dar ao agente acesso a todo o computador para ele trabalhar melhor."
           ],
@@ -265,7 +265,7 @@
       "tipo": "links",
       "titulo": "Fontes e para ir além",
       "links": [
-        { "t": "HKU, Escritório de Proteção de Dados: milhares de apps de vibe coding podem expor dados (05/2026, a partir da pesquisa da Red Access)", "href": "https://dpo.hku.hk/news/thousands-of-ai-%E2%80%98vibe-coding%E2%80%99-apps-may-expose-sensitive-medical%2C-business-data", "icone": "arquivo" },
+        { "t": "HKU, Escritório de Proteçêo de Dados: milhares de apps de vibe coding podem expor dados (05/2026, a partir da pesquisa da Red Access)", "href": "https://dpo.hku.hk/news/thousands-of-ai-%E2%80%98vibe-coding%E2%80%99-apps-may-expose-sensitive-medical%2C-business-data", "icone": "arquivo" },
         { "t": "Supabase: o que é RLS, a regra que impede um usuário de ler os dados de outro", "href": "https://supabase.com/docs/guides/database/postgres/row-level-security", "icone": "cadeado" },
         { "t": "Claude Code (Anthropic)", "href": "https://claude.com/product/claude-code", "icone": "terminal" },
         { "t": "Codex (OpenAI)", "href": "https://developers.openai.com/codex", "icone": "terminal" },
