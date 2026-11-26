@@ -1,21 +1,21 @@
 {
   "id": "prof2030-base",
   "lang": "es",
-  "url": "https://inematds.github.io/prof2030-base/es/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/es/",
   "nome": "Confiar en lo que la IA construye",
   "sub": "Profesional 2030 · Base común",
   "volta": {
     "t": "Área Profesional 2030",
-    "href": "https://inematds.github.io/profissional-2030/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/"
   },
   "lado_card": {
     "rot": "Empresa-laboratorio",
     "t": "Horizonte Distribuidora",
     "texto": "Una empresa ficticia con fallas plantadas, la misma en los cinco cursos. Las clases 4 y 8 la usan.",
     "link": "Abrir el laboratorio",
-    "href": "https://inematds.github.io/prof2030-lab/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/"
   },
-  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inematds.github.io/profissional-2030/\">Profesional 2030</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/\">Ficha de este curso en INEMA.CLUB</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender IA</a>",
+  "rodape": "ARCKHÉ AI · contenido abierto y gratuito · formato ARCKHÉ Learning v7.2 · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Profesional 2030</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/\">Ficha de este curso en ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guía: cómo aprender IA</a>",
   "videos": {},
   "inicio": {
     "kicker": "Profesional 2030 · Base común · 8 clases",
@@ -24,7 +24,7 @@
     "cta": "Empezar por la clase 1",
     "cta2": {
       "t": "Ver el programa Profesional 2030",
-      "href": "https://inematds.github.io/profissional-2030/"
+      "href": "https://linnoff88-dev.github.io/arckhe-/"
     },
     "capa_alt": "Confiar en lo que la IA construye — Profesional 2030, Base común. Una profesional examina con una lupa una aplicación en el portátil.",
     "numeros": [
@@ -42,7 +42,7 @@
       },
       {
         "v": "Gratis",
-        "t": "contenido abierto de INEMA.CLUB"
+        "t": "contenido abierto de ARCKHÉ AI"
       }
     ],
     "aulas_titulo": "Las clases",
@@ -69,13 +69,13 @@
       {
         "t": "Forma parte de Profesional 2030",
         "itens": [
-          "Este curso es la Base común de <a href=\"https://inematds.github.io/profissional-2030/\">Profesional 2030</a>, programa abierto de INEMA. Cada formación tendrá certificación INEMA; detalles pronto. Es una certificación de cualificación, no una profesión regulada.",
-          "<a href=\"https://inematds.github.io/prof2030-base/\">Base común: Confiar en lo que la IA construye</a> (este curso)",
-          "<a href=\"https://inematds.github.io/prof2030-consultor/\">Consultor de IA</a>: para dueño y dirección",
-          "<a href=\"https://inematds.github.io/prof2030-auditor/\">Auditor de IA</a>: evaluación y triaje de riesgos",
-          "<a href=\"https://inematds.github.io/prof2030-mentor/\">Mentor de IA</a>: gerentes que construyen",
-          "<a href=\"https://inematds.github.io/prof2030-treinador/\">Entrenador de IA</a>: equipos y liderazgos",
-          "<a href=\"https://inematds.github.io/prof2030-lab/\">Laboratorio: Horizonte Distribuidora</a>"
+          "Este curso es la Base común de <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Profesional 2030</a>, programa abierto de ARCKHÉ. Cada formación tendrá certificación ARCKHÉ; detalles pronto. Es una certificación de cualificación, no una profesión regulada.",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Base común: Confiar en lo que la IA construye</a> (este curso)",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Consultor de IA</a>: para dueño y dirección",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Auditor de IA</a>: evaluación y triaje de riesgos",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Mentor de IA</a>: gerentes que construyen",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Entrenador de IA</a>: equipos y liderazgos",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Laboratorio: Horizonte Distribuidora</a>"
         ]
       }
     ]

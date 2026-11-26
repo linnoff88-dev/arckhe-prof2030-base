@@ -188,7 +188,7 @@
           "id": "e1",
           "titulo": "E1 · Pick the case and classify the data",
           "min": "10 min",
-          "texto": "Describe the case and list the data. No case? Open <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">the Horizonte customer service summary</a>.",
+          "texto": "Describe the case and list the data. No case? Open <a href=\"https://linnoff88-dev.github.io/arckhe-/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">the Horizonte customer service summary</a>.",
           "pronto": "each piece of data in the case has a type: public, internal, personal or sensitive."
         },
         {
@@ -300,7 +300,7 @@
         },
         {
           "t": "Lab company: customer service summary (F10)",
-          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/pecas/resumo-atendimento/",
           "icone": "pasta"
         }
       ]

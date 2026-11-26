@@ -89,10 +89,10 @@
           "itens": [
             {
               "icone": "check",
-              "t": "INEMA qualification certificate"
+              "t": "ARCKHÉ qualification certificate"
             }
           ],
-          "detalhe": "The Professional 2030 certificate will be a qualification certification issued by INEMA, not a regulated profession. It is also not the ISO/IEC 42001 certification, which is granted to companies by an accredited body. Say exactly what it is."
+          "detalhe": "The Professional 2030 certificate will be a qualification certification issued by ARCKHÉ, not a regulated profession. It is also not the ISO/IEC 42001 certification, which is granted to companies by an accredited body. Say exactly what it is."
         }
       ],
       "legenda": "\"AI Auditor\" here means AI risk assessment and triage. It is not a pentest or a certified audit.",
@@ -251,7 +251,7 @@
         {
           "rot": "Scope card (5 lines)",
           "icone": "arquivo",
-          "conteudo": "SCOPE CARD — <your name>\n1. What I do: <e.g., I map where AI is used and triage risks with evidence>\n2. What I deliver: <e.g., one-page report + 30-day plan>\n3. What I do NOT do: <e.g., penetration testing, incident response, legal opinion, guarantee of total security>\n4. When I call a specialist: <e.g., suspected leak → security; LGPD or contract question → legal>\n5. My credential: <e.g., INEMA qualification certificate (Professional 2030); not a regulated profession nor an ISO certification>"
+          "conteudo": "SCOPE CARD — <your name>\n1. What I do: <e.g., I map where AI is used and triage risks with evidence>\n2. What I deliver: <e.g., one-page report + 30-day plan>\n3. What I do NOT do: <e.g., penetration testing, incident response, legal opinion, guarantee of total security>\n4. When I call a specialist: <e.g., suspected leak → security; LGPD or contract question → legal>\n5. My credential: <e.g., ARCKHÉ qualification certificate (Professional 2030); not a regulated profession nor an ISO certification>"
         },
         {
           "rot": "Guarantee / no-guarantee sentence",
@@ -264,7 +264,7 @@
         "abas": [
           {
             "rot": "Filled-in example",
-            "html": "<p><b>1.</b> I map where AI is used in the company and triage risks with evidence. <b>2.</b> One-page report and a 30-day plan. <b>3.</b> I don't do penetration testing, incident response, or legal opinions, and I don't guarantee total security. <b>4.</b> Leak or attack → security specialist; LGPD and contracts → legal. <b>5.</b> INEMA qualification certificate; not a regulated profession.</p>"
+            "html": "<p><b>1.</b> I map where AI is used in the company and triage risks with evidence. <b>2.</b> One-page report and a 30-day plan. <b>3.</b> I don't do penetration testing, incident response, or legal opinions, and I don't guarantee total security. <b>4.</b> Leak or attack → security specialist; LGPD and contracts → legal. <b>5.</b> ARCKHÉ qualification certificate; not a regulated profession.</p>"
           },
           {
             "rot": "Common mistakes",
@@ -324,7 +324,7 @@
           "opcoes": [
             "Registration of a regulated profession.",
             "ISO/IEC 42001 certification.",
-            "A qualification certificate issued by INEMA.",
+            "A qualification certificate issued by ARCKHÉ.",
             "A license to do pentesting."
           ],
           "certa": 2,
@@ -364,7 +364,7 @@
         },
         {
           "t": "Credential",
-          "texto": "INEMA qualification certificate; not a regulated profession."
+          "texto": "ARCKHÉ qualification certificate; not a regulated profession."
         }
       ]
     },
@@ -373,18 +373,18 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "LOOP-R (INEMA): what a method guarantees and what it doesn't",
-          "href": "https://inematds.github.io/loop-r/curso/",
+          "t": "LOOP-R (ARCKHÉ): what a method guarantees and what it doesn't",
+          "href": "https://linnoff88-dev.github.io/arckhe-/curso/",
           "icone": "lista"
         },
         {
-          "t": "Client Map (INEMA): what the AI solutions consultant is not",
-          "href": "https://inematds.github.io/mapacliente/",
+          "t": "Client Map (ARCKHÉ): what the AI solutions consultant is not",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         },
         {
           "t": "Professional 2030 Program: training and certification",
-          "href": "https://inematds.github.io/profissional-2030/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "escudo"
         },
         {

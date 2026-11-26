@@ -188,7 +188,7 @@
           "id": "e1",
           "titulo": "E1 · Elegir el caso y clasificar el dato",
           "min": "10 min",
-          "texto": "Describe el caso y enumera los datos. Sin caso, abre <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">el resumen de atención al cliente de Horizonte</a>.",
+          "texto": "Describe el caso y enumera los datos. Sin caso, abre <a href=\"https://linnoff88-dev.github.io/arckhe-/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">el resumen de atención al cliente de Horizonte</a>.",
           "pronto": "listo cuando cada dato del caso tiene un tipo: público, interno, personal o sensible."
         },
         {
@@ -300,7 +300,7 @@
         },
         {
           "t": "Empresa-laboratorio: resumen de atención al cliente (F10)",
-          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/pecas/resumo-atendimento/",
           "icone": "pasta"
         }
       ]

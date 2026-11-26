@@ -153,7 +153,7 @@
           "id": "e1",
           "titulo": "E1 · Escolher o caso e classificar o dado",
           "min": "10 min",
-          "texto": "Descreva o caso e liste os dados. Sem caso, abra <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">o resumo de atendimento da Horizonte</a>.",
+          "texto": "Descreva o caso e liste os dados. Sem caso, abra <a href=\"https://linnoff88-dev.github.io/arckhe-/pecas/resumo-atendimento/\" target=\"_blank\" rel=\"noopener\">o resumo de atendimento da Horizonte</a>.",
           "pronto": "cada dado do caso tem um tipo: público, interno, pessoal ou sensível."
         },
         {
@@ -235,7 +235,7 @@
         { "t": "ANPD: transferência internacional de dados", "href": "https://www.gov.br/anpd/pt-br/assuntos/assuntos-internacionais", "icone": "escudo" },
         { "t": "Alibaba Cloud: Qwen3.8-27B, Apache 2.0, roda em notebook com quantizaçêo (08/2026)", "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463", "icone": "chip" },
         { "t": "The Next Web: o modelo pequeno da Alibaba que roda em notebook (08/2026)", "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model", "icone": "arquivo" },
-        { "t": "Empresa-laboratório: resumo de atendimento (F10)", "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/", "icone": "pasta" }
+        { "t": "Empresa-laboratório: resumo de atendimento (F10)", "href": "https://linnoff88-dev.github.io/arckhe-/pecas/resumo-atendimento/", "icone": "pasta" }
       ]
     }
   ]

@@ -233,7 +233,7 @@
           "pronto": "la lista tiene 3 fallas, cada una con la línea o la captura de dónde está y cómo la encontraste."
         }
       ],
-      "fonte": "¿Quieres ir más a fondo en construcción? El curso <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cubre el camino hasta producción."
+      "fonte": "¿Quieres ir más a fondo en construcción? El curso <a href=\"https://linnoff88-dev.github.io/arckhe-/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cubre el camino hasta producción."
     },
     {
       "tipo": "quiz",
@@ -339,8 +339,8 @@
           "icone": "terminal"
         },
         {
-          "t": "Vibe Coding: Dominio Completo (INEMA)",
-          "href": "https://inematds.github.io/vibe-coding-completo/",
+          "t": "Vibe Coding: Dominio Completo (ARCKHÉ)",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         }
       ]

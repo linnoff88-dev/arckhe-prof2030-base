@@ -1,21 +1,21 @@
 {
   "id": "prof2030-base",
   "lang": "en",
-  "url": "https://inematds.github.io/prof2030-base/en/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/en/",
   "nome": "Trusting what AI builds",
   "sub": "Professional 2030 · Common Core",
   "volta": {
     "t": "Professional 2030 Area",
-    "href": "https://inematds.github.io/profissional-2030/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/"
   },
   "lado_card": {
     "rot": "Lab company",
     "t": "Horizonte Distribuidora",
     "texto": "A fictional company with planted flaws, the same one in all five courses. Lessons 4 and 8 use it.",
     "link": "Open the lab",
-    "href": "https://inematds.github.io/prof2030-lab/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/"
   },
-  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · <a href=\"https://inematds.github.io/profissional-2030/\">Professional 2030</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/\">This course's page on INEMA.CLUB</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guide: how to learn AI</a>",
+  "rodape": "ARCKHÉ AI · open and free content · ARCKHÉ Learning v7.2 format · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Professional 2030</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/\">This course's page on ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guide: how to learn AI</a>",
   "videos": {},
   "inicio": {
     "kicker": "Professional 2030 · Common Core · 8 lessons",
@@ -24,7 +24,7 @@
     "cta": "Start with lesson 1",
     "cta2": {
       "t": "See the Professional 2030 program",
-      "href": "https://inematds.github.io/profissional-2030/"
+      "href": "https://linnoff88-dev.github.io/arckhe-/"
     },
     "capa_alt": "Trusting what AI builds — Professional 2030, Common Core. A professional examines an app on a laptop with a magnifying glass.",
     "numeros": [
@@ -42,7 +42,7 @@
       },
       {
         "v": "Free",
-        "t": "open content from INEMA.CLUB"
+        "t": "open content from ARCKHÉ AI"
       }
     ],
     "aulas_titulo": "The lessons",
@@ -69,13 +69,13 @@
       {
         "t": "Part of Professional 2030",
         "itens": [
-          "This course is the Common Core of <a href=\"https://inematds.github.io/profissional-2030/\">Professional 2030</a>, an open INEMA program. Each track will have INEMA certification; details soon. It is a qualification certificate, not a regulated profession.",
-          "<a href=\"https://inematds.github.io/prof2030-base/\">Common Core: Trusting what AI builds</a> (this course)",
-          "<a href=\"https://inematds.github.io/prof2030-consultor/\">AI Consultant</a>: for the owner and the board",
-          "<a href=\"https://inematds.github.io/prof2030-auditor/\">AI Auditor</a>: risk assessment and triage",
-          "<a href=\"https://inematds.github.io/prof2030-mentor/\">AI Mentor</a>: managers who build",
-          "<a href=\"https://inematds.github.io/prof2030-treinador/\">AI Trainer</a>: teams and leaders",
-          "<a href=\"https://inematds.github.io/prof2030-lab/\">Lab: Horizonte Distribuidora</a>"
+          "This course is the Common Core of <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Professional 2030</a>, an open ARCKHÉ program. Each track will have ARCKHÉ certification; details soon. It is a qualification certificate, not a regulated profession.",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Common Core: Trusting what AI builds</a> (this course)",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">AI Consultant</a>: for the owner and the board",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">AI Auditor</a>: risk assessment and triage",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">AI Mentor</a>: managers who build",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">AI Trainer</a>: teams and leaders",
+          "<a href=\"https://linnoff88-dev.github.io/arckhe-/\">Lab: Horizonte Distribuidora</a>"
         ]
       }
     ]

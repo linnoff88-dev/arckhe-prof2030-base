@@ -192,7 +192,7 @@
           "pronto": "a lista tem 3 falhas, cada uma com a linha ou o print de onde está e como você achou."
         }
       ],
-      "fonte": "Quer ir mais fundo em construçêo? O curso <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cobre o caminho até a produçêo."
+      "fonte": "Quer ir mais fundo em construçêo? O curso <a href=\"https://linnoff88-dev.github.io/arckhe-/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Domínio Completo</a> cobre o caminho até a produçêo."
     },
     {
       "tipo": "quiz",
@@ -269,7 +269,7 @@
         { "t": "Supabase: o que é RLS, a regra que impede um usuário de ler os dados de outro", "href": "https://supabase.com/docs/guides/database/postgres/row-level-security", "icone": "cadeado" },
         { "t": "Claude Code (Anthropic)", "href": "https://claude.com/product/claude-code", "icone": "terminal" },
         { "t": "Codex (OpenAI)", "href": "https://developers.openai.com/codex", "icone": "terminal" },
-        { "t": "Vibe Coding: Domínio Completo (INEMA)", "href": "https://inematds.github.io/vibe-coding-completo/", "icone": "camadas" }
+        { "t": "Vibe Coding: Domínio Completo (ARCKHÉ)", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "camadas" }
       ]
     }
   ]

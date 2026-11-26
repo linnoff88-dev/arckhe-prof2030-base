@@ -6,11 +6,11 @@
 </div>
 
 
-## Mais no INEMA.CLUB
+## Mais no ARCKHÉ AI
 
-- [Ficha no INEMA.CLUB](https://www.inema.club/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/)
-- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
+- [Ficha no ARCKHÉ AI](https://www.ARCKHÉ AI/cursos/336-profissional-2030-base-comum-confiar-no-que-a-ia-constroi-8-aulas/)
+- [Guia: como aprender inteligência artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
 
 ---
 

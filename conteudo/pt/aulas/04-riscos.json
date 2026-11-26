@@ -186,28 +186,28 @@
           "id": "e1",
           "titulo": "E1 · F1, a chave no app de pedidos",
           "min": "10 min",
-          "texto": "Abra <a href=\"https://inematds.github.io/prof2030-lab/pecas/app-pedidos/\" target=\"_blank\" rel=\"noopener\">o app de pedidos</a>, use Ctrl+U e abra o app.js. Procure por \"key\" e \"sk-\".",
+          "texto": "Abra <a href=\"https://linnoff88-dev.github.io/arckhe-/pecas/app-pedidos/\" target=\"_blank\" rel=\"noopener\">o app de pedidos</a>, use Ctrl+U e abra o app.js. Procure por \"key\" e \"sk-\".",
           "pronto": "a ficha de achado F1 tem o nome do arquivo e o trecho copiado da chave."
         },
         {
           "id": "e2",
           "titulo": "E2 · F5 e F6, o agente de WhatsApp",
           "min": "15 min",
-          "texto": "Abra <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\" target=\"_blank\" rel=\"noopener\">o agente de WhatsApp</a>. Leia a instruçêo do agente e as conversas. Ache a regra de desconto e a ordem escondida no texto de um cliente.",
+          "texto": "Abra <a href=\"https://linnoff88-dev.github.io/arckhe-/pecas/agente-whatsapp/\" target=\"_blank\" rel=\"noopener\">o agente de WhatsApp</a>. Leia a instruçêo do agente e as conversas. Ache a regra de desconto e a ordem escondida no texto de um cliente.",
           "pronto": "há duas fichas (F5 e F6), cada uma com a frase exata da instruçêo ou da conversa como evidência."
         },
         {
           "id": "e3",
           "titulo": "E3 · F9, a integraçêo com o e-mail",
           "min": "10 min",
-          "texto": "Abra <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\" target=\"_blank\" rel=\"noopener\">a integraçêo MCP com o e-mail</a> (MCP é o padrêo que liga um agente a outros sistemas). Veja que permissões ela tem e o que é aprovado automaticamente.",
+          "texto": "Abra <a href=\"https://linnoff88-dev.github.io/arckhe-/pecas/mcp-email/\" target=\"_blank\" rel=\"noopener\">a integraçêo MCP com o e-mail</a> (MCP é o padrêo que liga um agente a outros sistemas). Veja que permissões ela tem e o que é aprovado automaticamente.",
           "pronto": "a ficha F9 lista as permissões que sobram para a tarefa e o que deveria esperar aprovaçêo."
         },
         {
           "id": "e4",
           "titulo": "E4 · Conferir no gabarito",
           "min": "5 min",
-          "texto": "Só agora abra o <a href=\"https://inematds.github.io/prof2030-lab/gabarito.html\" target=\"_blank\" rel=\"noopener\">gabarito (spoiler)</a> e compare.",
+          "texto": "Só agora abra o <a href=\"https://linnoff88-dev.github.io/arckhe-/gabarito.html\" target=\"_blank\" rel=\"noopener\">gabarito (spoiler)</a> e compare.",
           "pronto": "você marcou quais das 4 achou sozinho e o que faltou em cada ficha."
         }
       ]
@@ -312,27 +312,27 @@
         },
         {
           "t": "Empresa-laboratório: Horizonte Distribuidora",
-          "href": "https://inematds.github.io/prof2030-lab/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "pasta"
         },
         {
-          "t": "Agente sob controle (INEMA): os 5 controles e as quatro portas",
-          "href": "https://inematds.github.io/curso-agente-sob-controle/",
+          "t": "Agente sob controle (ARCKHÉ): os 5 controles e as quatro portas",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "lista"
         },
         {
           "t": "Laboratório Horizonte: App de pedidos (F1–F4)",
-          "href": "https://inematds.github.io/prof2030-lab/pecas/app-pedidos/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/pecas/app-pedidos/",
           "icone": "lupa"
         },
         {
           "t": "Laboratório Horizonte: Agente de WhatsApp (F5–F7)",
-          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/pecas/agente-whatsapp/",
           "icone": "lupa"
         },
         {
           "t": "Laboratório Horizonte: Integraçêo MCP com o e-mail (F9)",
-          "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/pecas/mcp-email/",
           "icone": "lupa"
         }
       ]

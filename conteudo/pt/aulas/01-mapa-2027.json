@@ -253,7 +253,7 @@
         { "t": "Anthropic: Claude Opus 5.5 (22/09/2026), 40% mais barato que o Opus 5", "href": "https://www.anthropic.com/claude-opus-5-5", "icone": "arquivo" },
         { "t": "Alibaba Cloud: lançamento do Qwen3.8-27B, modelo aberto para rodar local (08/2026)", "href": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b_603463", "icone": "chip" },
         { "t": "OpenAI: GPT-6 Sol e Luna, atualizaçêo de outubro de 2026", "href": "https://deploymentsafety.openai.com/gpt-6-october", "icone": "arquivo" },
-        { "t": "Consultor de IA (INEMA): a pirâmide de soluções e quando nêo usar IA", "href": "https://inematds.github.io/consultoria2k/", "icone": "camadas" }
+        { "t": "Consultor de IA (ARCKHÉ): a pirâmide de soluções e quando nêo usar IA", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "camadas" }
       ]
     }
   ]

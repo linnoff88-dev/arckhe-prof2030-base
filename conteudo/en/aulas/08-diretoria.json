@@ -189,7 +189,7 @@
           "id": "e1",
           "titulo": "E1 · Choose the item and gather the evidence",
           "min": "15 min",
-          "texto": "Open the <a href=\"https://inematds.github.io/prof2030-lab/\" target=\"_blank\" rel=\"noopener\">Horizonte lab</a> and choose one item. Use the finding sheets from lesson 4 and fill in whatever is missing.",
+          "texto": "Open the <a href=\"https://linnoff88-dev.github.io/arckhe-/\" target=\"_blank\" rel=\"noopener\">Horizonte lab</a> and choose one item. Use the finding sheets from lesson 4 and fill in whatever is missing.",
           "pronto": "you have 3 findings from the same item, each with an excerpt or number copied from the lab."
         },
         {
@@ -203,7 +203,7 @@
           "id": "e3",
           "titulo": "E3 · The 2-minute test",
           "min": "10 min",
-          "texto": "Read the page aloud while timing yourself. Then compare it with the <a href=\"https://inematds.github.io/prof2030-lab/gabarito.html\" target=\"_blank\" rel=\"noopener\">answer key (spoiler)</a>.",
+          "texto": "Read the page aloud while timing yourself. Then compare it with the <a href=\"https://linnoff88-dev.github.io/arckhe-/gabarito.html\" target=\"_blank\" rel=\"noopener\">answer key (spoiler)</a>.",
           "pronto": "the reading took less than 2 minutes and you noted what the answer key had that your page did not."
         }
       ]
@@ -295,32 +295,32 @@
       "links": [
         {
           "t": "AI Consultant (Professional 2030)",
-          "href": "https://inematds.github.io/prof2030-consultor/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "alvo"
         },
         {
           "t": "AI Auditor (Professional 2030)",
-          "href": "https://inematds.github.io/prof2030-auditor/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "escudo"
         },
         {
           "t": "AI Mentor (Professional 2030)",
-          "href": "https://inematds.github.io/prof2030-mentor/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "usuario"
         },
         {
           "t": "AI Trainer (Professional 2030)",
-          "href": "https://inematds.github.io/prof2030-treinador/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "megafone"
         },
         {
           "t": "Lab company: Horizonte Distribuidora",
-          "href": "https://inematds.github.io/prof2030-lab/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "pasta"
         },
         {
           "t": "Professional 2030 Program",
-          "href": "https://inematds.github.io/profissional-2030/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         }
       ]

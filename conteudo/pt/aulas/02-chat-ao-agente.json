@@ -223,8 +223,8 @@
         { "t": "Reworked: OpenAI lança o ChatGPT Work (07/2026)", "href": "https://reworked.co/digital-workplace/openai-debuts-direct-claude-cowork-competitor-chatgpt-work/", "icone": "arquivo" },
         { "t": "Help Net Security: Claude Managed Agents (04/2026)", "href": "https://www.helpnetsecurity.com/?p=365593", "icone": "arquivo" },
         { "t": "Claude Code: novidades da semana 36 de 2026 (uso do computador em segundo plano)", "href": "https://code.claude.com/docs/en/whats-new/2026-w36", "icone": "terminal" },
-        { "t": "Do chat ao agente (INEMA): os quatro degraus na prática", "href": "https://inematds.github.io/do-chat-ao-agente-v72/", "icone": "camadas" },
-        { "t": "Gestêo de Agentes: os 7 princípios (INEMA)", "href": "https://inematds.github.io/curso-7pa/", "icone": "lista" }
+        { "t": "Do chat ao agente (ARCKHÉ): os quatro degraus na prática", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "camadas" },
+        { "t": "Gestêo de Agentes: os 7 princípios (ARCKHÉ)", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "lista" }
       ]
     }
   ]

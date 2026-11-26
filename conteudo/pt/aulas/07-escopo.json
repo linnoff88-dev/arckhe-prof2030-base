@@ -89,10 +89,10 @@
           "itens": [
             {
               "icone": "check",
-              "t": "Certificado INEMA de qualificaçêo"
+              "t": "Certificado ARCKHÉ de qualificaçêo"
             }
           ],
-          "detalhe": "O certificado do Profissional 2030 será uma certificaçêo de qualificaçêo emitida pelo INEMA, nêo uma profissêo regulada. Também nêo é a certificaçêo ISO/IEC 42001, que é dada a empresas por organismo acreditado. Diga exatamente o que ele é."
+          "detalhe": "O certificado do Profissional 2030 será uma certificaçêo de qualificaçêo emitida pelo ARCKHÉ, nêo uma profissêo regulada. Também nêo é a certificaçêo ISO/IEC 42001, que é dada a empresas por organismo acreditado. Diga exatamente o que ele é."
         }
       ],
       "legenda": "\"Auditor de IA\" aqui quer dizer avaliaçêo e triagem de riscos de IA. Nêo é pentest nem auditoria certificada.",
@@ -251,7 +251,7 @@
         {
           "rot": "Cartêo de escopo (5 linhas)",
           "icone": "arquivo",
-          "conteudo": "CARTêO DE ESCOPO — <seu nome>\n1. O que eu faço: <ex.: mapeio onde há IA e faço triagem de riscos com evidência>\n2. O que eu entrego: <ex.: relatório de uma página + plano de 30 dias>\n3. O que eu NêO faço: <ex.: teste de invasêo, resposta a incidente, parecer jurídico, garantia de segurança total>\n4. Quando chamo especialista: <ex.: suspeita de vazamento → segurança; dúvida de LGPD ou contrato → jurídico>\n5. Minha credencial: <ex.: certificado de qualificaçêo INEMA (Profissional 2030); nêo é profissêo regulada nem certificaçêo ISO>"
+          "conteudo": "CARTêO DE ESCOPO — <seu nome>\n1. O que eu faço: <ex.: mapeio onde há IA e faço triagem de riscos com evidência>\n2. O que eu entrego: <ex.: relatório de uma página + plano de 30 dias>\n3. O que eu NêO faço: <ex.: teste de invasêo, resposta a incidente, parecer jurídico, garantia de segurança total>\n4. Quando chamo especialista: <ex.: suspeita de vazamento → segurança; dúvida de LGPD ou contrato → jurídico>\n5. Minha credencial: <ex.: certificado de qualificaçêo ARCKHÉ (Profissional 2030); nêo é profissêo regulada nem certificaçêo ISO>"
         },
         {
           "rot": "Frase de garante / nêo garante",
@@ -264,7 +264,7 @@
         "abas": [
           {
             "rot": "Exemplo preenchido",
-            "html": "<p><b>1.</b> Mapeio onde há IA na empresa e faço triagem de riscos com evidência. <b>2.</b> Relatório de uma página e plano de 30 dias. <b>3.</b> Nêo faço teste de invasêo, resposta a incidente nem parecer jurídico, e nêo garanto segurança total. <b>4.</b> Vazamento ou ataque → especialista em segurança; LGPD e contratos → jurídico. <b>5.</b> Certificado de qualificaçêo INEMA; nêo é profissêo regulada.</p>"
+            "html": "<p><b>1.</b> Mapeio onde há IA na empresa e faço triagem de riscos com evidência. <b>2.</b> Relatório de uma página e plano de 30 dias. <b>3.</b> Nêo faço teste de invasêo, resposta a incidente nem parecer jurídico, e nêo garanto segurança total. <b>4.</b> Vazamento ou ataque → especialista em segurança; LGPD e contratos → jurídico. <b>5.</b> Certificado de qualificaçêo ARCKHÉ; nêo é profissêo regulada.</p>"
           },
           {
             "rot": "Erros comuns",
@@ -324,7 +324,7 @@
           "opcoes": [
             "Registro de profissêo regulada.",
             "Certificaçêo ISO/IEC 42001.",
-            "Certificaçêo de qualificaçêo emitida pelo INEMA.",
+            "Certificaçêo de qualificaçêo emitida pelo ARCKHÉ.",
             "Licença para fazer pentest."
           ],
           "certa": 2,
@@ -364,7 +364,7 @@
         },
         {
           "t": "Credencial",
-          "texto": "Certificado de qualificaçêo INEMA; nêo é profissêo regulada."
+          "texto": "Certificado de qualificaçêo ARCKHÉ; nêo é profissêo regulada."
         }
       ]
     },
@@ -373,18 +373,18 @@
       "titulo": "Para ir além",
       "links": [
         {
-          "t": "LOOP-R (INEMA): o que um método garante e o que nêo garante",
-          "href": "https://inematds.github.io/loop-r/curso/",
+          "t": "LOOP-R (ARCKHÉ): o que um método garante e o que nêo garante",
+          "href": "https://linnoff88-dev.github.io/arckhe-/curso/",
           "icone": "lista"
         },
         {
-          "t": "Mapa do Cliente (INEMA): o que o consultor de soluções de IA nêo é",
-          "href": "https://inematds.github.io/mapacliente/",
+          "t": "Mapa do Cliente (ARCKHÉ): o que o consultor de soluções de IA nêo é",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         },
         {
           "t": "Programa Profissional 2030: formações e certificaçêo",
-          "href": "https://inematds.github.io/profissional-2030/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "escudo"
         },
         {

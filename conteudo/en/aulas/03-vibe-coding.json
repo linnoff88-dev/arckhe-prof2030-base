@@ -233,7 +233,7 @@
           "pronto": "the list has 3 failures, each with the line or screenshot of where it is and how you found it."
         }
       ],
-      "fonte": "Want to go deeper into building? The course <a href=\"https://inematds.github.io/vibe-coding-completo/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Complete Mastery</a> covers the path to production."
+      "fonte": "Want to go deeper into building? The course <a href=\"https://linnoff88-dev.github.io/arckhe-/\" target=\"_blank\" rel=\"noopener\">Vibe Coding: Complete Mastery</a> covers the path to production."
     },
     {
       "tipo": "quiz",
@@ -339,8 +339,8 @@
           "icone": "terminal"
         },
         {
-          "t": "Vibe Coding: Complete Mastery (INEMA)",
-          "href": "https://inematds.github.io/vibe-coding-completo/",
+          "t": "Vibe Coding: Complete Mastery (ARCKHÉ)",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         }
       ]
